@@ -11,3 +11,18 @@
  *= require_self
  *= require_tree .
  */
+
+ @font-face {
+  font-family:'PontanoSans';
+  src:url(font-path('PontanoSans-Regular.ttf'));
+}
+
+
+/* Landing Page */
+
+.landing-content {
+	position: relative;
+	top: 530px;
+	text-align: center;
+	font-family:'PontanoSans';
+}
