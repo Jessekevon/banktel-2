@@ -22,5 +22,6 @@ module Banktel2
 
     # Add app/assets/fonts to the assets path.
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    config.assets.initialize_on_precompile = false
   end
 end

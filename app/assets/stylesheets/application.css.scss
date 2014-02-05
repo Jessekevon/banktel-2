@@ -13,10 +13,14 @@
  */
 
  @font-face {
-  font-family:'PontanoSans';
-  src:url(font-path('PontanoSans-Regular.ttf'));
+  font-family:'OpenSans-Light';
+  src:url(font-path('OpenSans-Light.ttf'));
 }
 
+.wrapper {
+	height: 100%;
+	width: 100%;
+}
 
 /* Landing Page */
 
@@ -24,5 +28,18 @@
 	position: relative;
 	top: 530px;
 	text-align: center;
-	font-family:'PontanoSans';
+	font-family:'OpenSans-Light';
+}
+
+.landing-content h3 {
+	font-size: 36px;
+	top: 26px;
+	position: relative;
+}
+
+.landing-content p {
+	position: relative;
+	top: 32px;
+	line-height: 31px;
+	font-size: 19px;
 }
