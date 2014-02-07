@@ -17,6 +17,7 @@
   src:url(font-path('OpenSans-Light.ttf'));
 }
 
+
 .wrapper {
 	height: 100%;
 	width: 100%;
@@ -47,9 +48,67 @@
 form {
 	text-align: center;
 	position: relative;
-	top: 266px;
+	top: 354px;
 }
 
 .alert-success {
 	display: none;
 	}
+
+.forgot-password  {
+	position: relative;
+	top: 303px;
+	text-align: center;
+}
+
+.forgot-password a {
+	padding: 15px 60px;
+	color: #97989A;
+	border: 1px solid #97989A;
+
+}
+
+.forgot-password a:hover {
+	text-decoration: none;
+	color: #28B4AB;
+}
+
+.sign-up {
+	display: none;
+}
+
+.subtext {
+position: relative;
+top: 61px;
+line-height: 35px;
+text-align: center;
+}
+
+.subtext p {
+	font-size: 22px;
+	color: #fff;
+}
+
+.sign-in-nav {
+	display: none;
+}
+
+.module-button {
+	text-align: center;
+}
+
+.module-button .btn {
+	color: #28B4AB;
+	background-color: #fff;
+	border: 2px solid #28B4AB;
+	position: relative;
+	top: 577px;
+	right: 3px;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 33px;
+}
+
+.nav .navbar-nav .btn-lg {
+	color: #fff;
+}
