@@ -26,9 +26,9 @@
 /* Landing Page */
 
 .landing-content {
-	position: relative;
+/*	position: relative;
 	top: 530px;
-	text-align: center;
+*/	text-align: center;
 	font-family:'OpenSans-Light';
 }
 
@@ -102,13 +102,65 @@ text-align: center;
 	background-color: #fff;
 	border: 2px solid #28B4AB;
 	position: relative;
-	top: 577px;
+	top: 46px;
 	right: 3px;
 	font-size: 16px;
 	font-weight: 600;
 	padding: 15px 33px;
+	margin-bottom: 97px;
 }
 
 .nav .navbar-nav .btn-lg {
 	color: #fff;
 }
+
+.section-1 {
+	background-color: #fff;
+/*	padding-bottom: 627px;
+*/
+}
+
+.welcome {
+	background-color: #EFEFEF;
+	margin-top: 103px;
+}
+
+.section-2 {
+	background-color: #28B4AB;
+}
+
+.section-2 h3 {
+/*	position: relative;
+	top: 61px;
+*/	color: #fff;
+}
+
+.section-3 {
+	background-color: #58595B;
+}
+
+.section-3 h3 {
+color: #fff;
+}
+
+
+.section-4 {
+	background-color: #7267B5;
+}
+
+.section-4 h3 {
+color: #fff;
+}
+
+
+.section-5 {
+	background-color: #949599;
+}
+
+.section-5 h3 {
+color: #fff;
+}
+
+
+
+
