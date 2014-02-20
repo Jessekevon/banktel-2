@@ -13,6 +13,7 @@ img {
   .navbar-nav {
   float: right;
   margin: 0;
+  top: 0;
 }
 .navbar-inverse {
   background-color: #F0F0F0;
@@ -123,4 +124,14 @@ padding-bottom: 53px;
 }
 
 #user_email {}
+
+.carousel-control.left {
+background-image: none;
+}
+
+.carousel-control.right {
+background-image: none;
+}
+
+
 
