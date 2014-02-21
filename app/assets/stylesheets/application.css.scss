@@ -125,9 +125,17 @@ text-align: center;
 */
 }
 
+h3.section-content  {
+	position: relative;
+	top: 78px;
+text-align: center;
+font-size: 36px;
+
+}
+
+
 .welcome {
 	background-color: #EFEFEF;
-	margin-top: 103px;
 }
 
 .section-2 {
@@ -136,7 +144,6 @@ text-align: center;
 
 .section-2 h3, p {
 	position: relative;
-	top: 61px;
 	color: #fff;
 }
 

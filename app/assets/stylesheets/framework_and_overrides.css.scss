@@ -20,6 +20,14 @@ img {
   border-color: #F0F0F0;
 }
 
+.navbar {
+position: relative;
+min-height: 50px;
+margin-bottom: 0px;
+border: none;
+}
+
+
 body {
   font-family:'OpenSans-Light';
   background-color: #58595B;
@@ -160,7 +168,7 @@ padding-bottom: 53px;
   background-repeat: no-repeat;
   width: 36px;
   height: 62px;
-  top: 35.5%;
+  top: 26%;
   left: 9.5%;
   background-size: 36px 62px;
   font-size: 0;
@@ -173,10 +181,36 @@ background-image: url('section-1-arrow.png');
 background-repeat: no-repeat;
 width: 36px;
 height: 62px;
-top: 35.5%;
+top: 26%;
 right: 9.5%;
 background-size: 36px 62px;
 font-size: 0;
+
+
+}
+
+.carousel-control.left.section {
+  background-image: url("arrow-left.png");
+  background-repeat: no-repeat;
+  width: 69px;
+  height: 66px;
+  top: 47%;
+  left: 4%;
+  background-size: 66px 62px;
+  font-size: 0;
+
+
+}
+
+.carousel-control.right.section {
+  background-image: url("arrow-right.png");
+  background-repeat: no-repeat;
+  width: 69px;
+  height: 66px;
+  top: 47%;
+  right: 4%;
+  background-size: 66px 62px;
+  font-size: 0;
 
 
 }
