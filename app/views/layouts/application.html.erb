@@ -9,16 +9,16 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-  <%= yield %>
     <header>
       <%= render 'layouts/navigation' %>
     </header>
+           <%= yield %>
+
     <main role="main">
        <%= render 'layouts/messages' %>
     </main>
       <div class="container">
         <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
       </div>
   </body>
 </html>

@@ -77,12 +77,42 @@ background-color: #58595B;
 margin-top: 0px;
 }
 
+.navbar-nav {
+  float: right;
+  position: relative;
+  left: 105px;
+  margin: 0 7px;
+  top: 15px;
+}
+
+.navbar-nav > li > a {
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
 color: #28B4AB;
 background-color: transparent;
 }
 
+li.log-out.btn-sm {
+  background-color: #28b4ab;
+  padding: 12px 7px;
+  position: relative;
+  top: 16px;
+  right: 98px;
+}
 
+li.log-out.btn-sm a {
+    color: #fff;
+
+}
+
+li.log-out.btn-sm a:hover {
+  color: #28b4ab;
+  background-color: #fff;
+}
 input, button, select, textarea {
 font-family: inherit;
 font-size: inherit;
@@ -126,11 +156,37 @@ padding-bottom: 53px;
 #user_email {}
 
 .carousel-control.left {
-background-image: none;
+  background-image: url("section-1-arrow-left.png");
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 62px;
+  top: 35.5%;
+  left: 9.5%;
+  background-size: 36px 62px;
+  font-size: 0;
+
+
 }
 
 .carousel-control.right {
-background-image: none;
+background-image: url('section-1-arrow.png');
+background-repeat: no-repeat;
+width: 36px;
+height: 62px;
+top: 35.5%;
+right: 9.5%;
+background-size: 36px 62px;
+font-size: 0;
+
+
+}
+
+
+.alert-danger {
+  margin-top: 20px;
+background-color: #28B4AB;
+border-color: #28B4AB;
+color: #fff;
 }
 
 

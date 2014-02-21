@@ -23,6 +23,7 @@
 	width: 100%;
 }
 
+
 /* Landing Page */
 
 .landing-content {
@@ -57,7 +58,7 @@ form {
 
 .forgot-password  {
 	position: relative;
-	top: 303px;
+	top: 196px;
 	text-align: center;
 }
 
@@ -172,7 +173,7 @@ color: #fff;
 .accounts-payable {
 	position: relative;
 	top: 132px;
-	right: 117px;
+	left: 37px;
 	padding-bottom: 180px;
 
 }
@@ -180,7 +181,7 @@ color: #fff;
 
 #sign-in-subtext {
 	position: relative;
-	top: 0;
+	top: -108px;
 }
 
 textarea:focus,
@@ -232,5 +233,38 @@ input[type="color"]:focus,
   opacity: 1 !important;
 }
 
+.description-subtext p {
+	text-align: left;
+	position: relative;
+	top: 316px;
+	right: 75px;
 
+}
+
+.biz {
+	position: relative;
+	bottom: 71px;
+
+}
+
+#module-biz {
+	position: relative;
+	top: 7px;
+}
+
+.notice {
+	position: relative;
+	top: 148px;
+	text-align: center;
+}
+
+.section-2-btn {
+	position: relative;
+	top: 322px;
+	right: 186px;
+}
+
+.section-2-btn .btn-lg {
+	color: #fff;
+}
 
