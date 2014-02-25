@@ -295,18 +295,30 @@ input[type="color"]:focus,
 
 
 .powered-by-box {
-	position: relative;
+/*	position: relative;
 	top: 429px;
 	right: 37px;
+*/
+position: absolute;
+top: 91%;
+right: 40px;
+padding-bottom: 40px;
 }
+@media screen and (max-width: 767px) {
+	.powered-by-box {
+	position: relative;
+		top: 229px;
+		right: 37px;
+		}
 
 .powered-logo {
 	position: absolute;
 	top: 0;
 	right: 0;
-	padding-bottom: 20px;
-
+	padding-bottom: 40px;
 }
+}
+
 
 .description-sub p {
 }
