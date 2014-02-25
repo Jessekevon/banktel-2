@@ -179,7 +179,7 @@ width: 100%;
 
 
 .carousel-control.left {
-  background-image: url("section-1-arrow-left.png");
+  background-image: image-url("section-1-arrow-left.png");
   background-repeat: no-repeat;
   width: 36px;
   height: 62px;
@@ -192,7 +192,7 @@ width: 100%;
 }
 
 .carousel-control.right {
-  background-image: url("section-1-arrow.png");
+  background-image: image-url("section-1-arrow.png");
   background-repeat: no-repeat;
   width: 36px;
   height: 62px;
@@ -205,7 +205,7 @@ width: 100%;
 }
 
 .carousel-control.left.section {
-  background-image: url("arrow-left.png");
+  background-image: image-url("arrow-left.png");
   background-repeat: no-repeat;
   width: 69px;
   height: 66px;
@@ -218,7 +218,7 @@ width: 100%;
 }
 
 .carousel-control.right.section {
-  background-image: url("arrow-right.png");
+  background-image: image-url("arrow-right.png");
   background-repeat: no-repeat;
   width: 69px;
   height: 66px;
