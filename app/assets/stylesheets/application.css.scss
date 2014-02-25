@@ -43,8 +43,8 @@
 	position: relative;
 	top: 32px;
 	line-height: 31px;
-	font-size: 19px;
-}
+/*	font-size: 19px;
+*/}
 
 form {
 	text-align: center;
@@ -127,7 +127,7 @@ text-align: center;
 
 h3.section-content  {
 	position: relative;
-	top: 78px;
+	top: 66px;
 text-align: center;
 font-size: 36px;
 
@@ -137,6 +137,14 @@ font-size: 36px;
 .welcome {
 	background-color: #EFEFEF;
 }
+
+.welcome.top-graph {
+	position: relative;
+	padding-top: 36px;
+/*	right: 3px;
+*/
+}
+
 
 .section-2 {
 	background-color: #28B4AB;
@@ -177,20 +185,23 @@ color: #fff;
 
 .section-1-subtext {
 	color: #000;
+	font-size: 19px;
+	letter-spacing: 1px;
+
 }
 
 .accounts-payable {
 	position: relative;
 	top: 132px;
 	left: 37px;
-	padding-bottom: 180px;
+	height: 775px;
 
 }
 
 
 #sign-in-subtext {
 	position: relative;
-	top: -108px;
+	top: -46px;
 }
 
 textarea:focus,
@@ -245,10 +256,15 @@ input[type="color"]:focus,
 .description-subtext p {
 	text-align: left;
 	position: relative;
-	top: 316px;
-	right: 75px;
+	top: 325px;
+	left: 8px;
+	font-size: 16px;
+	line-height: 24px;
+
 
 }
+
+
 
 .biz {
 	position: relative;
@@ -277,3 +293,39 @@ input[type="color"]:focus,
 	color: #fff;
 }
 
+
+.powered-by-box {
+	position: relative;
+	top: 429px;
+	right: 37px;
+}
+
+.powered-logo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-bottom: 20px;
+
+}
+
+.description-sub p {
+}
+
+.section-button {
+/*	position: relative;
+	top: 372px;
+	right: 53px;
+*/
+	position: absolute;
+	top: 488px;
+	right: 126px;
+
+
+}
+
+.section-button .btn {
+	padding: 14px 22px;
+	color: #fff;
+	border: 2px solid #fff;
+	font-size: 17px;
+}

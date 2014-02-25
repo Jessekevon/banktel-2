@@ -1,24 +1,23 @@
 <% content_for :title do %>Modules<% end %>
 <!-- Section One Carousel
   ================================================== -->
-<div id="myCarousel1" class="carousel slide">
+<div id="myCarousel1" class="carousel slide" data-interval="false">
   <div class="carousel-inner">
     <div class="item active">
-      <div class="welcome">
-        <%=image_tag('welcome.png', :size => '900x426')%>
+      <div class="welcome top-graph">
+        <%=image_tag('top-graph.png', :size => '1178x391')%>
       </div>
       <div class="section-1">
         <div class="container">
           <div class="landing-content">
             <div class="row">
               <div class="col-md-12">
-                <h3>Billpay, reimagined.</h3>
+                <h3>Increase Revenue. Build Loyalty.</h3>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
-                <p class="section-1-subtext">Introducing a smarter, cloud-based Small Business<br>
-                  solution built from the bank up.
+                <p class="section-1-subtext">The Biz enables to do both simultaneously. Become<br>a daily destination for your Small Business customers.
                 </p>
               </div>
             </div>
@@ -31,8 +30,8 @@
         <!-- container -->
       </div>
       <!-- section-1-->
-
-    </div><!-- item active -->
+    </div>
+    <!-- item active -->
     <div class="item">
       <div class="welcome">
         <%=image_tag('welcome.png', :size => '900x426')%>
@@ -61,7 +60,8 @@
         <!-- container -->
       </div>
       <!-- section-1-->
-    </div><!-- item -->
+    </div>
+    <!-- item -->
     <div class="item">
       <div class="welcome">
         <%=image_tag('welcome.png', :size => '900x426')%>
@@ -90,217 +90,354 @@
         <!-- container -->
       </div>
       <!-- section-1-->
-    </div> <!-- item -->
-  </div> <!-- carousel inner -->
- <a class="left carousel-control" href="#myCarousel1" data-slide="prev">&lsaquo;</a>
+    </div>
+    <!-- item -->
+  </div>
+  <!-- carousel inner -->
+  <a class="left carousel-control" href="#myCarousel1" data-slide="prev">&lsaquo;</a>
   <a class="right carousel-control" href="#myCarousel1" data-slide="next">&rsaquo;</a>
-</div> <!-- my carousel -->
+</div>
+<!-- my carousel -->
 <!-- /.carousel -->
-
 <div class="section-2">
 	<div class="container">
-	<div class="row">
-	  <div class="col-md-12">
-	    <h3 class="section-content">Accounts Payable</h3>
-	  </div>
+	    <div class="row">
+	      <div class="col-md-12">
+	        <h3 class="section-content">Accounts Payable</h3>
+	      </div>
+	    </div>
 	</div>
+	  <!-- Section Two Carousel
+	    ================================================== -->
+	    <div id="myCarousel2" class="carousel slide" data-interval="false">
+	    	<div class="container">
+
+	      <ol class="carousel-indicators">
+	        <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+
+	      </ol>
+	      <div class="carousel-inner">
+	        <div class="item active landing-content">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('accounts-payable.png', :size => '1005x600')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p class="description-sub"> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
+
+	            <div class="section-button">
+	              <div class="btn" "btn-lg">Learn more</div>
+	            </div>
+
+
+	          </div>
+	        </div>
+	        <div class="item">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('invoicing-card.png', :size => '382x439')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
+	            <div class="section-button">
+	              <div class="btn" "btn-lg">Learn more</div>
+	            </div>
+
+	          </div>
+	        </div>
+	        <div class="item">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('accounts-payable.png', :size => '1005x600')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
+
+	            <div class="section-button">
+	              <div class="btn" "btn-lg">Learn more</div>
+	            </div>
+
+	          </div>
+	        </div>
+	        <div class="item">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('invoicing-card.png', :size => '382x439')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
+
+	            <div class="section-button">
+	              <div class="btn" "btn-lg">Learn more</div>
+	            </div>
+
+	          </div>
+	        </div>
+	        <div class="item">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('accounts-payable.png', :size => '1005x600')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
+
+	            <div class="section-button">
+	              <div class="btn" "btn-lg">Learn more</div>
+	            </div>
+
+	          </div>
+	        </div>
+
+
+	      </div><!-- carousel inner -->
+	      <a class="left carousel-control section" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
+	      <a class="right carousel-control section" href="#myCarousel2" data-slide="next">&rsaquo;</a>
+
+	    </div><!-- carousel -->
+	 
+	</div><!--container -->
 </div>
+<!-- section 2-->
+<div class="section-3">
+	<div class="container">
 
-  <!-- Section Two Carousel
-    ================================================== -->
-  <div id="myCarousel2" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="item active landing-content">
-      	<div class="accounts-payable col-md-9">
-      	  <%=image_tag('accounts-payable.png', :size => '1005x600')%>
-      	</div>
-      	<div class="description-subtext col-md-3">
-      		<p><strong>Custom Expense Dashboards</strong></p>
-      		<p> Lorem ipsum dolor sit amet,consec
-      			tetur adipiscing elit. Aenean sit amet dolar</p>
+	    <div class="row">
+	      <div class="col-md-12">
+	        <h3 class="section-content">Accounts Receivable</h3>
+	      </div>
+	    </div>
+	  </div>
+	  <!-- Section Two Carousel
+	    ================================================== -->
+	    <div id="myCarousel3" class="carousel slide" data-interval="false">
+	    	<div class="container">
 
-      	</div>
+	      <ol class="carousel-indicators">
+	        <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
 
-      </div>
-      <div class="item">
-      	<div class="accounts-payable col-md-9">
-      	  <%=image_tag('invoicing-card.png', :size => '382x439')%>
-      	</div>
-      	<div class="description-subtext col-md-3">
-      		<p><strong>Custom Expense Dashboards</strong></p>
-      		<p> Lorem ipsum dolor sit amet,consec
-      			tetur adipiscing elit. Aenean sit amet dolar</p>
-      	</div>
-      </div>
-      <div class="item">
-      	<div class="accounts-payable col-md-9">
-      	  <%=image_tag('accounts-payable.png', :size => '1005x600')%>
-      	</div>
-      	<div class="description-subtext col-md-3">
-      		<p><strong>Custom Expense Dashboards</strong></p>
-      		<p> Lorem ipsum dolor sit amet,consec
-      			tetur adipiscing elit. Aenean sit amet dolar</p>
-      	</div>
-      </div>
-    </div>
-<a class="left carousel-control section" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
-    <a class="right carousel-control section" href="#myCarousel2" data-slide="next">&rsaquo;</a>
-  </div>
-  <!-- /.carousel -->
-</div><!-- section 2-->
+	      </ol>
+	      <div class="carousel-inner">
+	        <div class="item active landing-content">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('accounts-payable.png', :size => '1005x600')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
 
- <div class="section-3">
- 		<div class="container">
- 		<div class="row">
- 		  <div class="col-md-12">
-	    <h3 class="section-content">Accounts Receivable</h3>
- 		  </div>
- 		</div>
- 	</div>
+	            <div class="section-button">
+	              <div class="btn" "btn-lg">Learn more</div>
+	            </div>
 
- 	  <!-- Section Three Carousel
- 	    ================================================== -->
- 	  <div id="myCarousel3" class="carousel slide">
- 	    <div class="carousel-inner">
- 	      <div class="item active landing-content">
- 	      	<div class="accounts-payable col-md-9">
- 	      	  <%=image_tag('accounts-payable.png', :size => '1005x600')%>
- 	      	</div>
- 	      	<div class="description-subtext col-md-3">
- 	      		<p><strong>Custom Expense Dashboards</strong></p>
- 	      		<p> Lorem ipsum dolor sit amet,consec
- 	      			tetur adipiscing elit. Aenean sit amet dolar</p>
+	          </div>
+	        </div>
+	        <div class="item">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('invoicing-card.png', :size => '382x439')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
 
- 	      	</div>
+	            <div class="section-button">
+	              <div class="btn" "btn-lg">Learn more</div>
+	            </div>
 
- 	      </div>
- 	      <div class="item">
- 	      	<div class="accounts-payable col-md-9">
- 	      	  <%=image_tag('accounts-payable.png', :size => '1005x600')%>
- 	      	</div>
- 	      	<div class="description-subtext col-md-3">
- 	      		<p><strong>Custom Expense Dashboards</strong></p>
- 	      		<p> Lorem ipsum dolor sit amet,consec
- 	      			tetur adipiscing elit. Aenean sit amet dolar</p>
- 	      	</div>
- 	      </div>
- 	      <div class="item">
- 	      	<div class="accounts-payable col-md-9">
- 	      	  <%=image_tag('accounts-payable.png', :size => '1005x600')%>
- 	      	</div>
- 	      	<div class="description-subtext col-md-3">
- 	      		<p><strong>Custom Expense Dashboards</strong></p>
- 	      		<p> Lorem ipsum dolor sit amet,consec
- 	      			tetur adipiscing elit. Aenean sit amet dolar</p>
- 	      	</div>
- 	      </div>
- 	    </div>
- 	<a class="left carousel-control section" href="#myCarousel3" data-slide="prev">&lsaquo;</a>
- 	    <a class="right carousel-control section" href="#myCarousel3" data-slide="next">&rsaquo;</a>
- 	  </div>
- 	  <!-- /.carousel -->
-  </div>
-  <div class="section-4">
-  		<div class="container">
-  		<div class="row">
-  		  <div class="col-md-12">
-  		  	<h3 class="section-content">Budgeting</h3>
-  		  </div>
-  		</div>
-  	</div>
+	          </div>
+	        </div>
+	        <div class="item">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('accounts-payable.png', :size => '1005x600')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
+	          </div>
+	        </div>
 
-  	  <!-- Section Two Carousel
-  	    ================================================== -->
-  	  <div id="myCarousel4" class="carousel slide">
-  	    <div class="carousel-inner">
-  	      <div class="item active landing-content">
-  	      	<div class="accounts-payable col-md-9">
-  	      	  <%=image_tag('accounts-payable.png', :size => '1005x600')%>
-  	      	</div>
-  	      	<div class="description-subtext col-md-3">
-  	      		<p><strong>Custom Expense Dashboards</strong></p>
-  	      		<p> Lorem ipsum dolor sit amet,consec
-  	      			tetur adipiscing elit. Aenean sit amet dolar</p>
+	        <div class="item">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('invoicing-card.png', :size => '382x439')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
 
-  	      	</div>
+	            <div class="section-button">
+	              <div class="btn" "btn-lg">Learn more</div>
+	            </div>
 
-  	      </div>
-  	      <div class="item">
-  	      	<div class="accounts-payable col-md-9">
-  	      	  <%=image_tag('accounts-payable.png', :size => '1005x600')%>
-  	      	</div>
-  	      	<div class="description-subtext col-md-3">
-  	      		<p><strong>Custom Expense Dashboards</strong></p>
-  	      		<p> Lorem ipsum dolor sit amet,consec
-  	      			tetur adipiscing elit. Aenean sit amet dolar</p>
-  	      	</div>
-  	      </div>
-  	      <div class="item">
-  	      	<div class="accounts-payable col-md-9">
-  	      	  <%=image_tag('accounts-payable.png', :size => '1005x600')%>
-  	      	</div>
-  	      	<div class="description-subtext col-md-3">
-  	      		<p><strong>Custom Expense Dashboards</strong></p>
-  	      		<p> Lorem ipsum dolor sit amet,consec
-  	      			tetur adipiscing elit. Aenean sit amet dolar</p>
-  	      	</div>
-  	      </div>
-  	    </div>
-  	<a class="left carousel-control section" href="#myCarousel4" data-slide="prev">&lsaquo;</a>
-  	    <a class="right carousel-control section" href="#myCarousel4" data-slide="next">&rsaquo;</a>
-  	  </div>
-  	  <!-- /.carousel -->
-  </div>
-  <div class="section-5">
-  		<div class="container">
-  		<div class="row">
-  		  <div class="col-md-12">
-	    <h3 class="section-content">Inventory</h3>
-  		  </div>
-  		</div>
-  	</div>
+	          </div>
+	        </div>
+	        <div class="item">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('accounts-payable.png', :size => '1005x600')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
+	          </div>
+	        </div>
 
-  	  <!-- Section Two Carousel
-  	    ================================================== -->
-  	  <div id="myCarousel5" class="carousel slide">
-  	    <div class="carousel-inner">
-  	      <div class="item active landing-content">
-  	      	<div class="accounts-payable col-md-9">
-  	      	  <%=image_tag('accounts-payable.png', :size => '1005x600')%>
-  	      	</div>
-  	      	<div class="description-subtext col-md-3">
-  	      		<p><strong>Custom Expense Dashboards</strong></p>
-  	      		<p> Lorem ipsum dolor sit amet,consec
-  	      			tetur adipiscing elit. Aenean sit amet dolar</p>
 
-  	      	</div>
+	      </div><!-- carousel inner -->
+	      <a class="left carousel-control section" href="#myCarousel3" data-slide="prev">&lsaquo;</a>
+	      <a class="right carousel-control section" href="#myCarousel3" data-slide="next">&rsaquo;</a>
 
-  	      </div>
-  	      <div class="item">
-  	      	<div class="accounts-payable col-md-9">
-  	      	  <%=image_tag('accounts-payable.png', :size => '1005x600')%>
-  	      	</div>
-  	      	<div class="description-subtext col-md-3">
-  	      		<p><strong>Custom Expense Dashboards</strong></p>
-  	      		<p> Lorem ipsum dolor sit amet,consec
-  	      			tetur adipiscing elit. Aenean sit amet dolar</p>
-  	      	</div>
-  	      </div>
-  	      <div class="item">
-  	      	<div class="accounts-payable col-md-9">
-  	      	  <%=image_tag('accounts-payable.png', :size => '1005x600')%>
-  	      	</div>
-  	      	<div class="description-subtext col-md-3">
-  	      		<p><strong>Custom Expense Dashboards</strong></p>
-  	      		<p> Lorem ipsum dolor sit amet,consec
-  	      			tetur adipiscing elit. Aenean sit amet dolar</p>
-  	      	</div>
-  	      </div>
-  	    </div>
-  	<a class="left carousel-control section" href="#myCarousel5" data-slide="prev">&lsaquo;</a>
-  	    <a class="right carousel-control section" href="#myCarousel5" data-slide="next">&rsaquo;</a>
-  	  </div>
-  	  <!-- /.carousel -->
-  </div>
+	    </div><!-- carousel -->
+	 
+	</div><!--container -->
+</div>
+<div class="section-4">
+	<div class="container">
+	    <div class="row">
+	      <div class="col-md-12">
+	        <h3 class="section-content">Budgeting</h3>
+	      </div>
+	    </div>
+	  </div>
+	  <!-- Section Two Carousel
+	    ================================================== -->
+	    <div id="myCarousel4" class="carousel slide" data-interval="false">
+	    	<div class="container">
+
+	      <ol class="carousel-indicators">
+	        <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+	      </ol>
+	      <div class="carousel-inner">
+	        <div class="item active landing-content">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('accounts-payable.png', :size => '1005x600')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
+	          </div>
+	        </div>
+	        <div class="item">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('invoicing-card.png', :size => '382x439')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
+	          </div>
+	        </div>
+	        <div class="item">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('accounts-payable.png', :size => '1005x600')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
+	          </div>
+	        </div>
+
+	      </div><!-- carousel inner -->
+	      <a class="left carousel-control section" href="#myCarousel4" data-slide="prev">&lsaquo;</a>
+	      <a class="right carousel-control section" href="#myCarousel4" data-slide="next">&rsaquo;</a>
+
+	    </div><!-- carousel -->
+	 
+	</div><!--container -->
+</div>
+<div class="section-5">
+		<div class="container">
+
+	    <div class="row">
+	      <div class="col-md-12">
+	        <h3 class="section-content">Accounts Payable</h3>
+	      </div>
+	    </div>
+	  </div>
+	  <!-- Section Two Carousel
+	    ================================================== -->
+	    <div id="myCarousel5" class="carousel slide" data-interval="false">
+	    	<div class="container">
+
+	      <ol class="carousel-indicators">
+	        <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+	      </ol>
+	      <div class="carousel-inner">
+	        <div class="item active landing-content">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('accounts-payable.png', :size => '1005x600')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
+	          </div>
+	        </div>
+	        <div class="item">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('invoicing-card.png', :size => '382x439')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
+	          </div>
+	        </div>
+	        <div class="item">
+	          <div class="accounts-payable col-md-9">
+	            <%=image_tag('accounts-payable.png', :size => '1005x600')%>
+	          </div>
+	          <div class="description-subtext col-md-3">
+	            <p><strong>Custom Expense Dashboards</strong></p>
+	            <p> Lorem ipsum dolor sit amet,consec
+	              tetur adipiscing elit. Aenean sit amet dolar
+	            </p>
+	          </div>
+	        </div>
+
+	      </div><!-- carousel inner -->
+	      <a class="left carousel-control section" href="#myCarousel5" data-slide="prev">&lsaquo;</a>
+	      <a class="right carousel-control section" href="#myCarousel5" data-slide="next">&rsaquo;</a>
+
+	    </div><!-- carousel -->
+	 
+	</div><!--container -->
+</div>
 </div>
 <!-- module page -->

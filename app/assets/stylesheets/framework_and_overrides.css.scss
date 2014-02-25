@@ -25,6 +25,7 @@ position: relative;
 min-height: 50px;
 margin-bottom: 0px;
 border: none;
+border-radius: 0px;
 }
 
 
@@ -117,16 +118,23 @@ li.log-out.btn-sm a {
 
 }
 
-li.log-out.btn-sm a:hover {
+li.log-out.btn-sm:hover {
   color: #28b4ab;
   background-color: #fff;
 }
+
+
 input, button, select, textarea {
 font-family: inherit;
 font-size: inherit;
 line-height: inherit;
-padding: 14px 43px;
+/*padding: 14px 43px;
 margin-bottom: 10px;
+*/
+padding: 14px 14px;
+margin-bottom: 10px;
+width: 266px;
+
 }
 
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
@@ -163,13 +171,20 @@ padding-bottom: 53px;
 
 #user_email {}
 
+.carousel-inner {
+position: relative;
+overflow: visible;
+width: 100%;
+}
+
+
 .carousel-control.left {
   background-image: url("section-1-arrow-left.png");
   background-repeat: no-repeat;
   width: 36px;
   height: 62px;
-  top: 26%;
-  left: 9.5%;
+  top: 25%;
+  left: 7%;
   background-size: 36px 62px;
   font-size: 0;
 
@@ -177,14 +192,14 @@ padding-bottom: 53px;
 }
 
 .carousel-control.right {
-background-image: url('section-1-arrow.png');
-background-repeat: no-repeat;
-width: 36px;
-height: 62px;
-top: 26%;
-right: 9.5%;
-background-size: 36px 62px;
-font-size: 0;
+  background-image: url("section-1-arrow.png");
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 62px;
+  top: 25%;
+  right: 7%;
+  background-size: 36px 62px;
+  font-size: 0;
 
 
 }
@@ -216,11 +231,64 @@ font-size: 0;
 }
 
 
+.carousel-indicators {
+  bottom: 661px;
+/*bottom: 85%;
+*/}
+
+.carousel-indicators .active {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 1px 6px;
+  text-indent: -999px;
+/*  border: 1px solid white;
+*/  
+border: none;
+border-radius: 10px;
+  cursor: pointer;
+background-color: #59585d;
+}
+
+.carousel-indicators li {
+display: inline-block;
+width: 6px;
+height: 6px;
+margin: 1px 6px;
+text-indent: -999px;
+border: 1px solid white;
+border-radius: 10px;
+cursor: pointer;
+background-color: #fff;
+}
+
+
 .alert-danger {
   margin-top: 20px;
 background-color: #28B4AB;
 border-color: #28B4AB;
 color: #fff;
+}
+
+
+.btn, .submit {
+display: inline-block;
+margin-bottom: 0;
+font-weight: normal;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+white-space: nowrap;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.428571429;
+border-radius: 2px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 
