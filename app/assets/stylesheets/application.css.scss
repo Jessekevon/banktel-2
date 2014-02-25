@@ -302,8 +302,9 @@ input[type="color"]:focus,
 position: absolute;
 top: 91%;
 right: 40px;
-padding-bottom: 40px;
 }
+
+
 @media screen and (max-width: 767px) {
 	.powered-by-box {
 	position: relative;
@@ -315,7 +316,7 @@ padding-bottom: 40px;
 	position: absolute;
 	top: 0;
 	right: 0;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 }
 }
 
