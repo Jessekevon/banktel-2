@@ -8,5 +8,5 @@
 # Environment variables (ENV['...']) can be set in the file config/application.yml.
 # See http://railsapps.github.io/rails-environment-variables.html
 User.create!([
-  { :email => "jessekevon@gmail.com",  :user_name => "Jesse Kevon", :password => "password", :password_confirmation => "password"},
+  { :email => "banktel@gmail.com",  :user_name => "Banktel", :password => "banktelbiz", :password_confirmation => "banktelbiz"},
 ])
