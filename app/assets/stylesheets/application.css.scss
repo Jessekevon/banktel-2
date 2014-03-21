@@ -16,15 +16,88 @@
   font-family:'OpenSans-Light';
   src:url(font-path('OpenSans-Light.ttf'));
 }
-
+/*---------------- GLOBAL STYLES -----------*/
 
 .wrapper {
 	height: 100%;
 	width: 100%;
 }
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  outline: none;
+  outline: thin dotted \9;
+  /* IE6-9 */
+ 
+}
+
+.header-wrapper {
+	background-color: #EEEEEE;
+	padding-bottom: 23px;
+	text-align: center;
+
+}
+
+.header-wrapper h3 p {
+	font-family:'OpenSans-Light';
+	color: #333;
+}
+
+.header-wrapper h3 {
+	font-size: 35px;
+	padding-top: 34px;
+	padding-bottom: 18px;
+
+}
+.header-wrapper p {
+	color: #333;
+	font-size: 20px;
+	line-height: 35px;
+	position: relative;
+	bottom: 7px;
+	padding: 0 75px;
 
 
-/* Landing Page */
+}
+.about-body {
+	background-color: #fff;
+	padding-top: 58px;
+
+}
+
+.about-body p {
+	color: #333;
+}
+
+.main-button .btn {
+	color: #28B4AB;
+	background-color: #fff;
+	border: 2px solid #28B4AB;
+	position: relative;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 33px;
+}
+
+.main-button .btn:hover {
+	background-color: #28B4AB;
+	color: #fff;
+}
+
+/*---------- Landing Page ------------*/
 
 .landing-content {
 /*	position: relative;
@@ -79,10 +152,10 @@ form {
 }
 
 .subtext {
-position: relative;
-top: 61px;
-line-height: 35px;
-text-align: center;
+	position: relative;
+	top: 61px;
+	line-height: 35px;
+	text-align: center;
 }
 
 .subtext p {
@@ -204,27 +277,6 @@ color: #fff;
 	top: -46px;
 }
 
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus {
-  outline: none;
-  outline: thin dotted \9;
-  /* IE6-9 */
- 
-}
 
 .carousel-fade .item {
   opacity: 0;
@@ -260,7 +312,6 @@ input[type="color"]:focus,
 	left: 8px;
 	font-size: 16px;
 	line-height: 24px;
-
 
 }
 
@@ -343,3 +394,11 @@ padding-bottom: 40px;
 	border: 2px solid #fff;
 	font-size: 17px;
 }
+
+/* End Landing page */
+
+
+/*------------ ABOUT PAGE ------------------*/
+
+
+
