@@ -80,8 +80,20 @@ input[type="color"]:focus,
 
 .about-body p {
 	color: #333;
-}
+	color: #333;
+	font-size: 16px;
+	line-height: 25px;
+	padding-bottom: 36px;
 
+
+}
+.overview-content h4 {
+	font-size: 23px;
+	position: relative;
+	bottom: 3px;
+	letter-spacing: 1px;
+	padding-bottom: 39px;
+}
 .main-button .btn {
 	color: #28B4AB;
 	background-color: #fff;
@@ -89,7 +101,7 @@ input[type="color"]:focus,
 	position: relative;
 	font-size: 16px;
 	font-weight: 600;
-	padding: 15px 33px;
+	padding: 15px 17px;
 }
 
 .main-button .btn:hover {
@@ -97,7 +109,23 @@ input[type="color"]:focus,
 	color: #fff;
 }
 
-/*---------- Landing Page ------------*/
+/*---------------- ABOUT PAGE STYLES -----------*/
+
+.first-row {
+	padding-bottom: 104px;
+
+}
+
+.second-row {
+	padding-bottom: 104px;
+}
+
+.banktel-wireframe {
+	position: relative;
+	top: 6px;
+}
+
+/*---------- LANDING PAGE ------------*/
 
 .landing-content {
 /*	position: relative;
