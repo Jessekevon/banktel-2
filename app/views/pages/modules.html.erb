@@ -236,9 +236,10 @@
 	      </ol>
 	      <div class="carousel-inner">
 	        <div class="item active landing-content">
-	        	<div class="col-md-2"></div>
-	          <div class="accounts-payable col-md-4">
-	          	<%=image_tag('invoicing-card.png', :size => '382x439')%>
+	        	<div class="col-md-1"></div>
+	          <div class="accounts-payable col-md-5">
+	          	<div class="card"><%=image_tag('invoicing-card.png', :size => '382x439')%>
+	          	</div>
 	          </div>
 	          <div class="col-md-1"></div>
 
@@ -342,16 +343,16 @@
 	      </ol>
 	      <div class="carousel-inner">
 	        <div class="item active landing-content">
-	          <div class="accounts-payable col-md-9">
-	            <%=image_tag('accounts-payable.png', :size => '1005x600')%>
+	        	<div class="description-subtext col-md-3">
+	        	  <p><strong>Custom Expense Dashboards</strong></p>
+	        	  <p> Lorem ipsum dolor sit amet,consec
+	        	    tetur adipiscing elit. Aenean sit amet dolar
+	        	  </p>
+	        	</div>
+	        	<div class="accounts-payable col-md-9">
+	        	  <div class="computer-purple"><%=image_tag('purple-wireframe.png', :size => '1005x600')%></div>
+	        	</div>
 	          </div>
-	          <div class="description-subtext col-md-3">
-	            <p><strong>Custom Expense Dashboards</strong></p>
-	            <p> Lorem ipsum dolor sit amet,consec
-	              tetur adipiscing elit. Aenean sit amet dolar
-	            </p>
-	          </div>
-	        </div>
 	        <div class="item">
 	          <div class="accounts-payable col-md-9">
 	            <%=image_tag('invoicing-card.png', :size => '382x439')%>
@@ -388,7 +389,7 @@
 
 	    <div class="row">
 	      <div class="col-md-12">
-	        <h3 class="section-content">Accounts Payable</h3>
+	        <h3 class="section-content">Inventory</h3>
 	      </div>
 	    </div>
 	  </div>
@@ -403,17 +404,29 @@
 	        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
 	      </ol>
 	      <div class="carousel-inner">
-	        <div class="item active landing-content">
-	          <div class="accounts-payable col-md-9">
-	            <%=image_tag('accounts-payable.png', :size => '1005x600')%>
-	          </div>
-	          <div class="description-subtext col-md-3">
-	            <p><strong>Custom Expense Dashboards</strong></p>
-	            <p> Lorem ipsum dolor sit amet,consec
-	              tetur adipiscing elit. Aenean sit amet dolar
-	            </p>
-	          </div>
-	        </div>
+	      	<div class="item active landing-content">
+	      		<div class="col-md-1"></div>
+	      	  <div class="accounts-payable col-md-5">
+	      	  	<div class="card"><%=image_tag('invoicing-card.png', :size => '382x439')%>
+	      	  	</div>
+	      	  </div>
+	      	  <div class="col-md-1"></div>
+
+	      	  <div class="description-subtext col-md-3">
+	      	    <p><strong>Custom Expense Dashboards</strong></p>
+	      	    <p> Lorem ipsum dolor sit amet,consec
+	      	      tetur adipiscing elit. Aenean sit amet dolar
+	      	    </p>
+	      	    <div class="section-button">
+	      	      <div class="btn" "btn-lg">Learn more</div>
+	      	    </div>
+
+	      	    <div class="col-md-2"></div>
+
+
+
+	      	  </div>
+	      	</div>
 	        <div class="item">
 	          <div class="accounts-payable col-md-9">
 	            <%=image_tag('invoicing-card.png', :size => '382x439')%>
@@ -441,10 +454,48 @@
 	      <a class="left carousel-control section" href="#myCarousel5" data-slide="prev">&lsaquo;</a>
 	      <a class="right carousel-control section" href="#myCarousel5" data-slide="next">&rsaquo;</a>
 
-	    </div><!-- carousel -->
+	    </div><!-- container -->
 	 
-	</div><!--container -->
+	</div><!--carousel -->
 </div>
-</div>
-<!-- module page -->
-      <%= render 'layouts/footer' %>
+<!-- section 5 -->
+<div class="landing-page-footer">
+	  <div class="footer-bottom">
+	  <div class="container">
+	      <div class="row">
+	        <div class="col-md-6">
+	          <p><strong>This is only the beginning.</strong><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	          <div class="main-button">
+	            <div class="btn" "btn-lg">Request a Product Demo</div>
+	          </div>
+
+	        </div>
+
+	        <div class="col-md-3">
+	          <p><strong>Stay In The Loop.</strong><br>Sign up for timely product updates & releases direct from Banktel</p>
+	        </div>
+
+	        <div class="col-md-3">
+	          <p>Building On 20+ Years In Banking<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	        </div>
+	        
+	      </div><!--row-->
+
+
+	<div class="row">
+	    <div class="col-md-6">
+	      <div class="powered-logo-footer"><%=image_tag('powered-by.png', :size => '211x34')%></div>
+	    </div>
+
+	    <div class="col-md-6">
+	      <div class="copyright">
+	        <p>All content © 2014 BankTEL, Inc.</p>
+	      </div>
+	    </div>
+	</div><!-- row -->
+
+
+	      </div><!--container-->
+
+	  </div><!--footer-bottom-->
+</div><!-- landing page footer-->
