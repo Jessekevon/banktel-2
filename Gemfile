@@ -6,6 +6,7 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+gem 'entypo-rails'
 gem 'pg'
 gem 'rails_12factor', group: :production
 gem 'sass-rails', '~> 4.0.0'

@@ -16,6 +16,23 @@
   font-family:'OpenSans-Light';
   src:url(font-path('OpenSans-Light.ttf'));
 }
+
+@font-face {
+  font-family: 'entypo-social';
+  src: url(font-path('fonts/entypo-social.eot'));
+  src: url(font-path('fonts/entypo-social.eot?#iefix') format('embedded-opentype'),url('fonts/entypo-social.woff') format('woff'),url('fonts/entypo-social.ttf') format('truetype'),url('fonts/entypo-social.svg#entypo-social') format('svg'));
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'entypo';
+  src: url(font-path('entypo.eot'));
+  src: url(font-path('entypo.eot?#iefix') format('embedded-opentype'),url('entypo.woff') format('woff'),url('entypo.ttf') format('truetype'),url('entypo.svg#entypo-social') format('svg'));
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*---------------- GLOBAL STYLES -----------*/
 
 .wrapper {
@@ -143,6 +160,8 @@ input[type="color"]:focus,
 
 .footer-bottom p {
 	color: #333;
+	line-height: 26px;
+
 }
 
 
@@ -161,6 +180,44 @@ input[type="color"]:focus,
 .banktel-wireframe {
 	position: relative;
 	top: 6px;
+}
+
+.table {
+	position: relative;
+	top: 8px;
+}
+
+
+.table th {
+	color: #fff;
+	background-color: #28b4ab;
+	text-align: center;
+
+}
+
+/*---------------- CONTACT PAGE STYLES -----------*/
+
+.overview-content li {
+	line-height: 40px;
+	font-size: 24px;
+	list-style-type: none;
+
+
+}
+
+.form-control.input-lg.comments-input {
+	height: 100px;
+}
+
+.contact-links {
+	padding-bottom: 60px;
+}
+.contact-links li {
+	color: #28b4ab;
+}
+
+i.phone-icon {
+	font-family: 'entypo';
 }
 
 /*---------- LANDING PAGE ------------*/

@@ -35,6 +35,10 @@ body {
 
 }
 
+h4 {
+  font-size: 23px;
+  letter-spacing: 1px;
+}
 
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
@@ -292,4 +296,34 @@ user-select: none;
 }
 
 
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+  line-height: 1.428571429;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
 
+.table > caption + thead > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+  padding: 26px;
+}
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+  line-height: 20px;
+  vertical-align: top;
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+
+  padding: 24px;
+  text-align: center;
+}
+
+
+.input-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn, .input-group-lg > .input-group-btn > .submit {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 2px;
+
+}
