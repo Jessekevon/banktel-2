@@ -109,6 +109,44 @@ input[type="color"]:focus,
 	color: #fff;
 }
 
+.opening-statement {
+	font-weight: bold;
+}
+
+.footer-top {
+	background-color: #28B4AB;
+	padding-top: 43px;
+
+}
+
+.footer-top h4 {
+	color: #fff;
+	font-size: 23px;
+	padding-bottom: 13px;
+}
+
+.footer-top p {
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+	padding-bottom: 46px;
+
+}
+
+
+
+.footer-bottom {
+	background-color: #fff;
+	padding-top: 53px;
+
+}
+
+.footer-bottom p {
+	color: #333;
+}
+
+
+
 /*---------------- ABOUT PAGE STYLES -----------*/
 
 .first-row {
@@ -117,7 +155,7 @@ input[type="color"]:focus,
 }
 
 .second-row {
-	padding-bottom: 104px;
+	padding-bottom: 110px;
 }
 
 .banktel-wireframe {
