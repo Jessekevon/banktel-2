@@ -38,17 +38,43 @@
 
         <div class="row">
           <div class="col-md-6">
+              <div class="row">
+                    <div class="col-sm-5 footer-form">
+                        <input type="text" placeholder="Name" class="form-control small-input">
+                     </div>
+                    <div class="col-sm-5">
+                        <input type="email" placeholder="Email" class="form-control small-input">
+                    </div>
+                    <div class="col-sm-1 main-button">
+                        <a href="#" class="btn btn-lg">Submit</a>
+                    </div>
+              </div><!-- nested row-->
+
           </div>
 
           <div class="col-md-1"></div>
 
           <div class="col-md-5">
-            <p>Visit banktel.com for more information.</p>
+            <p>Visit <a href="banktel.com" class="footer-link">banktel.com</a> for more information.</p>
           </div>
-        </div>
+        </div><!-- row -->
+
+<div class="row">
+    <div class="col-md-6">
+      <div class="powered-logo-footer"><%=image_tag('powered-by.png', :size => '211x34')%></div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="copyright">
+        <p>All content © 2014 BankTEL, Inc.</p>
+      </div>
+    </div>
+</div><!-- row -->
+
+
       </div><!--container-->
 
-  </div><!--footer-top-->
+  </div><!--footer-bottom-->
 
 </div><!--footer-->
 <% end %>
