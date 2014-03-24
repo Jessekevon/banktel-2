@@ -10,6 +10,8 @@
  *
  *= require_self
  *= require_tree .
+ //= require entypo-fonts
+
  */
 
  @font-face {
@@ -214,11 +216,47 @@ input[type="color"]:focus,
 }
 .contact-links li {
 	color: #28b4ab;
+	position: relative;
+	right: 28px;
+
 }
 
-i.phone-icon {
-	font-family: 'entypo';
+.support-links li {
+	position: relative;
+	right: 28px;
+
 }
+
+i.phone, i.mail { 
+	font-family: 'entypo';
+	font-style: normal;
+	font-size: 44px;
+	position: relative;
+	right: 14px;
+}
+
+i.twitter {
+	font-family: 'entypo-social';
+	font-style: normal;
+	position: relative;
+	right: 14px;
+
+	
+}
+
+i.phone:before { 
+	content: "\1F4F1"; 
+}
+
+i.mail:before {
+	content: "\27A2";
+}
+
+i.twitter:before {
+	content: "\F309";
+}
+
+
 
 /*---------- LANDING PAGE ------------*/
 
