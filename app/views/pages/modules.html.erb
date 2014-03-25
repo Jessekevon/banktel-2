@@ -571,3 +571,16 @@
 
 	  </div><!--footer-bottom-->
 </div><!-- landing page footer-->
+
+<script type="text/javascript">
+
+$('#myCarousel1').swipe( {
+    swipeLeft: function() {
+        $(this).carousel('next');
+    },
+    swipeRight: function() {
+        $(this).carousel('prev');
+    },
+    allowPageScroll: 'vertical'
+});
+</script>
