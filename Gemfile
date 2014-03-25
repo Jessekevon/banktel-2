@@ -6,7 +6,7 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-gem 'entypo-rails'
+gem 'entypo-rails', '~> 2.2.1'
 gem 'pg'
 gem 'rails_12factor', group: :production
 gem 'sass-rails', '~> 4.0.0'
@@ -32,3 +32,5 @@ group :development do
   gem 'rb-fsevent', :require=>false
   gem 'rb-inotify', :require=>false
 end
+gem 'jquery_mobile_rails'
+
