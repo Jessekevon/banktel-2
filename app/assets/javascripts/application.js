@@ -27,3 +27,13 @@ $(document).ready(function() {
       $("#myCarousel1").carousel('next');  
    });  
 });  
+
+$(document).ready(function() {  
+   $("#myCarousel2").swiperight(function() {  
+      $("#myCarousel2").carousel('prev');  
+    });  
+   $("#myCarousel2").swipeleft(function() {  
+      $("#myCarousel2").carousel('next');  
+   });  
+});  
+
