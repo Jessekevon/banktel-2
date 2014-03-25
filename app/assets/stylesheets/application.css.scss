@@ -437,9 +437,16 @@ display: none;
 color: #fff;
 }
 
+.section-1-wrapper {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+}
+
 .section-1 {
-background-color: #fff;
-padding-top: 25px;
+	background-color: #fff;
+	padding-top: 25px;
+
 }
 
 h3.section-content  {
@@ -464,8 +471,8 @@ padding-top: 36px;
 
 
 .section-2 {
-background-color: #28B4AB;
-height: auto;
+
+	background-color: #28B4AB;
 
 }
 
@@ -683,7 +690,7 @@ font-size: 17px;
 
 @media screen and (min-width: 992px) {
 	.description-subtext {
-		margin-top: 7%;
+		margin-top: 17%;
 	}
 
 	.section-3 .description-subtext {
@@ -695,6 +702,12 @@ font-size: 17px;
 
 	.section-4 .description-subtext {
 		margin-top: 98px; 
+	}
+
+	.card {
+		position: relative;
+		top: 60px;
+		left: 36px;
 	}
 
 
@@ -744,4 +757,5 @@ font-size: 17px;
 @media only screen and (min-width : 1824px) {
 /* Styles */
 }
+
 
