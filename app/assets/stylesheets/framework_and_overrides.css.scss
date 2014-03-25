@@ -279,6 +279,9 @@ cursor: pointer;
 background-color: #fff;
 }
 
+.section-3 .carousel-indicators .active, .section-4 .carousel-indicators .active  {
+  background-color: #28b4ab;
+}
 
 .alert-danger {
   margin-top: 20px;
