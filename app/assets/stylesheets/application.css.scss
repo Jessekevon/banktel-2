@@ -465,8 +465,7 @@ padding-top: 36px;
 
 .section-2 {
 background-color: #28B4AB;
-min-height: 850px;
-
+height: auto;
 
 }
 
@@ -483,12 +482,6 @@ min-height: 850px;
 	min-height: 855px;
 
 }
-
-.section-4 .description-subtext {
-	margin-top: 98px;
-
-}
-
 
 .section-5 {
 	background-color: #949599;
@@ -661,9 +654,6 @@ font-size: 17px;
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
 /* Styles */
-.description-subtext {
-	margin-top: 20px;
-}
 
 }
 
@@ -680,39 +670,55 @@ font-size: 17px;
 		margin: 15px 0;
 	}
 
+	.description-subtext {
+		padding: 40px 40px 68px 40px;
+	}
+
+	.computer-purple {
+		padding-bottom: 68px;
+		}
+
 	
+}
+
+@media screen and (min-width: 992px) {
+	.description-subtext {
+		margin-top: 7%;
+	}
+
+	.section-3 .description-subtext {
+		margin-top: 179px;
+		position: relative;
+		right: 13px;
+
+	}
+
+	.section-4 .description-subtext {
+		margin-top: 98px; 
+	}
+
 
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
+@media only screen and (max-width : 1400px) {
 /* Styles */
-
-.description-subtext {
-	margin-top: 190px;
-}
-
-.section-3 .description-subtext {
-	margin-top: 179px;
-	position: relative;
-	right: 13px;
-
+.computer {
+	margin-top: 7%;
 }
 
 
 }
 
 @media only screen and (min-width : 1400px) {
-/*	.computer {
-		position: relative;
-		overflow: visible;
+.computer {
 		min-width: 1005px;
 		min-height: 600px;
-		float: right;
-		left: 45px;
+		position: relative;
+		right: 100px;
 	}
 
-	.card {
+/*	.card {
 		position: relative;
 		bottom: 73px;
 		width: 382px;
@@ -721,7 +727,6 @@ font-size: 17px;
 		left: 30px;
 	}
 */
-
 /*.computer-purple {
 	position: relative;
 	overflow: visible;
