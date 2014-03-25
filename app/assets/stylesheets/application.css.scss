@@ -9,11 +9,9 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+ *= require entypo-fonts
  *= require jquery.mobile
- //= require entypo
- //= require entypo-fonts
- @charset "UTF-8";
+ *= require_tree .
 
  */
 
@@ -56,6 +54,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 
 /*---------------- GLOBAL STYLES -----------*/
 a {
@@ -201,8 +200,8 @@ padding-bottom: 46px;
 
 
 .footer-bottom {
-background-color: #fff;
-padding-top: 53px;
+	background-color: #fff;
+	padding-top: 52px;
 
 }
 
@@ -260,7 +259,7 @@ padding-bottom: 104px;
 }
 
 .second-row {
-padding-bottom: 110px;
+	padding-bottom: 67px;
 }
 
 .banktel-wireframe {
@@ -374,7 +373,6 @@ color: #28B4AB;
 background-color: #fff;
 border: 2px solid #28B4AB;
 position: relative;
-right: 3px;
 font-size: 16px;
 font-weight: 600;
 padding: 15px 33px;
@@ -467,7 +465,7 @@ padding-top: 36px;
 
 .section-2 {
 background-color: #28B4AB;
-min-height: 855px;
+min-height: 850px;
 
 
 }
@@ -495,36 +493,51 @@ min-height: 855px;
 
 .card {
 	position: relative;
-	bottom: 58px;
+	bottom: 73px;
 	width: 382px;
 	height: 439px;
 	float: left;
-	left: 21px;
+	left: 30px;
 }
 
 .section-3 {
-background-color: #58595B;
-min-height: 855px;
+	background-color: #58595B;
+	min-height: 823px;
+
+}
+
+.section-3 .description-subtext {
+	margin-top: 179px;
+	position: relative;
+	right: 13px;
 
 }
 
 .section-4 {
-background-color: #7267B5;
-min-height: 855px;
+	background-color: #7267B5;
+	min-height: 855px;
+
+}
+
+.section-4 .description-subtext {
+	margin-top: 98px;
 
 }
 
 
 .section-5 {
-background-color: #949599;
-min-height: 855px;
+	background-color: #949599;
+	min-height: 785px;
 
 }
 
 .section-1-subtext {
-color: #000;
-font-size: 19px;
-letter-spacing: 1px;
+	color: #000;
+	font-size: 19px;
+	letter-spacing: 1px;
+	line-height: 31px;
+	padding-bottom: 13px;
+
 
 }
 
@@ -570,14 +583,15 @@ top: -46px;
 }
 
 .description-subtext {
-	margin-top: 191px;
+	margin-top: 190px;
 }
 
 .description-subtext p {
 	text-align: left;
 	position: relative;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 27px;
+	margin-bottom: 1px;
 	color: #fff;
 
 }
@@ -657,6 +671,8 @@ top: 488px;
 right: 126px;
 */
 float: left;
+margin-top: 28px;
+
 
 }
 

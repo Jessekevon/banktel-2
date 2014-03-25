@@ -1,11 +1,20 @@
 // import the CSS framework
 @import "bootstrap";
 
+
+
 // make all images responsive by default
 img {
   @extend .img-responsive;
   margin: 0 auto;
   }
+
+  .img-responsive {
+   display: block;
+   height: auto;
+   max-width: 100%;
+  }
+
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
@@ -356,7 +365,7 @@ transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 .input-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn, .input-group-lg > .input-group-btn > .submit {
   height: 46px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.33;
   border-radius: 2px;
 
