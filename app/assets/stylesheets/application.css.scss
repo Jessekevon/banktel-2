@@ -19,6 +19,25 @@
   src:url(font-path('OpenSans-Light.ttf'));
 }
 
+ @font-face {
+  font-family:'OpenSans-Regular';
+  src:url(font-path('OpenSans-Regular.ttf'));
+}
+
+
+ @font-face {
+  font-family:'OpenSans-Bold';
+  src:url(font-path('OpenSans-Bold.ttf'));
+}
+
+
+ @font-face {
+  font-family:'OpenSans-Semibold';
+  src:url(font-path('OpenSans-Semibold.ttf'));
+}
+
+
+
 @font-face {
   font-family: 'entypo-social';
   src: url(font-path('fonts/entypo-social.eot'));
@@ -231,6 +250,9 @@ padding-bottom: 110px;
 .banktel-wireframe {
 position: relative;
 top: 6px;
+width: 694px;
+height: auto;
+
 }
 
 .table {

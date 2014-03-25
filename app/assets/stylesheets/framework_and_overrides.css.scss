@@ -30,7 +30,7 @@ border-radius: 0px;
 
 
 body {
-  font-family:'OpenSans-Light';
+  font-family:'OpenSans-light';
   background-color: #58595B;
 
 }
@@ -357,4 +357,9 @@ transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   line-height: 1.33;
   border-radius: 2px;
 
+}
+
+strong {
+  font-family:'OpenSans-Semibold';
+ font-weight: bold;
 }
