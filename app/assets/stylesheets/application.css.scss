@@ -471,47 +471,12 @@ min-height: 850px;
 }
 
 
-.computer {
-	position: relative;
-	overflow: visible;
-	min-width: 1005px;
-	min-height: 600px;
-	bottom: 131px;
-	float: right;
-	left: 45px;
-}
-
-.computer-purple {
-	position: relative;
-	overflow: visible;
-	min-width: 1005px;
-	min-height: 600px;
-	bottom: 148px;
-	float: right;
-	left: 61px;
-}
-
-.card {
-	position: relative;
-	bottom: 73px;
-	width: 382px;
-	height: 439px;
-	float: left;
-	left: 30px;
-}
-
 .section-3 {
 	background-color: #58595B;
 	min-height: 823px;
 
 }
 
-.section-3 .description-subtext {
-	margin-top: 179px;
-	position: relative;
-	right: 13px;
-
-}
 
 .section-4 {
 	background-color: #7267B5;
@@ -543,8 +508,6 @@ min-height: 850px;
 
 .accounts-payable {
 position: relative;
-top: 132px;
-left: 37px;
 
 }
 
@@ -582,9 +545,6 @@ top: -46px;
   opacity: 1 !important;
 }
 
-.description-subtext {
-	margin-top: 190px;
-}
 
 .description-subtext p {
 	text-align: left;
@@ -687,33 +647,96 @@ font-size: 17px;
 
 
 /*==================================================
-=            Bootstrap 3 Media Queries             =
+=            			Media Queries             =
 ==================================================*/
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+/* Styles */
+.carousel-control {
+	display: none;
+}
+}
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+/* Styles */
+.description-subtext {
+	margin-top: 20px;
+}
 
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media screen and (max-width: 991px) {
+	.description-subtext p {
+		text-align: center;
+	}
 
-}
+	.section-button {
+		float: none;
+	}
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+	.main-button {
+		margin: 15px 0;
+	}
 
-}
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
-
-}
-
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) {
 	
+
 }
 
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+/* Styles */
+
+.description-subtext {
+	margin-top: 190px;
+}
+
+.section-3 .description-subtext {
+	margin-top: 179px;
+	position: relative;
+	right: 13px;
+
+}
+
+
+}
+
+@media only screen and (min-width : 1400px) {
+/*	.computer {
+		position: relative;
+		overflow: visible;
+		min-width: 1005px;
+		min-height: 600px;
+		float: right;
+		left: 45px;
+	}
+
+	.card {
+		position: relative;
+		bottom: 73px;
+		width: 382px;
+		height: 439px;
+		float: left;
+		left: 30px;
+	}
+*/
+
+/*.computer-purple {
+	position: relative;
+	overflow: visible;
+	min-width: 1005px;
+	min-height: 600px;
+	bottom: 148px;
+	float: right;
+	left: 61px;
+}
+*/
+
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+/* Styles */
+}
 
