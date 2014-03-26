@@ -37,11 +37,6 @@ border: none;
 border-radius: 0px;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
 body {
   font-family:'OpenSans-light';
   background-color: #58595B;
@@ -108,6 +103,7 @@ margin-top: 0px;
   position: relative;
   margin: 0 7px;
   top: 15px;
+  z-index: 1000;
 }
 
 .navbar-nav > li > a {
@@ -292,7 +288,7 @@ cursor: pointer;
 background-color: #fff;
 }
 
-.section-3 .carousel-indicators .active, .section-4 .carousel-indicators .active  {
+#section2 .carousel-indicators .active, #section3 .carousel-indicators .active  {
   background-color: #28b4ab;
 }
 
@@ -379,5 +375,7 @@ strong {
   font-family:'OpenSans-Semibold';
  font-weight: bold;
 }
+
+
 
 

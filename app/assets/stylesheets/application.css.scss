@@ -9,11 +9,14 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require jquery.ui.all
+
  *= require entypo-fonts
  *= require jquery.mobile
  *= require_tree .
 
  */
+
 
  @font-face {
   font-family:'OpenSans-Light';
@@ -57,6 +60,13 @@
 
 
 /*---------------- GLOBAL STYLES -----------*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 a {
 transition: .3s ease-in-out;
 -moz-transition: .3s ease-in-out;
@@ -70,21 +80,17 @@ transition: .3s ease-in-out;
 }
 
 .btn {
-	transition: .3s ease-in-out;
-	-moz-transition: .3s ease-in-out;
-	-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+-moz-transition: .3s ease-in-out;
+-webkit-transition: .3s ease-in-out;
 
 }
 
 .btn:hover {
-	transition: .3s ease-in-out;
-	-moz-transition: .3s ease-in-out;
-	-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+-moz-transition: .3s ease-in-out;
+-webkit-transition: .3s ease-in-out;
 
-}
-.wrapper {
-height: 100%;
-width: 100%;
 }
 textarea:focus,
 input[type="text"]:focus,
@@ -200,8 +206,8 @@ padding-bottom: 46px;
 
 
 .footer-bottom {
-	background-color: #fff;
-	padding-top: 52px;
+background-color: #fff;
+padding-top: 52px;
 
 }
 
@@ -211,9 +217,6 @@ line-height: 26px;
 padding-bottom: 14px;
 
 
-}
-
-.footer-bottom .form-control {
 }
 
 .footer-form {
@@ -259,7 +262,7 @@ padding-bottom: 104px;
 }
 
 .second-row {
-	padding-bottom: 67px;
+padding-bottom: 67px;
 }
 
 .banktel-wireframe {
@@ -345,6 +348,100 @@ content: "\F309";
 
 /*---------- LANDING PAGE ------------*/
 
+/* Landing sections */
+
+/**
+ * fullPage 1.6.6
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+	
+	
+	/* Centered texts in each section 
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+	
+	
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3,
+	#section4{
+		background-size: cover;
+	}
+	
+	/* Defining each sectino background and styles 
+	* --------------------------------------- */
+	#section0{
+		background-color: #fff;
+	}
+
+	#section1{
+		background-color: #28b4ab;
+	}
+
+	#section2{
+		background-color: #58595B;
+	}
+	#section3{
+		background-color: #7267B5;
+	}
+
+	#section4{
+		background-color: #58595B;
+	}
+
+
+ 
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-color: #333;
+		padding: 6% 0 0 0;
+	}
+	#slide2{
+		background-color: #fff;
+		padding: 6% 0 0 0;
+	}
+
+#superContainer {
+    height: 100%;
+    position: relative;
+	
+	/* Touch detection for Windows 8 */
+	-ms-touch-action: none; 
+}
+.section {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.scrollable {
+    overflow: scroll;
+}
+.easing {
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+
+
+/*------------------*/
+
 .landing-content {
 /*	position: relative;
 top: 530px;
@@ -356,11 +453,6 @@ font-family:'OpenSans-Light';
 font-size: 36px;
 padding-bottom: 7px;
 }
-
-.landing-content p {
-/*padding-bottom: 14px;
-line-height: 31px;
-*/}
 
 .module-button {
 text-align: center;
@@ -391,6 +483,113 @@ position: relative;
 top: 354px;
 }
 
+h3.section-content  {
+position: relative;
+text-align: center;
+padding-top: 62px;
+padding-bottom: 37px;
+font-size: 36px;
+color: #fff;
+}
+
+.welcome {
+background-color: #EFEFEF;
+}
+
+.welcome.top-graph {
+position: relative;
+padding-top: 36px;
+/*	right: 3px;
+*/
+}
+
+.section-1-subtext {
+color: #000;
+font-size: 19px;
+letter-spacing: 1px;
+line-height: 31px;
+padding-bottom: 13px;
+
+
+}
+
+.accounts-payable {
+position: relative;
+
+}
+
+
+#sign-in-subtext {
+position: relative;
+top: -46px;
+}
+
+
+.carousel-fade .item {
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+  left: 0 !important;
+}
+
+.carousel-fade .active {
+  opacity: 1 !important;
+}
+
+.carousel-fade .left {
+  opacity: 0 !important;
+  -webkit-transition: opacity 0.5s ease-in-out !important;
+  -moz-transition: opacity 0.5s ease-in-out !important;
+  -ms-transition: opacity 0.5s ease-in-out !important;
+  -o-transition: opacity 0.5s ease-in-out !important;
+  transition: opacity 0.5s ease-in-out !important;
+}
+
+.carousel-fade .carousel-control {
+  opacity: 1 !important;
+}
+
+
+.description-subtext p {
+text-align: left;
+position: relative;
+font-size: 16px;
+line-height: 27px;
+margin-bottom: 1px;
+color: #fff;
+
+}
+
+
+
+.section-button {
+/*	position: relative;
+top: 372px;
+right: 53px;
+*/
+/*	position: absolute;
+top: 488px;
+right: 126px;
+*/
+float: left;
+margin-top: 28px;
+
+
+}
+
+.section-button .btn {
+padding: 14px 22px;
+color: #fff;
+border: 2px solid #fff;
+font-size: 17px;
+}
+
+/* End Landing page */
+
+/* SIGN IN PAGE */
 .alert-success {
 display: none;
 }
@@ -437,148 +636,27 @@ display: none;
 color: #fff;
 }
 
-.section-1-wrapper {
-	width: 100%;
-	height: auto;
-	background-color: #fff;
-}
-
-.section-1 {
-	background-color: #fff;
-	padding-top: 25px;
-
-}
-
-h3.section-content  {
-position: relative;
-text-align: center;
-padding-top: 62px;
-padding-bottom: 37px;
-font-size: 36px;
-color: #fff;
-}
-
-.welcome {
-background-color: #EFEFEF;
-}
-
-.welcome.top-graph {
-position: relative;
-padding-top: 36px;
-/*	right: 3px;
-*/
-}
-
-
-.section-2 {
-
-	background-color: #28B4AB;
-
-}
-
-
-.section-3 {
-	background-color: #58595B;
-	min-height: 823px;
-
-}
-
-
-.section-4 {
-	background-color: #7267B5;
-	min-height: 855px;
-
-}
-
-.section-5 {
-	background-color: #949599;
-	min-height: 785px;
-
-}
-
-.section-1-subtext {
-	color: #000;
-	font-size: 19px;
-	letter-spacing: 1px;
-	line-height: 31px;
-	padding-bottom: 13px;
-
-
-}
-
-.accounts-payable {
-position: relative;
-
-}
-
-
-#sign-in-subtext {
-position: relative;
-top: -46px;
-}
-
-
-.carousel-fade .item {
-  opacity: 0;
-  -webkit-transition: opacity 2s ease-in-out;
-  -moz-transition: opacity 2s ease-in-out;
-  -ms-transition: opacity 2s ease-in-out;
-  -o-transition: opacity 2s ease-in-out;
-  transition: opacity 2s ease-in-out;
-  left: 0 !important;
-}
-
-.carousel-fade .active {
-  opacity: 1 !important;
-}
-
-.carousel-fade .left {
-  opacity: 0 !important;
-  -webkit-transition: opacity 0.5s ease-in-out !important;
-  -moz-transition: opacity 0.5s ease-in-out !important;
-  -ms-transition: opacity 0.5s ease-in-out !important;
-  -o-transition: opacity 0.5s ease-in-out !important;
-  transition: opacity 0.5s ease-in-out !important;
-}
-
-.carousel-fade .carousel-control {
-  opacity: 1 !important;
-}
-
-
-.description-subtext p {
-	text-align: left;
-	position: relative;
-	font-size: 16px;
-	line-height: 27px;
-	margin-bottom: 1px;
-	color: #fff;
-
-}
-
-
-
 .biz {
-	position: relative;
-	bottom: 71px;
+position: relative;
+bottom: 71px;
 
 }
 
 #module-biz {
-	position: relative;
-	top: 7px;
-	opacity: 1;
-	transition: .3s ease-in-out;
-	-moz-transition: .3s ease-in-out;
-	-webkit-transition: .3s ease-in-out;
+position: relative;
+top: 7px;
+opacity: 1;
+transition: .3s ease-in-out;
+-moz-transition: .3s ease-in-out;
+-webkit-transition: .3s ease-in-out;
 
 }
 
 #module-biz:hover {
-	opacity: 0.6;
-	transition: .3s ease-in-out;
-	-moz-transition: .3s ease-in-out;
-	-webkit-transition: .3s ease-in-out;
+opacity: 0.6;
+transition: .3s ease-in-out;
+-moz-transition: .3s ease-in-out;
+-webkit-transition: .3s ease-in-out;
 
 }
 
@@ -603,58 +681,33 @@ padding-bottom: 40px;
 
 
 @media screen and (max-width: 767px) {
-.powered-by-box {
-position: relative;
-top: 229px;
-right: 37px;
+	.powered-by-box {
+	position: relative;
+	top: 229px;
+	right: 37px;
+	}
+
+	.powered-logo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-bottom: 20px;
+	}
 }
 
-.powered-logo {
-position: absolute;
-top: 0;
-right: 0;
-padding-bottom: 20px;
-}
-}
+/* ----- */
 
-
-.description-sub p {
-}
-
-.section-button {
-/*	position: relative;
-top: 372px;
-right: 53px;
-*/
-/*	position: absolute;
-top: 488px;
-right: 126px;
-*/
-float: left;
-margin-top: 28px;
-
-
-}
-
-.section-button .btn {
-padding: 14px 22px;
-color: #fff;
-border: 2px solid #fff;
-font-size: 17px;
-}
-
-/* End Landing page */
 
 
 /*==================================================
-=            			Media Queries             =
+=            	 Media Queries             =
 ==================================================*/
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 /* Styles */
 .carousel-control {
-	display: none;
+display: none;
 }
 }
 
@@ -665,50 +718,49 @@ font-size: 17px;
 }
 
 @media screen and (max-width: 991px) {
-	.description-subtext p {
-		text-align: center;
-	}
+.description-subtext p {
+text-align: center;
+}
 
-	.section-button {
-		float: none;
-	}
+.section-button {
+float: none;
+}
 
-	.main-button {
-		margin: 15px 0;
-	}
+.main-button {
+margin: 15px 0;
+}
 
-	.description-subtext {
-		padding: 40px 40px 68px 40px;
-	}
+.description-subtext {
+padding: 40px 40px 68px 40px;
+}
 
-	.computer-purple {
-		padding-bottom: 68px;
-		}
+.computer-purple {
+padding-bottom: 68px;
+}
 
-	
 }
 
 @media screen and (min-width: 992px) {
-	.description-subtext {
-		margin-top: 17%;
-	}
+.description-subtext {
+margin-top: 17%;
+}
 
-	.section-3 .description-subtext {
-		margin-top: 179px;
-		position: relative;
-		right: 13px;
+.section-3 .description-subtext {
+margin-top: 179px;
+position: relative;
+right: 13px;
 
-	}
+}
 
-	.section-4 .description-subtext {
-		margin-top: 98px; 
-	}
+.section-4 .description-subtext {
+margin-top: 98px; 
+}
 
-	.card {
-		position: relative;
-		top: 60px;
-		left: 36px;
-	}
+.card {
+position: relative;
+top: 60px;
+left: 36px;
+}
 
 
 }
@@ -717,7 +769,7 @@ font-size: 17px;
 @media only screen and (max-width : 1400px) {
 /* Styles */
 .computer {
-	margin-top: 7%;
+margin-top: 7%;
 }
 
 
@@ -725,29 +777,29 @@ font-size: 17px;
 
 @media only screen and (min-width : 1400px) {
 .computer {
-		min-width: 1005px;
-		min-height: 600px;
-		position: relative;
-		right: 100px;
-	}
+min-width: 1005px;
+min-height: 600px;
+position: relative;
+right: 100px;
+}
 
 /*	.card {
-		position: relative;
-		bottom: 73px;
-		width: 382px;
-		height: 439px;
-		float: left;
-		left: 30px;
-	}
+position: relative;
+bottom: 73px;
+width: 382px;
+height: 439px;
+float: left;
+left: 30px;
+}
 */
 /*.computer-purple {
-	position: relative;
-	overflow: visible;
-	min-width: 1005px;
-	min-height: 600px;
-	bottom: 148px;
-	float: right;
-	left: 61px;
+position: relative;
+overflow: visible;
+min-width: 1005px;
+min-height: 600px;
+bottom: 148px;
+float: right;
+left: 61px;
 }
 */
 
@@ -757,5 +809,4 @@ font-size: 17px;
 @media only screen and (min-width : 1824px) {
 /* Styles */
 }
-
 

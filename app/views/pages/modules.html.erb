@@ -1,7 +1,6 @@
 <% content_for :title do %>Modules<% end %>
 
-<div class="section-1-contain">
-<div class="section-1-wrapper">
+<div class="section" id="section0">
 <!-- Section One Carousel
   ================================================== -->
 <div id="myCarousel1" class="carousel slide" data-interval="false">
@@ -57,14 +56,10 @@
             <div class="module-button">
             	<a class="link1"><div class="btn" "btn-lg">Learn more</div></a>
             </div>
-          </div>
-          <!-- landing content -->
-        </div>
-        <!-- container -->
-      </div>
-      <!-- section-1-->
-    </div>
-    <!-- item -->
+          </div><!--landing-content-->
+        </div><!--container-->
+      </div><!--section content-->
+    </div><!--item-->
     <div class="item">
       <div class="welcome">
         <%=image_tag('welcome.png', :size => '900x426')%>
@@ -87,25 +82,18 @@
             <div class="module-button">
             	<a class="link1"><div class="btn" "btn-lg">Learn more</div></a>
             </div>
-          </div>
-          <!-- landing content -->
-        </div>
-        <!-- container -->
-      </div>
-      <!-- section-1-->
-    </div>
-    <!-- item -->
-  </div>
-  <!-- carousel inner -->
+          </div><!--landing-content-->
+        </div><!--container-->
+      </div><!--section-1-content-->
+    </div><!--item-->
+  </div>  <!-- carousel inner -->
+
   <a class="left carousel-control" href="#myCarousel1" data-slide="prev">&lsaquo;</a>
   <a class="right carousel-control" href="#myCarousel1" data-slide="next">&rsaquo;</a>
-</div>
-</div><!-- section-1-wrapper-->
-</div><!--contain-->
-<!-- my carousel -->
-<!-- /.carousel -->
-<div class="section-wrapper">
-<div class="section-2">
+</div><!--mycarousel-->
+</div><!-- section id section0-->
+
+<div class="section" id="section1">
 	<div class="container">
 	    <div class="row">
 	      <div class="col-md-12">
@@ -229,11 +217,8 @@
 	 
 	</div><!--myCarousel -->
 </div>
-</div>
-<!-- section 2-->
-<div class="section-wrapper">
 
-<div class="section-3">
+<div class="section" id="section2">
 	<div class="container">
 
 	    <div class="row">
@@ -364,11 +349,9 @@
 	 
 	</div><!--container -->
 </div>
-</div><!--section-wrapper-->
 
-<div class="section-wrapper">
 
-<div class="section-4">
+<div class="section" id="section3">
 	<div class="container">
 	    <div class="row">
 	      <div class="col-md-12">
@@ -446,11 +429,9 @@
 	 
 	</div><!--container -->
 </div>
-</div><!--section-wrapper-->
 
-<div class="section-wrapper">
 
-<div class="section-5">
+<div class="section" id="section4">
 		<div class="container">
 
 	    <div class="row">
@@ -536,8 +517,7 @@
 	 
 	</div><!--carousel -->
 </div>
-<!-- section 5 -->
-</div><!--section-wrapper-->
+
 <div class="landing-page-footer">
 	  <div class="footer-bottom">
 	  <div class="container">
@@ -590,6 +570,18 @@
 
 	  </div><!--footer-bottom-->
 </div><!-- landing page footer-->
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$.fn.fullpage({
+			verticalCentered: false,
+		});
+	});
+
+
+</script>
+
 
 <script type="text/javascript">
 
