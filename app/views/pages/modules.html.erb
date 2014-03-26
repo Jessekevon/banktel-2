@@ -8,7 +8,7 @@
   <div class="carousel-inner">
     <div class="item active">
       <div class="welcome top-graph">
-        <%=image_tag('top-graph.png')%>
+      	<%=image_tag('top-graph.png', :size => '900x426')%>
       </div>
       <div class="section-1">
         <div class="container">
@@ -529,6 +529,7 @@
 </div>
 
 <div class="landing-page-footer section" id="section5">
+	<div class="tableCell">
 	  <div class="footer-bottom">
 	  <div class="container">
 	      <div class="row">
@@ -577,7 +578,7 @@
 
 
 	      </div><!--container-->
-
+</div>
 	  </div><!--footer-bottom-->
 </div><!-- landing page footer-->
 
@@ -589,8 +590,7 @@
 	$(document).ready(function() {
 		var pepe = $.fn.fullpage({
 			verticalCentered: false,
-			anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-			menu: '#menu'
+			anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage']
 
 		});
 	});

@@ -374,7 +374,8 @@ content: "\F309";
 	#section1,
 	#section2,
 	#section3,
-	#section4{
+	#section4,
+	#section5 {
 		background-size: cover;
 		display: table;
 		width: 100%;
@@ -403,6 +404,11 @@ content: "\F309";
 	#section4{
 		background-color: #58595B;
 	}
+	#section5{
+		background-color: #fff;
+	}
+
+
 
 
  
@@ -496,6 +502,7 @@ color: #fff;
 .welcome {
 background-color: #EFEFEF;
 padding-top: 50px;
+min-height: 300px;
 
 }
 
@@ -729,15 +736,27 @@ display: none;
 
 @media screen and (max-width: 767px) {
 
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+	.description-subtext p {
+		text-align: center;
+		padding: 0px 123px;
+
+	}
+
 }
 @media screen and (max-width: 991px) {
+
+	.description-subtext p {
+		text-align: center;
+
+	}
 
 	.main-button {
 		padding: 20px 0;
 	}
-.description-subtext p {
-	text-align: center;
-}
 
 .section-button {
 	float: none;
@@ -751,14 +770,13 @@ display: none;
 	padding: 40px 40px 0px 40px;
 	}
 
-
+#section3 .description-subtext {
+	padding: 0px 40px 40px 40px;
+}
 
 }
 
 @media screen and (min-width: 992px) {
-	.description-subtext {
-	margin-top: 14%;
-	}
 
 
 }
@@ -779,6 +797,11 @@ display: none;
 	width: 694px;
 	height: auto;
 	}
+	.description-subtext {
+	margin-top: 14%;
+	}
+
+
 
 }
 
@@ -852,3 +875,7 @@ left: 61px;
 
 }
 
+/*.top-graph img {
+	max-width: 100% !important;
+	display: block;
+}*/
