@@ -374,6 +374,10 @@ content: "\F309";
 	#section3,
 	#section4{
 		background-size: cover;
+		display: table;
+		width: 100%;
+		height: 100%;
+
 	}
 	
 	/* Defining each sectino background and styles 
@@ -401,15 +405,6 @@ content: "\F309";
  
  	/*Adding background for the slides
 	* --------------------------------------- */
-	#slide1{
-		background-color: #333;
-		padding: 6% 0 0 0;
-	}
-	#slide2{
-		background-color: #fff;
-		padding: 6% 0 0 0;
-	}
-
 #superContainer {
     height: 100%;
     position: relative;
@@ -446,7 +441,8 @@ content: "\F309";
 /*	position: relative;
 top: 530px;
 */	text-align: center;
-font-family:'OpenSans-Light';
+	font-family:'OpenSans-Light';
+
 }
 
 .landing-content h3 {
@@ -502,7 +498,12 @@ padding-top: 36px;
 /*	right: 3px;
 */
 }
+.section-1 {
+	display: table;
+	width: 100%;
+	height: 100%;
 
+}
 .section-1-subtext {
 color: #000;
 font-size: 19px;
@@ -735,7 +736,6 @@ padding: 40px 40px 68px 40px;
 }
 
 .computer-purple {
-padding-bottom: 68px;
 }
 
 }
@@ -769,7 +769,6 @@ left: 36px;
 @media only screen and (max-width : 1400px) {
 /* Styles */
 .computer {
-margin-top: 7%;
 }
 
 
@@ -777,10 +776,6 @@ margin-top: 7%;
 
 @media only screen and (min-width : 1400px) {
 .computer {
-min-width: 1005px;
-min-height: 600px;
-position: relative;
-right: 100px;
 }
 
 /*	.card {
@@ -808,5 +803,13 @@ left: 61px;
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
 /* Styles */
+}
+
+.tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 

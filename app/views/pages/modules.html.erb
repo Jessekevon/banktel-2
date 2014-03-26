@@ -11,7 +11,7 @@
       </div>
       <div class="section-1">
         <div class="container">
-          <div class="landing-content">
+          <div class="table-cell">
             <div class="row">
               <div class="col-md-12">
                 <h3>Increase Revenue. Build Loyalty.</h3>
@@ -94,6 +94,7 @@
 </div><!-- section id section0-->
 
 <div class="section" id="section1">
+	<div class="tableCell">
 	<div class="container">
 	    <div class="row">
 	      <div class="col-md-12">
@@ -217,8 +218,10 @@
 	 
 	</div><!--myCarousel -->
 </div>
+</div><!-- end of section-->
 
 <div class="section" id="section2">
+	<div class="tableCell">
 	<div class="container">
 
 	    <div class="row">
@@ -263,7 +266,8 @@
 	        </div>
 	        <div class="item">
 	        	<div class="accounts-payable col-md-9">
-	        	  <div class="computer"><%=image_tag('accounts-payable.png', :class=>"img-responsive", :size => '1005x600')%></div>
+	        		<div class="card"><%=image_tag('invoicing-card.png', :size => '382x439')%>
+	        		</div>
 	        	</div>
 	        	<div class="description-subtext col-md-3">
 	        	  <p><strong>Custom Expense Dashboards</strong></p>
@@ -348,10 +352,12 @@
 	    </div><!-- carousel -->
 	 
 	</div><!--container -->
-</div>
+</div><!--tableCell-->
+</div><!-- end of section-->
 
 
 <div class="section" id="section3">
+	<div class="tableCell">
 	<div class="container">
 	    <div class="row">
 	      <div class="col-md-12">
@@ -428,10 +434,12 @@
 	    </div><!-- carousel -->
 	 
 	</div><!--container -->
-</div>
+</div><!--tableCell-->
+</div><!--end of section-->
 
 
 <div class="section" id="section4">
+	<div class="tableCell">
 		<div class="container">
 
 	    <div class="row">
@@ -516,9 +524,10 @@
 	    </div><!-- container -->
 	 
 	</div><!--carousel -->
+</div><!--tableCell-->
 </div>
 
-<div class="landing-page-footer">
+<div class="landing-page-footer section" id="section5">
 	  <div class="footer-bottom">
 	  <div class="container">
 	      <div class="row">
@@ -570,17 +579,6 @@
 
 	  </div><!--footer-bottom-->
 </div><!-- landing page footer-->
-
-
-<script type="text/javascript">
-	$(document).ready(function() {
-		$.fn.fullpage({
-			verticalCentered: false,
-		});
-	});
-
-
-</script>
 
 
 <script type="text/javascript">
@@ -638,32 +636,14 @@
 
 	// Scroll to anchor animations //
 	
-	  function scrollToAnchor(aid){
-	var aTag = $("a[name='"+ aid +"']");
-	$('html,body').animate({scrollTop: aTag.offset().top}, 800);
-	}
-	
-	$(".link1").click(function() {
-	  scrollToAnchor('section-2');
+
+
+
+	$(document).ready(function() {
+		$.fn.fullpage({
+			verticalCentered: false,
+		});
 	});
-
-	$(".link2").click(function() {
-	  scrollToAnchor('section-3');
-	});
-
-	$(".link3").click(function() {
-	  scrollToAnchor('section-4');
-	});
-
-	$(".link4").click(function() {
-	  scrollToAnchor('section-5');
-	});
-
-	$(".link5").click(function() {
-	  scrollToAnchor('section-6');
-	});
-
-
 
 
 

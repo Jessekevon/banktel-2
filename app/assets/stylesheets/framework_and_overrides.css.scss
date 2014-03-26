@@ -183,6 +183,7 @@ padding-bottom: 53px;
 
 #user_email {}
 
+
 .carousel-inner {
   position: relative;
   overflow: visible;
@@ -224,7 +225,7 @@ padding-bottom: 53px;
   height: 66px;
   /*  top: 367px;
   */  
-  top: 262px;
+  top: 25%;
   left: 4%;
   background-size: 66px 62px;
   font-size: 0;
@@ -239,7 +240,7 @@ padding-bottom: 53px;
   height: 66px;
 /*  top: 367px;
 */  
-  top: 262px;
+  top: 25%;
   right: 4%;
   background-size: 66px 62px;
   font-size: 0;
@@ -288,7 +289,7 @@ cursor: pointer;
 background-color: #fff;
 }
 
-#section2 .carousel-indicators .active, #section3 .carousel-indicators .active  {
+#section2 .carousel-indicators .active, #section3 .carousel-indicators .active, #section4 .carousel-indicators .active  {
   background-color: #28b4ab;
 }
 

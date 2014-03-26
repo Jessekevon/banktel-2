@@ -18,6 +18,8 @@
 //= require_tree .
 
 
+
+
 /*
 * @fileOverview TouchSwipe - jQuery Plugin
 * @version 1.6.5
@@ -2018,7 +2020,7 @@
 			'anchors':[],
 			'scrollingSpeed': 700,
 			'easing': 'easeInQuart',
-			'menu': false,
+			'menu': 'false',
 			'navigation': false,
 			'navigationPosition': 'right',
 			'navigationColor': '#000',
@@ -2031,7 +2033,7 @@
 			'loopHorizontal': true,
 			'autoScrolling': true,
 			'scrollOverflow': false,
-			'css3': false,
+			'css3': true,
 			'paddingTop': 0,
 			'paddingBottom': 0,
 			'fixedElements': null,
