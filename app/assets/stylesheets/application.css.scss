@@ -184,7 +184,6 @@ color: #fff;
 .opening-statement {
 font-weight: bold;
 }
-
 .footer-top {
 background-color: #28B4AB;
 padding-top: 43px;
@@ -219,10 +218,6 @@ line-height: 26px;
 padding-bottom: 14px;
 
 
-}
-
-.footer-form {
-padding-bottom: 65px;
 }
 
 a.footer-link {
@@ -502,7 +497,10 @@ color: #fff;
 .welcome {
 background-color: #EFEFEF;
 padding-top: 50px;
-min-height: 300px;
+/*min-height: 300px;
+*/
+max-height: 300px;
+overflow: hidden;
 
 }
 
@@ -777,6 +775,15 @@ display: none;
 }
 
 @media screen and (min-width: 992px) {
+	.footer-form {
+	 padding-bottom: 65px; 
+	}
+
+	.footer .main-button {
+		padding: 0px;
+
+	}
+
 
 
 }

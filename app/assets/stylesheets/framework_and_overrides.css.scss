@@ -19,11 +19,6 @@ img {
 .navbar-brand {
   font-size: inherit;
   }
-  .navbar-nav {
-  float: right;
-  margin: 0;
-  top: 0;
-}
 .navbar-inverse {
   background-color: #F0F0F0;
   border-color: #F0F0F0;
@@ -107,6 +102,7 @@ margin-top: 0px;
   position: relative;
   margin: 0 7px;
   top: 15px;
+  left: 100px;
   z-index: 1000;
 }
 
