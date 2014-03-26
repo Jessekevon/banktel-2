@@ -583,6 +583,18 @@
 
 <script type="text/javascript">
 
+
+	// Scroll to anchor animations //
+	
+
+
+
+	$(document).ready(function() {
+		$.fn.fullpage({
+			verticalCentered: false,
+		});
+	});
+
 	$('#myCarousel1').swipe( {
 	    swipeLeft: function() {
 	        $(this).carousel('next');
@@ -631,18 +643,6 @@
 	        $(this).carousel('prev');
 	    },
 	    allowPageScroll: 'vertical'
-	});
-
-
-	// Scroll to anchor animations //
-	
-
-
-
-	$(document).ready(function() {
-		$.fn.fullpage({
-			verticalCentered: false,
-		});
 	});
 
 

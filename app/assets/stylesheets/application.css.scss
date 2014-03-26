@@ -482,8 +482,8 @@ top: 354px;
 h3.section-content  {
 position: relative;
 text-align: center;
-padding-top: 62px;
-padding-bottom: 37px;
+/*padding-top: 62px;
+*/padding-bottom: 37px;
 font-size: 36px;
 color: #fff;
 }
@@ -718,49 +718,31 @@ display: none;
 
 }
 
+@media screen and (max-width: 767px) {
+
+}
 @media screen and (max-width: 991px) {
 .description-subtext p {
-text-align: center;
+	text-align: center;
 }
 
 .section-button {
-float: none;
+	float: none;
 }
 
-.main-button {
-margin: 15px 0;
+/*.main-button {
+	margin: 15px 0;
 }
-
+*/
 .description-subtext {
-padding: 40px 40px 68px 40px;
-}
+	padding: 40px 40px 68px 40px;
+	}
 
-.computer-purple {
-}
+
 
 }
 
 @media screen and (min-width: 992px) {
-.description-subtext {
-margin-top: 17%;
-}
-
-.section-3 .description-subtext {
-margin-top: 179px;
-position: relative;
-right: 13px;
-
-}
-
-.section-4 .description-subtext {
-margin-top: 98px; 
-}
-
-.card {
-position: relative;
-top: 60px;
-left: 36px;
-}
 
 
 }
@@ -775,8 +757,26 @@ left: 36px;
 }
 
 @media only screen and (min-width : 1400px) {
-.computer {
-}
+	.description-subtext {
+	margin-top: 17%;
+	}
+
+	.section-3 .description-subtext {
+	margin-top: 179px;
+	position: relative;
+	right: 13px;
+
+	}
+
+	.section-4 .description-subtext {
+	margin-top: 98px; 
+	}
+
+	.card {
+	position: relative;
+	top: 60px;
+	left: 36px;
+	}
 
 /*	.card {
 position: relative;
