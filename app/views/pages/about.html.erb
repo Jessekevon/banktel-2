@@ -90,5 +90,52 @@
 
 		</div><!-- container-->
 </div><!-- about body-->
+
+
 <%= render 'layouts/footer' %>
+
+<script type="text/javascript">
+
+
+(function($) {
+	$.fn.fullpage = function(options) {
+		// Create some defaults, extending them with any options that were provided
+		options = $.extend({
+			"verticalCentered" : true,
+			'resize' : true,
+			'slidesColor' : [],
+			'anchors':[],
+			'scrollingSpeed': 700,
+			'easing': 'easeInQuart',
+			'menu': 'false',
+			'navigation': false,
+			'navigationPosition': 'right',
+			'navigationColor': '#000',
+			'navigationTooltips': [],
+			'slidesNavigation': false,
+			'slidesNavPosition': 'bottom',
+			'controlArrowColor': '#fff',
+			'loopBottom': false,
+			'loopTop': false,
+			'loopHorizontal': true,
+			'autoScrolling': false,
+			'scrollOverflow': false,
+			'css3': true,
+			'paddingTop': 0,
+			'paddingBottom': 0,
+			'fixedElements': null,
+			'normalScrollElements': null, 
+			'keyboardScrolling': true,
+			'touchSensitivity': 5,
+			'continuousVertical': false,
+			'animateAnchor': true,
+
+			//events
+			'afterLoad': null,
+			'onLeave': null,
+			'afterRender': null,
+			'afterSlideLoad': null,
+			'onSlideLeave': null
+		}, options);		
+</script>
 
