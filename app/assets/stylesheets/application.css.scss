@@ -150,8 +150,8 @@ color: #333;
 color: #333;
 font-size: 16px;
 line-height: 25px;
-padding-bottom: 36px;
-
+/*padding-bottom: 36px;
+*/
 
 }
 .overview-content h4 {
@@ -491,26 +491,24 @@ color: #fff;
 
 .welcome {
 background-color: #EFEFEF;
-padding-top: 50px;
-/*min-height: 300px;
-*/
-max-height: 300px;
+padding-top: 5px;
+max-height: 431px;
 overflow: hidden;
 
 }
 
 .welcome.top-graph {
 position: relative;
-/*padding-top: 98px;
-*//*	right: 3px;
-*/
+padding-top: 132px;
 }
 .section-1 {
 	display: table;
 	width: 100%;
 	height: 100%;
-	margin-top: 50px;
+	margin-top: 26px;
 
+/*	margin-top: 50px;
+*/
 
 }
 .section-1-subtext {
@@ -742,17 +740,41 @@ display: none;
 }
 @media screen and (max-width: 991px) {
 
-	.description-subtext p {
-		text-align: center;
+	.header-wrapper h3 {
+		font-size: 31px;
+	}
 
+	.header-wrapper p {
+		font-size: 16px;
+	}
+
+.about-body p, .overview-content h4, .description-subtext p {
+		text-align: center;
 	}
 
 	.main-button {
 		padding: 20px 0;
 	}
 
+
+.first-row .main-button, .second-row .main-button {
+	text-align: center;
+}	
+
 .section-button {
 	float: none;
+}
+
+.footer-bottom .main-button {
+	padding: 0;
+}
+
+.contact-links, .support-links {
+	text-align: center;
+}
+
+.first-row, .second-row {
+	padding-bottom: 58px;
 }
 
 /*.main-button {
@@ -778,6 +800,11 @@ display: none;
 		padding: 0px;
 
 	}
+
+	.about-body p {
+		padding-bottom: 36px;
+	}
+
 
 
 
