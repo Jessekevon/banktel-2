@@ -188,7 +188,7 @@ height: auto;
   position: relative;
   overflow: visible;
   width: 100%;
-  height: auto;
+  min-height: auto;
 }
 
 
@@ -376,6 +376,69 @@ strong {
   font-family:'OpenSans-Semibold';
  font-weight: bold;
 }
+
+.carousel {
+  min-height: 600px;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  /* left: 0; */
+  left: -50px;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  height: auto;
+  /* padding: 5px 0; */
+  padding: 0px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.175);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+
+}
+.dropdown .dropdown-menu {
+  -webkit-animation: fadein .5s ease-in-out; /* Safari and Chrome */
+     -moz-animation: fadein .5s ease-in-out; /* Firefox */
+    -ms-animation: fadein .5s ease-in-out; /* Internet Explorer */
+     -o-animation: fadein .5s ease-in-out; /* Opera */
+      animation: fadein .5s ease-in-out;
+
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  -webkit-animation: fadein .5s ease-in-out; /* Safari and Chrome */
+     -moz-animation: fadein .5s ease-in-out; /* Firefox */
+    -ms-animation: fadein .5s ease-in-out; /* Internet Explorer */
+     -o-animation: fadein .5s ease-in-out; /* Opera */
+      animation: fadein .5s ease-in-out;
+}
+ .dropdown-menu:after {
+  content: "";
+  position: absolute;
+  left: 66px;
+  border-style: solid;
+  border-color: #fff transparent;
+  display: block;
+  width: 60px;
+  z-index: -10;
+  top: -10px;
+  bottom: auto;
+  border-width: 0 29px 25px;
+
+ }
+
+ .navbar-nav > li > .dropdown-menu {
+/*   margin-top: 25px;
+*/   border-top-right-radius: 0;
+   border-top-left-radius: 0;
+ }
 
 
 

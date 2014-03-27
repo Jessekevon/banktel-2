@@ -2019,7 +2019,7 @@
 			"verticalCentered" : true,
 			'resize' : true,
 			'slidesColor' : [],
-			'anchors':[],
+			'anchors':['firstPage', 'secondPage', 'thirdPage'],
 			'scrollingSpeed': 700,
 			'easing': 'easeInQuart',
 			'menu': 'false',

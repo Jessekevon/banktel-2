@@ -142,6 +142,7 @@ padding: 0 75px;
 .about-body {
 background-color: #fff;
 padding-top: 58px;
+padding-bottom: 58px;
 
 }
 
@@ -305,6 +306,7 @@ right: 28px;
 .support-links li {
 position: relative;
 right: 28px;
+color: #636467;
 
 }
 
@@ -316,24 +318,34 @@ position: relative;
 right: 14px;
 }
 
-i.twitter {
+.twitter {
+	display: inline-block;
+	position: relative;
+	right: 15px;
+}
+
+/*i.twitter {
 font-family: 'entypo-social';
 font-style: normal;
 position: relative;
 right: 14px;
 
 }
-
-i.phone:before { 
+*/
+/*i.phone:before { 
 content: "\1F4F1"; 
 }
 
 i.mail:before {
-content: "\27A2";
+content: "\1F53F";
 }
 
 i.twitter:before {
 content: "\F309";
+}
+*/
+#info {
+	position: relative;
 }
 
 
