@@ -493,7 +493,6 @@
 </div><!--tableCell-->
 </div>
 
-<div class="section" id="section5">
 <div class="landing-page-footer">
 	<div class="tableCell">
 	  <div class="footer-bottom">
@@ -547,7 +546,6 @@
 </div>
 	  </div><!--footer-bottom-->
 </div><!-- landing page footer-->
-</div>
 
 
 	<script type="text/javascript">
@@ -579,54 +577,15 @@
 
 
 <script type="text/javascript">
+$(document).ready(function(){
 
-	$('#myCarousel1').swipe( {
-	    swipeLeft: function() {
-	        $(this).carousel('next');
-	    },
-	    swipeRight: function() {
-	        $(this).carousel('prev');
-	    },
-	    allowPageScroll: 'vertical'
-	});
+	$("#myCarousel1").touchwipe({
+	          wipeLeft: function() { jQuery("#myCarousel1").carousel('next'); },
+	          wipeRight: function() { jQuery("#myCarousel1").carousel('prev'); },
+	          min_move_x: 20,
+	          preventDefaultEvents: true
+		});
 
-	$('#myCarousel2').swipe( {
-	    swipeLeft: function() {
-	        $(this).carousel('next');
-	    },
-	    swipeRight: function() {
-	        $(this).carousel('prev');
-	    },
-	    allowPageScroll: 'vertical'
-	});
+});
 
-	$('#myCarousel3').swipe( {
-	    swipeLeft: function() {
-	        $(this).carousel('next');
-	    },
-	    swipeRight: function() {
-	        $(this).carousel('prev');
-	    },
-	    allowPageScroll: 'vertical'
-	});
-
-	$('#myCarousel4').swipe( {
-	    swipeLeft: function() {
-	        $(this).carousel('next');
-	    },
-	    swipeRight: function() {
-	        $(this).carousel('prev');
-	    },
-	    allowPageScroll: 'vertical'
-	});
-
-	$('#myCarousel5').swipe( {
-	    swipeLeft: function() {
-	        $(this).carousel('next');
-	    },
-	    swipeRight: function() {
-	        $(this).carousel('prev');
-	    },
-	    allowPageScroll: 'vertical'
-	});
 </script>
