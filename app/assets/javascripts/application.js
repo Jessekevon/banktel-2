@@ -232,7 +232,7 @@
 		longTap:null, 		
 		triggerOnTouchEnd: true, 
 		triggerOnTouchLeave:false, 
-		allowPageScroll: "auto", 
+		allowPageScroll: "vertical", 
 		fallbackToMouseEvents: true,	
 		excludedElements:"label, button, input, select, textarea, a, .noSwipe"
 	};
