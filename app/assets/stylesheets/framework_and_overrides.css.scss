@@ -378,8 +378,8 @@ strong {
 }
 
 .carousel {
-  min-height: 600px;
-}
+/*  min-height: 600px;
+*/}
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -438,6 +438,22 @@ strong {
 /*   margin-top: 25px;
 */   border-top-right-radius: 0;
    border-top-left-radius: 0;
+ }
+
+ .dropdown-menu > li > a {
+  display: block;
+  padding: 16px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  white-space: nowrap;
+  position: relative;
+  
+
+ }
+
+ .dropdown-menu li a:nth-child(2) {
+  background-color: #333;
  }
 
 
