@@ -577,15 +577,54 @@
 
 
 <script type="text/javascript">
-$(document).ready(function(){
 
-	$("#myCarousel1").touchwipe({
-	          wipeLeft: function() { $("#myCarousel1").carousel('next'); },
-	          wipeRight: function() { $("#myCarousel1").carousel('prev'); },
-	          min_move_x: 20,
-	          preventDefaultEvents: false
-		});
+	$('#myCarousel1').swipe( {
+	    swipeLeft: function() {
+	        $(this).carousel('next');
+	    },
+	    swipeRight: function() {
+	        $(this).carousel('prev');
+	    },
+	    // allowPageScroll: 'vertical'
+	});
 
-});
+	$('#myCarousel2').swipe( {
+	    swipeLeft: function() {
+	        $(this).carousel('next');
+	    },
+	    swipeRight: function() {
+	        $(this).carousel('prev');
+	    },
+	    allowPageScroll: 'vertical'
+	});
 
+	$('#myCarousel3').swipe( {
+	    swipeLeft: function() {
+	        $(this).carousel('next');
+	    },
+	    swipeRight: function() {
+	        $(this).carousel('prev');
+	    },
+	    allowPageScroll: 'vertical'
+	});
+
+	$('#myCarousel4').swipe( {
+	    swipeLeft: function() {
+	        $(this).carousel('next');
+	    },
+	    swipeRight: function() {
+	        $(this).carousel('prev');
+	    },
+	    allowPageScroll: 'vertical'
+	});
+
+	$('#myCarousel5').swipe( {
+	    swipeLeft: function() {
+	        $(this).carousel('next');
+	    },
+	    swipeRight: function() {
+	        $(this).carousel('prev');
+	    },
+	    allowPageScroll: 'vertical'
+	});
 </script>
