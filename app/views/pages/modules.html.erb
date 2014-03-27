@@ -580,10 +580,10 @@
 $(document).ready(function(){
 
 	$("#myCarousel1").touchwipe({
-	          wipeLeft: function() { jQuery("#myCarousel1").carousel('next'); },
-	          wipeRight: function() { jQuery("#myCarousel1").carousel('prev'); },
+	          wipeLeft: function() { $("#myCarousel1").carousel('next'); },
+	          wipeRight: function() { $("#myCarousel1").carousel('prev'); },
 	          min_move_x: 20,
-	          preventDefaultEvents: true
+	          preventDefaultEvents: false
 		});
 
 });
