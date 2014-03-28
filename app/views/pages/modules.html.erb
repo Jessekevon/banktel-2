@@ -571,14 +571,14 @@
 
 <script type="text/javascript">
 
-  $(document).ready(function() {  
-  		 $("#myCarousel1").swiperight(function() {  
-    		  $(this).carousel('prev');  
-	    		});  
-		   $("#myCarousel1").swipeleft(function() {  
-		      $(this).carousel('next');  
-	   });  
-	});  
+$(document).ready(function() {  
+    	$('#myCarousel1').hammer().on('swipeleft', function(){
+  			$(this).carousel('next'); 
+  		})
+  		$('#myCarousel1').hammer().on('swiperight', function(){
+  			$(this).carousel('prev'); 
+  		})
+ }); 
 
 
 </script>
