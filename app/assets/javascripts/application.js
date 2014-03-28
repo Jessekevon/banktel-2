@@ -15,7 +15,6 @@
 //= require jquery.ui.all
 //= require bootstrap
 //= require_tree .
-//= require jquery.mobile
 
 
 
