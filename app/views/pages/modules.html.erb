@@ -1,4 +1,5 @@
 <% content_for :title do %>Modules<% end %>
+<%= javascript_include_tag "jquery.mobile.min" %>
 
 
 <div class="section" id="section0">
@@ -571,55 +572,14 @@
 
 <script type="text/javascript">
 
-	$('#myCarousel1').swipe( {
-	    swipeLeft: function() {
-	        $(this).carousel('next');
-	    },
-	    swipeRight: function() {
-	        $(this).carousel('prev');
-	    },
-	    allowPageScroll: 'vertical'
-	});
-
-	$('#myCarousel2').swipe( {
-	    swipeLeft: function() {
-	        $(this).carousel('next');
-	    },
-	    swipeRight: function() {
-	        $(this).carousel('prev');
-	    },
-	    allowPageScroll: 'vertical'
-	});
-
-	$('#myCarousel3').swipe( {
-	    swipeLeft: function() {
-	        $(this).carousel('next');
-	    },
-	    swipeRight: function() {
-	        $(this).carousel('prev');
-	    },
-	    allowPageScroll: 'vertical'
-	});
-
-	$('#myCarousel4').swipe( {
-	    swipeLeft: function() {
-	        $(this).carousel('next');
-	    },
-	    swipeRight: function() {
-	        $(this).carousel('prev');
-	    },
-	    allowPageScroll: 'vertical'
-	});
-
-	$('#myCarousel5').swipe( {
-	    swipeLeft: function() {
-	        $(this).carousel('next');
-	    },
-	    swipeRight: function() {
-	        $(this).carousel('prev');
-	    },
-	    allowPageScroll: 'vertical'
-	});
+  $(document).ready(function() {  
+  		 $("#myCarousel1").swiperight(function() {  
+    		  $(this).carousel('prev');  
+	    		});  
+		   $("#myCarousel1").swipeleft(function() {  
+		      $(this).carousel('next');  
+	   });  
+	});  
 
 
 </script>
