@@ -465,7 +465,10 @@ strong {
   .dropdown-menu > li:nth-child(-n+3) {
     border-bottom: 1px solid #cecece;
   }
+/* mobile menu */
 
-
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+ border-color: transparent; 
+}
 
 

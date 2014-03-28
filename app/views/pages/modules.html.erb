@@ -200,8 +200,8 @@
 	      </div><!-- carousel inner -->
 
 	    </div><!-- container -->
-	    <a class="left carousel-control section" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
-	    <a class="right carousel-control section" href="#myCarousel2" data-slide="next">&rsaquo;</a>
+	    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
+	    <a class="right carousel-control" href="#myCarousel2" data-slide="next">&rsaquo;</a>
 
 	 
 	</div><!--myCarousel -->
@@ -322,8 +322,8 @@
 
 
 	      </div><!-- carousel inner -->
-	      <a class="left carousel-control section" href="#myCarousel3" data-slide="prev">&lsaquo;</a>
-	      <a class="right carousel-control section" href="#myCarousel3" data-slide="next">&rsaquo;</a>
+	      <a class="left carousel-control" href="#myCarousel3" data-slide="prev">&lsaquo;</a>
+	      <a class="right carousel-control" href="#myCarousel3" data-slide="next">&rsaquo;</a>
 
 	    </div><!-- carousel -->
 	 
@@ -397,8 +397,8 @@
 	        </div>
 
 	      </div><!-- carousel inner -->
-	      <a class="left carousel-control section" href="#myCarousel4" data-slide="prev">&lsaquo;</a>
-	      <a class="right carousel-control section" href="#myCarousel4" data-slide="next">&rsaquo;</a>
+	      <a class="left carousel-control" href="#myCarousel4" data-slide="prev">&lsaquo;</a>
+	      <a class="right carousel-control" href="#myCarousel4" data-slide="next">&rsaquo;</a>
 
 	    </div><!-- carousel -->
 	 
@@ -486,8 +486,8 @@
 	        </div>
 
 	      </div><!-- carousel inner -->
-	      <a class="left carousel-control section" href="#myCarousel5" data-slide="prev">&lsaquo;</a>
-	      <a class="right carousel-control section" href="#myCarousel5" data-slide="next">&rsaquo;</a>
+	      <a class="left carousel-control" href="#myCarousel5" data-slide="prev">&lsaquo;</a>
+	      <a class="right carousel-control" href="#myCarousel5" data-slide="next">&rsaquo;</a>
 
 	    </div><!-- container -->
 	 
@@ -495,7 +495,7 @@
 </div><!--tableCell-->
 </div>
 
-<div class="section .section4" id="section4">
+<div class="section" id="section4">
 
 <div class="landing-page-footer">
 	  <div class="footer-bottom">
@@ -553,22 +553,11 @@
 	<script type="text/javascript">
 
 
-	// $(document).ready(function() {
-	// 	var pepe = $.fn.fullpage({
-	// 		verticalCentered: false,
-	// 		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage']
-
-	// 	});
-	// });
-
-
 
 		$(document).ready(function() {
 			$.fn.fullpage({
 				verticalCentered: false,
-				normalScrollElements: '#section4',
-				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-
+				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage']
 			});
 
 		});
@@ -591,10 +580,7 @@
 	    swipeRight: function() {
 	        $(this).carousel('prev');
 	    },
-	    allowPageScroll: 'vertical',
-	    $.fn.fullpage.jsetAllowScrolling(false);
-	    $.fn.fullpage.jsetAllowScrolling(true);
-
+	    allowPageScroll: 'vertical'
 	});
 
 	$('#myCarousel2').swipe( {
@@ -604,10 +590,7 @@
 	    swipeRight: function() {
 	        $(this).carousel('prev');
 	    },
-	    allowPageScroll: 'vertical',
-	    $.fn.fullpage.jsetAllowScrolling(false);
-	    $.fn.fullpage.jsetAllowScrolling(true);
-
+	    allowPageScroll: 'vertical'
 	});
 
 	$('#myCarousel3').swipe( {
