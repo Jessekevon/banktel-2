@@ -969,18 +969,17 @@ text-align: left;
 i.checkmark {
 	font-family: 'entypo';
 	font-style: normal;
-	font-size: 27px;
+	font-size: 21px;
 	color: #28b4ab;
 	position: relative;
-	top: 39px;
-	left: 5px;
+	left: 10px;
 	z-index: 1000;
 	border-radius: 50%;
 	/* border-radius: 66px; */
 	border: 2px solid #28b4ab;
-	width: 18px;
-	height: 18px;
-	padding: 8px;
+	/* width: 25px; */
+	/* height: 18px; */
+	padding: 0px 7px;
 
 }
 
