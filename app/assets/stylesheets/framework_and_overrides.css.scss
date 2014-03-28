@@ -473,6 +473,12 @@ strong {
  text-decoration: none;
  color: #fff;
  background-color: #28b4ab;
+ -webkit-animation: .3s ease-in-out;
+ -moz-animation: .3s ease-in-out;
+ -ms-animation: .3s ease-in-out;
+ -o-animation: .3s ease-in-out;
+ animation: .3s ease-in-out;
+
  }
 
  .dropdown-menu > li:hover i.checkmark {
@@ -484,6 +490,7 @@ strong {
    text-decoration: none;
    color: #fff;
    background-color: transparent;
+
  }
 
  .dropdown:hover .dropdown-menu {
@@ -495,12 +502,18 @@ strong {
  animation: fadein .3s ease-in-out;
  }
 
+.slidesContainer {
 
+}
 
 /* mobile menu */
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
  border-color: transparent; 
 }
+/*
+.slides {
+  height: 529px;
+}
 
-
+*/
