@@ -495,6 +495,8 @@
 </div><!--tableCell-->
 </div>
 
+<div class="section .section4" id="section4">
+
 <div class="landing-page-footer">
 	  <div class="footer-bottom">
 	  <div class="container">
@@ -547,7 +549,7 @@
 </div>
 </div><!-- landing page footer-->
 
-
+</div>
 	<script type="text/javascript">
 
 
@@ -564,8 +566,11 @@
 		$(document).ready(function() {
 			$.fn.fullpage({
 				verticalCentered: false,
-				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage']
+				normalScrollElements: '#section4',
+				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+
 			});
+
 		});
 
 
@@ -586,7 +591,10 @@
 	    swipeRight: function() {
 	        $(this).carousel('prev');
 	    },
-	    allowPageScroll: 'vertical'
+	    allowPageScroll: 'vertical',
+	    $.fn.fullpage.jsetAllowScrolling(false);
+	    $.fn.fullpage.jsetAllowScrolling(true);
+
 	});
 
 	$('#myCarousel2').swipe( {
@@ -596,7 +604,10 @@
 	    swipeRight: function() {
 	        $(this).carousel('prev');
 	    },
-	    allowPageScroll: 'vertical'
+	    allowPageScroll: 'vertical',
+	    $.fn.fullpage.jsetAllowScrolling(false);
+	    $.fn.fullpage.jsetAllowScrolling(true);
+
 	});
 
 	$('#myCarousel3').swipe( {
