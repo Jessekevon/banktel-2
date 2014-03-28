@@ -370,8 +370,8 @@ content: "\F309";
 	/* Centered texts in each section 
 	* --------------------------------------- */
 	.section{
-		text-align:center;
-	}
+/*		text-align:center;
+*/	}
 	
 	
 	/* Backgrounds will cover all the section
@@ -394,6 +394,7 @@ content: "\F309";
 	#section0{
 		background-color: #fff;
 		padding-top: 98px;
+		text-align: center;
 	}
 
 	#section1{
@@ -416,7 +417,15 @@ content: "\F309";
 
 
 
+.landing-page-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	padding-top: 52px;
 
+}
  
  	/*Adding background for the slides
 	* --------------------------------------- */
@@ -923,6 +932,60 @@ left: 61px;
 	height: 100%;
 
 }
+
+.hidden { display: none; }
+
+/*flash*/
+
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+
+i.checkmark {
+	font-family: 'entypo';
+	font-style: normal;
+	font-size: 27px;
+	color: #28b4ab;
+	position: relative;
+	top: 39px;
+	left: 5px;
+	z-index: 1000;
+	border-radius: 50%;
+	/* border-radius: 66px; */
+	border: 2px solid #28b4ab;
+	width: 18px;
+	height: 18px;
+	padding: 8px;
+
+}
+
+
+
 
 /*.top-graph img {
 	max-width: 100% !important;

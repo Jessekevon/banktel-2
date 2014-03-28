@@ -99,7 +99,6 @@
 	<div class="container">
 	    <div class="row">
 	      <div class="col-md-12">
-	        <a name="section-2"></a>
 						<h3 class="section-content">Accounts Payable</h3>
 	      </div>
 	    </div>
@@ -200,8 +199,8 @@
 	      </div><!-- carousel inner -->
 
 	    </div><!-- container -->
-	    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
-	    <a class="right carousel-control" href="#myCarousel2" data-slide="next">&rsaquo;</a>
+	    <a class="left carousel-control section-arrow" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
+	    <a class="right carousel-control section-arrow" href="#myCarousel2" data-slide="next">&rsaquo;</a>
 
 	 
 	</div><!--myCarousel -->
@@ -214,7 +213,7 @@
 
 	    <div class="row">
 	      <div class="col-md-12">
-	        <a name="section-3"></a><h3 class="section-content">Accounts Receivable</h3>
+	        <h3 class="section-content">Accounts Receivable</h3>
 	      </div>
 	    </div>
 	  </div>
@@ -278,7 +277,7 @@
 	        	      tetur adipiscing elit. Aenean sit amet dolar
 	        	    </p>
 	        	    <div class="section-button">
-	        	    	<a class="link3"><div class="btn" "btn-lg">Learn more</div></a>
+	        	    	<div class="btn" "btn-lg">Learn more</div>
 	        	    </div>
 
 	        	    <div class="col-md-2"></div>
@@ -322,8 +321,8 @@
 
 
 	      </div><!-- carousel inner -->
-	      <a class="left carousel-control" href="#myCarousel3" data-slide="prev">&lsaquo;</a>
-	      <a class="right carousel-control" href="#myCarousel3" data-slide="next">&rsaquo;</a>
+	      <a class="left carousel-control section-arrow" href="#myCarousel3" data-slide="prev">&lsaquo;</a>
+	      <a class="right carousel-control section-arrow" href="#myCarousel3" data-slide="next">&rsaquo;</a>
 
 	    </div><!-- carousel -->
 	 
@@ -341,7 +340,7 @@
 	      </div>
 	    </div>
 	  </div>
-	  <!-- Section Two Carousel
+	  <!-- Section Carousel
 	    ================================================== -->
 	    <div id="myCarousel4" class="carousel slide" data-interval="false">
 	    	<div class="container">
@@ -397,8 +396,8 @@
 	        </div>
 
 	      </div><!-- carousel inner -->
-	      <a class="left carousel-control" href="#myCarousel4" data-slide="prev">&lsaquo;</a>
-	      <a class="right carousel-control" href="#myCarousel4" data-slide="next">&rsaquo;</a>
+	      <a class="left carousel-control section-arrow" href="#myCarousel4" data-slide="prev">&lsaquo;</a>
+	      <a class="right carousel-control section-arrow" href="#myCarousel4" data-slide="next">&rsaquo;</a>
 
 	    </div><!-- carousel -->
 	 
@@ -413,11 +412,11 @@
 
 	    <div class="row">
 	      <div class="col-md-12">
-	        <a name="section-5"></a><h3 class="section-content">Inventory</h3>
+	        <h3 class="section-content">Inventory</h3>
 	      </div>
 	    </div>
 	  </div>
-	  <!-- Section Two Carousel
+	  <!-- Section Carousel
 	    ================================================== -->
 	    <div id="myCarousel5" class="carousel slide" data-interval="false">
 	    	<div class="container">
@@ -460,7 +459,7 @@
 	        	      	      tetur adipiscing elit. Aenean sit amet dolar
 	        	      	    </p>
 	        	      	    <div class="section-button">
-	        	      	    	<a class="link5"><div class="btn" "btn-lg">Learn more</div></a>
+	        	      	    	<div class="btn" "btn-lg">Learn more</div>
 	        	      	    </div>
 	        						</div>
 	        	      	    <div class="col-md-2"></div>
@@ -486,8 +485,8 @@
 	        </div>
 
 	      </div><!-- carousel inner -->
-	      <a class="left carousel-control" href="#myCarousel5" data-slide="prev">&lsaquo;</a>
-	      <a class="right carousel-control" href="#myCarousel5" data-slide="next">&rsaquo;</a>
+	      <a class="left carousel-control section-arrow" href="#myCarousel5" data-slide="prev">&lsaquo;</a>
+	      <a class="right carousel-control section-arrow" href="#myCarousel5" data-slide="next">&rsaquo;</a>
 
 	    </div><!-- container -->
 	 
@@ -495,10 +494,9 @@
 </div><!--tableCell-->
 </div>
 
-<div class="section" id="section4">
+<div class="section" id="element1">
 
 <div class="landing-page-footer">
-	  <div class="footer-bottom">
 	  <div class="container">
 	      <div class="row">
 	        <div class="col-md-6">
@@ -547,7 +545,6 @@
 
 	      </div><!--container-->
 </div>
-</div><!-- landing page footer-->
 
 </div>
 	<script type="text/javascript">
@@ -557,6 +554,7 @@
 		$(document).ready(function() {
 			$.fn.fullpage({
 				verticalCentered: false,
+				// normalScrollElements: '#element1',
 				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage']
 			});
 

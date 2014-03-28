@@ -118,19 +118,27 @@ background-color: transparent;
 }
 
 li.log-out.btn-sm {
-  background-color: #28b4ab;
+/*  background-color: #28b4ab;
   padding: 12px 7px;
-  position: relative;
-  top: 16px;
-  right: 98px;
+*/  position: relative;
+  top: 20px;
+/*  right: 98px;
+*/
 }
 
 li.log-out.btn-sm a {
-    color: #fff;
+  color: #fff;
+background-color: #28b4ab;
+padding: 12px 25px;
+position: relative;
+display: inline;
+line-height: 1.5;
+border-radius: 3px;
+
 
 }
 
-li.log-out.btn-sm:hover {
+li.log-out.btn-sm a:hover {
   color: #28b4ab;
   background-color: #fff;
 }
@@ -218,7 +226,7 @@ height: auto;
 
 }
 
-.carousel-control.left.section {
+.carousel-control.left.section-arrow {
   background-image: image-url("arrow-left.png");
   background-repeat: no-repeat;
   width: 69px;
@@ -233,7 +241,7 @@ height: auto;
 
 }
 
-.carousel-control.right.section {
+.carousel-control.right.section-arrow {
   background-image: image-url("arrow-right.png");
   background-repeat: no-repeat;
   width: 69px;
@@ -455,6 +463,11 @@ strong {
  text-decoration: none;
  color: #fff;
  background-color: #28b4ab;
+ }
+
+ .dropdown-menu > li:hover i.checkmark {
+  color: #fff;
+  border: 2px solid #fff;
  }
 
 

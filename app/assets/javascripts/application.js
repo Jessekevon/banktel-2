@@ -2016,9 +2016,9 @@
 		// Create some defaults, extending them with any options that were provided
 		options = $.extend({
 			"verticalCentered" : true,
-			'resize' : true,
+			'resize' : false,
 			'slidesColor' : [],
-			'anchors':['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+			'anchors':[],
 			'scrollingSpeed': 700,
 			'easing': 'easeInQuart',
 			'menu': 'false',
@@ -2029,7 +2029,7 @@
 			'slidesNavigation': false,
 			'slidesNavPosition': 'bottom',
 			'controlArrowColor': '#fff',
-			'loopBottom': false,
+			'loopBottom': true,
 			'loopTop': false,
 			'loopHorizontal': true,
 			'autoScrolling': true,

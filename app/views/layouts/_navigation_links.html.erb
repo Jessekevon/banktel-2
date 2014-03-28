@@ -2,15 +2,15 @@
 <% if user_signed_in? %>
 	<li class="dropdown"><%= link_to 'Modules', page_path('modules') %>
 	<ul class="dropdown-menu">
-	    <li><a href="http://localhost:3000/pages/modules/#secondPage">Accounts Payable</a></li>
+	    <li><i class="checkmark">&#10003;</i><a href="http://localhost:3000/pages/modules/#secondPage">Accounts Payable</a></li>
 
-	    <li><a href="http://localhost:3000/pages/modules/#thirdPage">Accounts Recievable</a></li>
-
-
-	    <li><a href="http://localhost:3000/pages/modules/#fourthPage">Budgeting</a></li>
+	    <li><i class="checkmark">&#10003;</i><a href="http://localhost:3000/pages/modules/#thirdPage">Accounts Recievable</a></li>
 
 
-	    <li><a href="http://localhost:3000/pages/modules/#lastPage">Inventory</a></li>
+	    <li><i class="checkmark">&#10003;</i><a href="http://localhost:3000/pages/modules/#fourthPage">Budgeting</a></li>
+
+
+	    <li><i class="checkmark">&#10003;</i><a href="http://localhost:3000/pages/modules/#lastPage">Inventory</a></li>
 	</ul>
 </li>
 	<li><%= link_to 'About', page_path('about') %></li>
