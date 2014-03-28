@@ -564,15 +564,17 @@
 // ------------- TOUCH SWIPE ----------------//
 
   $(document).ready(function() {  
-       $("#myCarousel1, #myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5").swiperight(function() {  
+       $("#myCarousel1, #myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5").swiperight(function($.fn.fullpage.jsetAllowScrolling(false);
+       						$.fn.fullpage.jsetAllowScrolling(true);
+) {  
           $(this).carousel('prev');  
           });  
 
-       $("#myCarousel1, #myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5").swipeleft(function() {  
+       $("#myCarousel1, #myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5").swipeleft(function($.fn.fullpage.jsetAllowScrolling(false);
+       						$.fn.fullpage.jsetAllowScrolling(true);
+) {  
           $(this).carousel('next');  
      });  
-       $.fn.fullpage.jsetAllowScrolling(false);
-       $.fn.fullpage.jsetAllowScrolling(true);
 
   });  
 
