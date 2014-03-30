@@ -25,31 +25,32 @@
 						<div class="col-md-6">
 							<h4>Contact Us</h4>
 							<div class="row">
-							  <div class="col-xs-6 col-md-6">
-							    <input type="text" name="firstname" value="" class="form-control input-lg" placeholder="First Name"  />
-							  </div>
-							  <div class="col-xs-6 col-md-6">
-							    <input type="text" name="lastname" value="" class="form-control input-lg" placeholder="Last Name"  />
-							  </div>
-							  <div class="col-xs-6 col-md-6">
-							    <input type="text" name="phonenumber" value="" class="form-control input-lg" placeholder="Phone Number"  />
-							  </div>
-							  <div class="col-xs-6 col-md-6">
-							    <input type="text" name="company" value="" class="form-control input-lg" placeholder="Company email address"  />
-							  </div>
-							  <div class="col-xs-12 col-md-12">
-							    <input type="text" name="demo" value="" class="form-control input-lg" placeholder="Request a Product Demo"  />
-							    
+								<%= simple_form_for Contact.new do |f| %>
+								 <div class="col-xs-6 col-md-6">
+								 	<%= f.input :firstname, :required => true, :class => 'form-control input-lg', :placeholder => 'First Name'  %>
+								 </div>
+								 <div class="col-xs-6 col-md-6">
+								 	<%= f.input :lastname, :required => true, :class => 'form-control input-lg', :placeholder => 'Last Name'  %>
+								 </div>
+								 <div class="col-xs-6 col-md-6">
+								 	<%= f.input :phone, :required => true, :class => 'form-control input-lg', :placeholder => 'Phone Number'  %>
+								 </div>
+								 <div class="col-xs-6 col-md-6">
+								 	<%= f.input :email, :required => true, :class => 'form-control input-lg', :placeholder => 'Company email address'  %>
+								 </div>
+								 <div class="col-xs-12 col-md-12">
+								 	<%= f.input :subject, :required => true, :class => 'form-control input-lg', :placeholder => 'Request a product demo'  %>
 
-							  </div>
-							  <div class="col-xs-12 col-md-12">
-							    <input type="text" name="comments" value="" class="form-control input-lg comments-input" placeholder="Comments..."  />
-							  </div>
-							</div>	<!-- nested row-->						
-							
-							<div class="main-button">
-							  <div class="btn" id="submit-button">Submit</div>
-							</div>
+
+								 </div>
+								 <div class="col-xs-12 col-md-12">
+								 	<%= f.input :message, :as => :text, :required => true, :class => 'form-control input-lg', :placeholder => 'Comments...' %>
+								 </div>
+								</div>	<!-- nested row-->
+								<div class="main-button">
+								<%= f.button :submit, 'Submit', :class=> 'btn', :id => 'submit-button' %>
+								</div>
+								<% end %>
 
 						</div><!--col-md-6-->
 				</div><!-- overview content -->

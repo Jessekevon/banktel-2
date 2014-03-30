@@ -499,7 +499,7 @@ color: #fff;
 }
 
 
-form {
+.sign-in-form {
 text-align: center;
 position: relative;
 top: 354px;
@@ -969,7 +969,7 @@ text-align: left;
 i.checkmark {
 	font-family: 'entypo';
 	font-style: normal;
-	font-size: 21px;
+	font-size: 24px;
 	color: #28b4ab;
 	position: relative;
 	left: 10px;
@@ -983,6 +983,13 @@ i.checkmark {
 
 }
 
+#submit-button {
+	width: 100px;
+}
+
+#contact_message {
+	height: 200px;
+}
 
 
 

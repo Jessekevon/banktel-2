@@ -153,8 +153,9 @@ margin-bottom: 10px;
 */
 padding: 14px 14px;
 margin-bottom: 10px;
-width: 266px;
-
+width: 100%;
+/*width: 266px;
+*/
 }
 
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
@@ -502,6 +503,19 @@ strong {
  animation: fadein .3s ease-in-out;
  }
 
+ .navbar-toggle {
+  position: absolute;
+  float: right;
+  margin-right: 15px;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  right: 0;
+}
 .slidesContainer {
 
 }
@@ -511,6 +525,71 @@ strong {
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
  border-color: transparent; 
 }
+
+.navbar-default .navbar-toggle {
+border-color: #dddddd;
+}
+
+.navbar-inverse .navbar-toggle {
+ border-color: transparent; 
+ width: 43px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .navbar-nav > li > a {
+  padding: 18px 23px;
+  line-height: 20px;
+  }
+
+  .nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  }
+
+  .navbar-default {
+  /* background-color: #34314B; */
+  background-color: transparent;
+  border-color: transparent;
+  /* height: 438px; */
+  }
+
+  .dropdown-menu ul {
+    display: none;
+  }
+
+.navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-top: 58px;
+  }
+
+  .navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #28b4ab;
+  }
+
+  .navbar-inverse .navbar-toggle:hover {
+   border-color: transparent; 
+   background-color: #fff;
+  }
+
+  .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: #fff;
+  }
+
+
+
+
+}
+
+/* Flash messages */
+
+
+p.notice {
+  color: #fff;
+}
+
 /*
 .slides {
   height: 529px;
