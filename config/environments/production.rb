@@ -87,13 +87,12 @@ Banktel2::Application.configure do
   config.action_mailer.default :charset => "utf-8"
 
   config.action_mailer.smtp_settings = {
-  address: "smtp.gmail.com",
-  port: 587,
-  domain: ENV["GMAIL_DOMAIN"],
-  authentication: "plain",
-  enable_starttls_auto: true,
-  user_name: ENV["EMAIL_ACCOUNT"],
-  password: ENV["EMAIL_PASSWORD"]
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :user_name            => ENV["EMAIL_ACCOUNT"],
+    :password             => ENV["EMAIL_PASSWORD"],
+    :authentication       => "plain",
+    :enable_starttls_auto => true
   }
 
 
