@@ -38,7 +38,38 @@
  @font-face {
   font-family:'OpenSans-Semibold';
   src:url(font-path('OpenSans-Semibold.ttf'));
+  src:url(font-path('OpenSans-Semibold.ttf'));
+
 }
+
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url(font-path('OpenSans-Regular.eot'));
+  src: url(font-path('OpenSans-Regular.eot?#iefix') format('embedded-opentype'),url('OpenSans-Regular.woff') format('woff'),url('OpenSans-Regular.ttf') format('truetype'),url('OpenSans-Regular.svg#OpenSans-Regular') format('svg'));
+}
+
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url(font-path('OpenSans-Semibold.eot'));
+  src: url(font-path('OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),url('OpenSans-Semibold.woff') format('woff'),url('OpenSans-Semibold.ttf') format('truetype'),url('OpenSans-Semibold.svg#OpenSans-Semibold') format('svg'));
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(font-path('OpenSans-Light.eot'));
+  src: url(font-path('OpenSans-Light.eot?#iefix') format('embedded-opentype'),url('OpenSans-Light.woff') format('woff'),url('OpenSans-Light.ttf') format('truetype'),url('OpenSans-Light.svg#OpenSans-Light') format('svg'));
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(font-path('OpenSans-Bold.eot'));
+  src: url(font-path('OpenSans-Bold.eot?#iefix') format('embedded-opentype'),url('OpenSans-Bold.woff') format('woff'),url('OpenSans-Bold.ttf') format('truetype'),url('OpenSans-Bold.svg#OpenSans-Bold') format('svg'));
+}
+
+
+
+
 
 
 
@@ -422,6 +453,10 @@ content: "\F309";
 	padding-top: 52px;
 
 }
+
+#myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5 {
+/*	min-height: 523px;
+*/}
  
  	/*Adding background for the slides
 	* --------------------------------------- */
