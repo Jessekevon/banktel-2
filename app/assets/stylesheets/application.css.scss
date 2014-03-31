@@ -186,10 +186,6 @@ padding-top: 43px;
 
 }
 
-.footer-form {
-	margin-right: -20px;
-}
-
 .footer-top h4 {
 color: #fff;
 font-size: 23px;
@@ -750,10 +746,6 @@ display: none;
 
 }
 
-@media screen and (max-width: 767px) {
-
-
-}
 
 @media screen and (min-width: 600px) and (max-width: 991px) {
 	.description-subtext p {
@@ -816,6 +808,16 @@ display: none;
 
 }
 
+@media screen and (min-width: 768px) {
+
+	.footer-form {
+		margin-right: -20px;
+	}
+
+
+
+}
+
 @media screen and (min-width: 992px) {
 	.footer-form {
 	 padding-bottom: 65px; 
@@ -830,10 +832,10 @@ display: none;
 		padding-bottom: 36px;
 	}
 
-	#submit-button {
+/*	#submit-button {
 		float: right;
 	}
-
+*/
 
 
 
@@ -983,15 +985,56 @@ i.checkmark {
 
 }
 
-#submit-button {
-	width: 100px;
+#user_email {
+	width: 266px;
+	height: auto;
 }
+
+#user_password {
+	width: 266px;
+	height: auto;
+}
+
+
+#submit-button {
+/*	width: 100px;
+*/}
+
+#contact_name {
+	width: 100%;
+	height: auto;
+
+}
+
+#contact_lastname {
+	width: 100%;
+	height: auto;
+
+}
+
+
+#contact_phone {
+	width: 100%;
+	height: auto;
+
+}
+
+#contact_email {
+	width: 100%;
+	height: auto;
+
+}
+
+#contact_subject {
+	width: 100%;
+	height: auto;
+}
+
 
 #contact_message {
 	height: 200px;
+	width: 100%;
 }
-
-
 
 /*.top-graph img {
 	max-width: 100% !important;

@@ -509,18 +509,21 @@
 	        </div>
 
 	        <div class="col-md-3">
+	        	<%= simple_form_for Contact.new do |f| %>
+
 	          <p><strong>Stay In The Loop.</strong><br>Sign up for timely product updates & releases direct from Banktel</p>
-	          <input type="text" name="firstname&lastname" value="" class="form-control input-lg" placeholder="First Name & Last Name"  />
-	          <input type="text" name="companyemail" value="" class="form-control input-lg" placeholder="Company email address"  />
+	          <%= f.input :name, :required => true, :class => 'form-control input-lg', :placeholder => 'First & Last Name'  %>
+
+	          <%= f.input :email, :required => true, :class => 'form-control input-lg', :placeholder => 'Company email address'  %>
 	          <div class="row">
 	          	<div class="col-md-7"></div>
 		          	<div class="col-md-5">
 			          <div class="main-button">
-			            <div class="btn" "btn-lg">Submit</div>
+			          	<%= f.button :submit, 'Submit', :class=> 'btn', :id => 'submit-button' %>
 			          </div>
 			      	</div>
 		      </div><!--nested row-->
-
+<% end %>
 	        </div>
 
 	        <div class="col-md-3">

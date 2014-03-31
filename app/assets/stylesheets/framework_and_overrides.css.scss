@@ -83,7 +83,6 @@ section {
 
   .nav > li {
   position: relative;
-  right: 112px;
   top: 28px;
   letter-spacing: 1px;
   padding-right: 10px;
@@ -102,7 +101,6 @@ margin-top: 0px;
   position: relative;
   margin: 0 7px;
   top: 15px;
-  left: 121px;
   z-index: 1000;
 }
 
@@ -371,6 +369,10 @@ box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
+.form-inputs {
+
+}
+
 
 .input-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn, .input-group-lg > .input-group-btn > .submit {
   height: 46px;
@@ -391,7 +393,7 @@ strong {
 */}
 .dropdown-menu {
   position: absolute;
-  top: 140%;
+  top: 150%;
   /* left: 0; */
   left: -50px;
   z-index: 1000;
@@ -409,6 +411,7 @@ strong {
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.175);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
+  border: none;
 
 }
 .dropdown .dropdown-menu {
@@ -582,6 +585,22 @@ border-color: #dddddd;
 
 
 }
+
+@media screen and (max-width: 767px) {
+
+  .dropdown-menu {
+    border: none;
+  }
+  .dropdown li {
+    display: none;
+    box-shadow: none;
+  }
+  .dropdown-menu:after {
+    display: none;
+}
+
+}
+
 
 /* Flash messages */
 
