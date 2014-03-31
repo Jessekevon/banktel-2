@@ -20,10 +20,10 @@
  @font-face {
    font-family:'OpenSans-Light';
    src: url('OpenSans-Light.eot'); /* IE9 Compat Modes */
-   src: url('OpenSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('OpenSans-Light.woff') format('woff'), /* Modern Browsers */
-        url('OpenSans-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('OpenSans-Light.svg#svgOpenSans-Light') format('svg'); /* Legacy iOS */
+   src: url('OpenSans-Light.eot?#iefix') format('embedded-opentype'), 
+        url('OpenSans-Light.woff') format('woff'), 
+        url('OpenSans-Light.ttf')  format('truetype'), 
+        url('OpenSans-Light.svg#svgOpenSans-Light') format('svg');
  }
 
  @font-face {
@@ -142,14 +142,18 @@ text-align: center;
 }
 
 .header-wrapper h3 p {
-font-family:'OpenSans-Light';
 color: #333;
+font-weight: 300;
+
+
 }
 
 .header-wrapper h3 {
 font-size: 35px;
 padding-top: 34px;
 padding-bottom: 18px;
+font-weight: 300;
+
 
 }
 .header-wrapper p {
@@ -171,9 +175,10 @@ padding-bottom: 58px;
 
 .about-body p {
 color: #333;
-color: #333;
 font-size: 16px;
 line-height: 25px;
+font-weight: 300;
+
 /*padding-bottom: 36px;
 */
 
@@ -184,6 +189,8 @@ position: relative;
 bottom: 3px;
 letter-spacing: 1px;
 padding-bottom: 39px;
+font-weight: 300;
+
 }
 .main-button .btn {
 color: #28B4AB;
@@ -488,7 +495,7 @@ content: "\F309";
 /*	position: relative;
 top: 530px;
 */	text-align: center;
-	font-family:'OpenSans-Light';
+font-weight: 300;
 
 }
 
@@ -497,6 +504,8 @@ top: 530px;
 .section-1 h3 {
 font-size: 36px;
 padding-bottom: 7px;
+font-weight: 300;
+
 }
 
 .module-button {
@@ -535,6 +544,8 @@ text-align: center;
 */padding-bottom: 37px;
 font-size: 36px;
 color: #fff;
+font-weight: 300;
+
 }
 
 .welcome {
@@ -565,6 +576,8 @@ font-size: 19px;
 letter-spacing: 1px;
 line-height: 31px;
 padding-bottom: 13px;
+font-weight: 300;
+
 
 
 }
@@ -608,8 +621,8 @@ top: -46px;
   opacity: 1 !important;
 }
 
-
 .description-subtext p {
+	font-family: 'Open Sans', sans-serif;
 text-align: left;
 position: relative;
 font-size: 16px;
@@ -949,7 +962,8 @@ left: 61px;
     position: relative;
     width: 100%;
     height: 100%;
-    font-family:'OpenSans-Light';
+    font-weight: 300;
+    
 
 }
 
