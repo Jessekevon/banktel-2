@@ -208,7 +208,7 @@ height: auto;
   left: 7%;
   background-size: 36px 62px;
   font-size: 0;
-
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false) !important ;
 
 }
 
@@ -221,6 +221,7 @@ height: auto;
   right: 7%;
   background-size: 36px 62px;
   font-size: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false) !important ;
 
 
 }
@@ -580,6 +581,33 @@ border-color: #dddddd;
   .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
   background-color: #fff;
   }
+
+  .navbar-nav {
+  float: none;
+  position: relative;
+  margin: 0 7px;
+  top: 0px;
+  z-index: 1000;
+  }
+
+  .navbar-collapse.in {
+  overflow-y: visible;
+  }
+
+  .navbar-inverse {
+    position: relative;
+  }
+
+
+
+.navbar {
+/*  position: relative;
+  top: 100px;
+*/}
+
+#section0 {
+padding-top: 0px;
+}
 
 
 

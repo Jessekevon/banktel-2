@@ -21,6 +21,7 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'devise'
 gem 'jquery-ui-rails'
+gem 'chosen-rails'
 
 group :development do
   gem 'better_errors'

@@ -39,12 +39,13 @@
 								 	<%= f.input :email, :required => true, :class => 'form-control input-lg', :placeholder => 'Company email address'  %>
 								 </div>
 								 <div class="col-xs-12 col-md-12">
-								 	<%= f.input :subject, :required => true, :class => 'form-control input-lg', :placeholder => 'Request a product demo'  %>
+								 	<%= f.select :subject, options_for_select(['Request a Product Demo', 'Apply to become a Beta Tester', 'General Inquiry or Question'])
+%>
 
 
 								 </div>
 								 <div class="col-xs-12 col-md-12">
-								 	<%= f.input :message, :as => :text, :required => true, :class => 'form-control input-lg', :placeholder => 'Comments...' %>
+								 	<%= f.input :message, :as => :text, :required => true, :class => 'my_select_box', :placeholder => 'Comments...' %>
 								 </div>
 								</div>	<!-- nested row-->
 								<div class="main-button">
@@ -78,3 +79,6 @@
 </div><!-- about body-->
 <%= render 'layouts/footer' %>
 
+<script type="text/javascript">
+
+</script>
