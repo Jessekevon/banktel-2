@@ -340,19 +340,27 @@ color: #636467;
 
 }
 
-i.phone, i.mail { 
+#number {
+	position: relative;
+}
+
+.icon {
+/*	width: 20px;
+*/}
+
+#phone, #mail { 
 font-family: 'entypo';
 font-style: normal;
 font-size: 44px;
-position: relative;
+/*position: relative;
 right: 14px;
-}
+*/}
 
 .twitter {
-	display: inline-block;
-	position: relative;
+	display: inline;
+/*	position: relative;
 	right: 15px;
-}
+*/}
 
 /*i.twitter {
 font-family: 'entypo-social';
@@ -545,6 +553,7 @@ text-align: center;
 font-size: 36px;
 color: #fff;
 font-weight: 300;
+margin-top: 0px;
 
 }
 
