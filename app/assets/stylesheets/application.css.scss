@@ -84,6 +84,10 @@
 
 @charset "UTF-8";
 
+strong {
+  font-family: 'Open Sans';
+  font-weight: 700;
+}
 
 a {
 transition: .3s ease-in-out;
@@ -325,6 +329,8 @@ height: 100px;
 
 .contact-links {
 padding-bottom: 60px;
+margin-top: -10px;
+
 }
 .contact-links li {
 color: #28b4ab;
@@ -1169,10 +1175,9 @@ i.checkmark {
 }
 
 .bootstrap-select .btn:focus {
-    outline: thin dotted #333333 !important;
-    outline: 5px auto -webkit-focus-ring-color !important;
-    outline-offset: -2px;
-}
+/*    background-color: #28b4ab;
+    color: #fff;
+*/}
 
 .bootstrap-select.btn-group .btn .filter-option {
     display: inline-block;
@@ -1196,9 +1201,15 @@ i.checkmark {
 .bootstrap-select.btn-group .btn:after {
 	font-family: 'entypo';
 	content: "\E764";
-	font-size: 14px;
+	font-size: 35px;
 	position: absolute;
+	top: 0px;
+	right: 15px;
+	color: #c4c4c4;
+
 } 
+
+
 
 .bootstrap-select.btn-group > .disabled,
 .bootstrap-select.btn-group .dropdown-menu li.disabled > a {
@@ -1394,3 +1405,39 @@ i.checkmark {
 
 
 
+.overview-content .dropdown-menu {
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  -webkit-animation: fadein .3s ease-in-out;
+  -moz-animation: fadein .3s ease-in-out;
+  -ms-animation: fadein .3s ease-in-out;
+  -o-animation: fadein .3s ease-in-out;
+  animation: fadein .3s ease-in-out;
+
+}
+
+.overview-content .dropdown-menu li {
+  font-size: 14px;
+  padding: 8px;
+}
+
+.btn .dropdown-toggle .selectpicker .btn-default {
+  padding: 16px;
+  border: 1px solid #333;
+}
+
+.dropdown-menu .btn {
+	color: #cecece;
+
+}
+
+.bootstrap-select > .btn:hover {
+	background-color: #28b4ab;
+	color: #fff;
+
+}
+
+.filter-option {
+	color: #c4c4c4;
+}
