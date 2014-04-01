@@ -11,11 +11,12 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag "application", media: "all"%>
     <%= stylesheet_link_tag "framework_and_overrides", media: "all"%>
-
-    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag :modernizr %>
     <%= csrf_meta_tags %>
   </head>
   <body>
+    <%= javascript_include_tag "application" %>
+
     
     <header>
       <%= render 'layouts/navigation' %>
