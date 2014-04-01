@@ -37,3 +37,8 @@ group :development do
 end
 gem 'jquery_mobile_rails'
 
+group :development, :test do
+gem 'foreman'
+end
+
+
