@@ -2,7 +2,6 @@
 @import "bootstrap";
 
 
-
 // make all images responsive by default
 img {
   @extend .img-responsive;
@@ -155,6 +154,8 @@ margin-bottom: 10px;
 /*width: 100%;
 *//*width: 266px;
 */
+box-shadow:none !important;
+
 }
 
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
@@ -318,12 +319,15 @@ text-align: center;
 vertical-align: middle;
 cursor: pointer;
 background-image: none;
-border: 1px solid transparent;
-white-space: nowrap;
-padding: 6px 12px;
+/*border: 1px solid transparent;
+*/white-space: nowrap;
+padding: 20px;
 font-size: 14px;
 line-height: 1.428571429;
 border-radius: 2px;
+padding: 14px 14px;
+margin-bottom: 5px;
+
 -webkit-user-select: none;
 -moz-user-select: none;
 -ms-user-select: none;
@@ -386,8 +390,8 @@ transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
 strong {
-  font-family:'OpenSans-Semibold';
- font-weight: bold;
+  font-family:'Open Sans';
+ font-weight: 700;
 }
 
 .carousel {
@@ -453,6 +457,10 @@ strong {
   background-color: whitesmoke;
   }
 
+  .dropdown-menu > li > a:focus {
+    background-color: transparent;
+  }
+
   .dropdown-menu > li:nth-child(-n+3) {
     border-bottom: 1px solid #cecece;
   }
@@ -463,10 +471,14 @@ strong {
    border-top-left-radius: 0;
  }
 
+
+.dropdown-menu > li {
+  padding: 16px;
+}
  .dropdown-menu > li > a {
-/*  display: inline-block;
-*/  padding: 20px;
-  clear: both;
+ display: inline;
+/*  padding: 20px;
+*/  clear: both;
   font-weight: normal;
   line-height: 1.428571429;
   white-space: nowrap;
@@ -630,6 +642,39 @@ padding-top: 0px;
 }
 
 }
+
+.overview-content .dropdown-menu {
+  position: absolute;
+  left: 0px;
+  top: 50px;
+}
+
+.overview-content .dropdown-menu li {
+  font-size: 14px;
+  padding: 8px;
+}
+
+.btn .dropdown-toggle .selectpicker .btn-default {
+  padding: 16px;
+  border: 1px solid #333;
+
+}
+
+
+a:focus
+{
+  outline: none;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+
+/*.dropdown-menu > .inner > .selectpicker > ul {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+*/
 
 
 /* Flash messages */

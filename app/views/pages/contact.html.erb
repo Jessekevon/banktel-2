@@ -42,7 +42,6 @@
 								 	<%= f.select :subject, options_for_select(['Request a Product Demo', 'Apply to become a Beta Tester', 'General Inquiry or Question'])
 %>
 
-
 								 </div>
 								 <div class="col-xs-12 col-md-12">
 								 	<%= f.input :message, :as => :text, :required => true, :class => 'my_select_box', :placeholder => 'Comments...' %>
@@ -80,5 +79,14 @@
 <%= render 'layouts/footer' %>
 
 <script type="text/javascript">
+    $(window).on('load', function () {
+
+        $('#contact_subject').selectpicker({
+            'selectedText': 'cat'
+        });
+
+        // $('.selectpicker').selectpicker('hide');
+    });
+</script>
 
 </script>
