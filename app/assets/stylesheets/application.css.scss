@@ -1070,15 +1070,12 @@ i.checkmark {
 	font-size: 24px;
 	color: #28b4ab;
 	position: relative;
-	left: 10px;
 	z-index: 1000;
 	border-radius: 50%;
-	/* border-radius: 66px; */
 	border: 2px solid #28b4ab;
-	/* width: 25px; */
-	/* height: 18px; */
 	padding: 0px 7px;
-
+	top: 0;
+	
 }
 
 #user_email {
@@ -1238,16 +1235,20 @@ i.checkmark {
     content: "\E764";
 */}
 
+
 .bootstrap-select.btn-group .btn:after {
 	font-family: 'entypo';
 	content: "\E764";
 	font-size: 35px;
 	position: absolute;
-	top: 0px;
 	right: 15px;
 	color: #cecece;
+	bottom: 0;
+	bottom: 5px\9; /* IE9 Hack */
 
 } 
+
+
 
 
 
