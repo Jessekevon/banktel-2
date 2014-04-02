@@ -487,7 +487,7 @@ right: 14px;
 	}
 
 	#section4{
-		background-color: #58595B;
+		background-color: #949599;
 	}
 	#section5{
 		background-color: #fff;
@@ -911,6 +911,9 @@ right: 15px;
 .card {
 	height: 436px;
 }
+.computer {
+	height: 401px;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -948,7 +951,10 @@ right: 15px;
 		height: 403px;
 	}
 
+.computer {
+	height: 479px;
 
+}
 
 }
 
@@ -958,6 +964,10 @@ right: 15px;
 		position: relative;
 		top: 50px;
 	}
+
+.computer {
+	height: 493px;
+}	
 
 .computer-purple {
 	height: 493px;
