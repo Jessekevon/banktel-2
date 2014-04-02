@@ -191,7 +191,7 @@ font-size: 23px;
 position: relative;
 bottom: 3px;
 letter-spacing: 1px;
-padding-bottom: 39px;
+padding-bottom: 46px;
 font-weight: 300;
 
 }
@@ -207,6 +207,16 @@ padding: 15px 17px;
 
 .main-button .btn:hover {
 background-color: #28B4AB;
+color: #fff;
+}
+
+.main-button .btn a {
+	color: #28B4AB;
+	text-decoration: none;
+}
+
+
+.main-button .btn:hover a {
 color: #fff;
 }
 
@@ -244,7 +254,7 @@ padding-top: 52px;
 .footer-bottom p {
 color: #333;
 line-height: 26px;
-padding-bottom: 14px;
+padding-bottom: 18px;
 
 
 }
@@ -260,6 +270,10 @@ text-decoration: none;
 
 }
 
+.footer-input {
+	position: relative;
+	top: 7px;
+}
 
 .powered-logo-footer {
 float: left;
@@ -315,7 +329,7 @@ text-align: center;
 /*---------------- CONTACT PAGE STYLES -----------*/
 
 .overview-content li {
-line-height: 40px;
+line-height: 37px;
 font-size: 24px;
 list-style-type: none;
 
@@ -327,31 +341,43 @@ height: 100px;
 }
 
 .contact-links {
-padding-bottom: 60px;
-margin-top: -10px;
+	padding-bottom: 60px;
+	margin-top: -7px;
+	padding-left: 0px;
 
 }
 .contact-links li {
 color: #28b4ab;
 position: relative;
-right: 28px;
+
+
+}
+
+/*.contact-links ul li span { 
+	text-align: center;
+	width: 40px;
+}
+*/
+.support-links {
+	padding-left: 0px;
+	margin-top: -14px;
 
 }
 
 .support-links li {
 position: relative;
-right: 28px;
-color: #636467;
+/*right: 28px;
+*/color: #636467;
+line-height: 39px;
+
 
 }
 
-#number {
+.number {
 	position: relative;
+	left: 2px;
 }
 
-.icon {
-/*	width: 20px;
-*/}
 
 #phone, #mail { 
 font-family: 'entypo';
@@ -361,36 +387,49 @@ font-size: 44px;
 right: 14px;
 */}
 
+#phone {
+	display: inline;
+	position: relative;
+	margin-right: 10px;
+	top: 2px;
+	right: 1px;
+
+
+}
+
+#mail {
+	display: inline;
+	position: relative;
+	right: 5px;
+	top: 4px;
+	margin-right: 5px;
+
+
+}
+
+
 .twitter {
 	display: inline;
+	margin-right: 8px;
+	position: relative;
+	top: 3px;
+	width: 22px;
+	right: 4px;
+}
+
+.twitter-row {
 /*	position: relative;
-	right: 15px;
+	right: 5px;
 */}
 
-/*i.twitter {
-font-family: 'entypo-social';
-font-style: normal;
-position: relative;
-right: 14px;
-
-}
-*/
-/*i.phone:before { 
-content: "\1F4F1"; 
-}
-
-i.mail:before {
-content: "\1F53F";
-}
-
-i.twitter:before {
-content: "\F309";
-}
-*/
 #info {
 	position: relative;
 }
 
+#biz_email {
+	position: relative;
+	top: 5px;
+}
 
 
 /*---------- LANDING PAGE ------------*/
@@ -809,6 +848,8 @@ display: none;
 	}
 
 }
+
+
 @media screen and (max-width: 991px) {
 
 	.header-wrapper h3 {
@@ -860,6 +901,16 @@ display: none;
 	padding: 0px 40px 40px 40px;
 }
 
+.twitter-row {
+/* float: left; */
+/* text-align: center; */
+position: relative;
+right: 15px;
+}
+
+.card {
+	height: 436px;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -869,12 +920,11 @@ display: none;
 	}
 
 
-
 }
 
 @media screen and (min-width: 992px) {
 	.footer-form {
-	 padding-bottom: 65px; 
+		padding-bottom: 72px;
 	}
 
 	.footer .main-button {
@@ -886,11 +936,23 @@ display: none;
 		padding-bottom: 36px;
 	}
 
-/*	#submit-button {
+#submit-button {
 		float: right;
 	}
-*/
 
+	.card {
+		height: 403px;
+	}
+
+
+}
+
+@media screen and (min-width: 1199px) {
+	.card {
+		height: 493px;
+		position: relative;
+		top: 50px;
+	}
 
 
 }
@@ -941,27 +1003,6 @@ display: none;
 	.description-subtext {
 	margin-top: 14%;
 	}
-
-
-/*	.card {
-position: relative;
-bottom: 73px;
-width: 382px;
-height: 439px;
-float: left;
-left: 30px;
-}
-*/
-/*.computer-purple {
-position: relative;
-overflow: visible;
-min-width: 1005px;
-min-height: 600px;
-bottom: 148px;
-float: right;
-left: 61px;
-}
-*/
 
 }
 
@@ -1087,7 +1128,7 @@ i.checkmark {
 
 
 #contact_message {
-	height: 200px;
+	height: 137px;
 	width: 100%;
 }
 
@@ -1204,7 +1245,7 @@ i.checkmark {
 	position: absolute;
 	top: 0px;
 	right: 15px;
-	color: #c4c4c4;
+	color: #cecece;
 
 } 
 
@@ -1363,7 +1404,7 @@ i.checkmark {
 
 .bootstrap-select.btn-group .dropdown-menu .notify {
     position: absolute;
-    bottom: 5px;
+    bottom: 4px;
     width: 96%;
     margin: 0 2%;
     min-height: 26px;
@@ -1416,6 +1457,12 @@ i.checkmark {
 
 }
 
+.filter-option {
+	color: #a8a9ad;
+	font-weight: 300;
+}
+
+
 .overview-content .dropdown-menu li {
   font-size: 14px;
   padding: 8px;
@@ -1432,11 +1479,13 @@ i.checkmark {
 }
 
 .bootstrap-select > .btn:hover {
-	background-color: #28b4ab;
+/*	background-color: #28b4ab;
 	color: #fff;
-
+*/
 }
 
-.filter-option {
-	color: #c4c4c4;
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+color: #cccccc;
+background-color: none;
+border-color: #cccccc; 
 }

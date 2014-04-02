@@ -135,7 +135,7 @@
 	        <div class="item">
 	        		<div class="col-md-1"></div>
 	        	  <div class="accounts-payable col-md-5">
-	        	  	<div class="card"><%=image_tag('invoicing-card.png', :size => '382x439')%>
+	        	  	<div class="card"><%=image_tag('invoicing-card.png', :size => '382x493')%>
 	        	  	</div>
 	        	  </div>
 	        	  <div class="col-md-1"></div>
@@ -249,19 +249,21 @@
 	            <div class="col-md-2"></div>
 	        </div>
 	        <div class="item">
-	        	<div class="accounts-payable col-md-9">
-	        		<div class="card"><%=image_tag('invoicing-card.png', :size => '382x439')%>
-	        		</div>
-	        	</div>
-	        	<div class="description-subtext col-md-3">
-	        	  <p><strong>Custom Expense Dashboards</strong></p>
-	        	  <p class="description-sub"> Lorem ipsum dolor sit amet,consec
-	        	    tetur adipiscing elit. Aenean sit amet dolar Ut enim ad minim veniam, quis nostrud exercitation.
-	        	  </p>
+	        	        	<div class="col-md-1"></div>
+	        	          <div class="accounts-payable col-md-5">
+	        	          	<div class="card"><%=image_tag('invoicing-card.png', :size => '382x439')%>
+	        	          	</div>
+	        	          </div>
+	        	          <div class="col-md-1"></div>
 
+	        	          <div class="description-subtext col-md-3">
+	        		            <p><strong>Tailored invoicing for any business.</strong></p>
+	        		            <p> Lorem ipsum dolor sit amet,consec
+	        		              tetur adipiscing elit. Aenean sit amet dolar
+	        		            </p>
+	        	            </div>
 
-
-	        	</div>
+	        	            <div class="col-md-2"></div>
 	        </div>
 	        <div class="item">
 	        		<div class="col-md-1"></div>
@@ -544,6 +546,7 @@
 
 	<script type="text/javascript">
 
+
 //----------- fullPage.js--------------//
 
 		$(document).ready(function() {
@@ -558,11 +561,11 @@
 // ------------- TOUCH SWIPE ----------------//
 
   $(document).ready(function() {  
-       $("#myCarousel1, #myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5").swiperight(function() {  
+       $("#myCarousel1, #myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5").swipe(function() {  
           $(this).carousel('prev');  
           });  
 
-       $("#myCarousel1, #myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5").swipeleft(function() {  
+       $("#myCarousel1, #myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5").swipe(function() {  
           $(this).carousel('next');  
      });  
 

@@ -48,7 +48,10 @@ h4 {
   letter-spacing: 1px;
 }
 
+.btn-default {
+  background-color: #f2f2f2;
 
+}
 //THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
@@ -148,15 +151,14 @@ input, button, select, textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-/*padding: 14px 43px;
-margin-bottom: 10px;
-*/
-  padding: 14px 14px;
+  padding: 14px;
   margin-bottom: 10px;
-/*width: 100%;
-*//*width: 266px;
-*/
+  /* width: 100%; */
+  /* width: 266px; */
   box-shadow: none !important;
+  background-color: #f2f2f2;
+  border-radius: 2px;
+  border: 1px solid #cccccc;
 }
 
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
@@ -295,6 +297,10 @@ label {
   background-color: #28b4ab;
 }
 
+
+.carousel img {
+
+}
 /*------------------------- Buttons and form inputs-------------------*/
 
 .alert-danger {
@@ -426,7 +432,7 @@ label {
 .dropdown-menu:after {
   content: "";
   position: absolute;
-  left: 90px;
+  left: 95px;
   border-style: solid;
   border-color: #fff transparent;
   display: block;

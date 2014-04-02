@@ -42,5 +42,6 @@ gem 'foreman'
 end
 
 gem 'modernizr-rails'
+gem 'sendgrid'
 
 

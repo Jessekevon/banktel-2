@@ -40,14 +40,14 @@
           <div class="col-md-6">
               <div class="row">
                 <%= simple_form_for Contact.new do |f| %>
-                    <div class="col-sm-5 footer-form">
+                    <div class="col-sm-5 footer-form footer-input">
                       <%= f.input :name, :required => true, :class => 'form-control input-lg', :placeholder => 'First & Last Name'  %>
                      </div>
-                    <div class="col-sm-5">
+                    <div class="col-sm-5 footer-input">
                       <%= f.input :email, :required => true, :class => 'form-control input-lg', :placeholder => 'Company email address'  %>
                     </div>
                     <div class="col-sm-1 main-button">
-                      <%= f.button :submit, 'Submit', :class=> 'btn', :id => 'submit-button' %>
+                      <%= f.button :submit, 'Submit', :class=> 'btn'%>
                     </div>
                     <% end %>
               </div><!-- nested row-->
