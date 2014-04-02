@@ -944,6 +944,11 @@ right: 15px;
 		height: 403px;
 	}
 
+	.computer-purple {
+		height: 403px;
+	}
+
+
 
 }
 
@@ -954,6 +959,9 @@ right: 15px;
 		top: 50px;
 	}
 
+.computer-purple {
+	height: 493px;
+}
 
 }
 
@@ -1074,8 +1082,9 @@ i.checkmark {
 	border-radius: 50%;
 	border: 2px solid #28b4ab;
 	padding: 0px 7px;
+	padding: 0px 9px 8px 9px\9; /* IE ONLY */
 	top: 0;
-	
+
 }
 
 #user_email {
