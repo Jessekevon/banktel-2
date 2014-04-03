@@ -477,8 +477,8 @@ right: 14px;
 .the-graph {
 	width: 80%;
 	height: auto;
-	padding-top: 20px;
-}
+/*	padding-top: 20px;
+*/}
 
 .graph {
 	width: 65%;
@@ -967,8 +967,11 @@ right: 15px;
 }
 
 .welcome {
-	max-height: 225px;
-
+	max-height: 255px;
+}
+.the-graph {
+width: 90%;
+height: auto;
 }
 
 }
@@ -1039,10 +1042,6 @@ right: 15px;
 .computer {
 	height: 493px;
 }	
-
-.computer-purple {
-	height: 493px;
-}
 
 .welcome {
 	max-height: 340px; 
