@@ -434,6 +434,19 @@ right: 14px;
 
 /*---------- LANDING PAGE ------------*/
 
+.the-graph {
+	width: 80%;
+	height: auto;
+	padding-top: 20px;
+}
+
+.graph {
+	width: 65%;
+	height: auto;
+	padding-top: 20px;
+}
+
+
 /* Landing sections */
 
 /**
@@ -603,32 +616,11 @@ margin-top: 0px;
 
 .welcome {
 background-color: #EFEFEF;
-padding-top: 20px;
 overflow: hidden;
-max-height: 100%;
-max-width: 100%;
-
-
 }
 
 .welcome.top-graph {
 position: relative;
-padding-top: 20px;
-}
-
-.top-graph {
-/*	width: 100%;
-	height: auto;
-*/}
-
-.the-graph {
-	width: 80%;
-	height: auto;
-}
-
-.graph {
-	width: 50%;
-	height: auto;
 }
 
 .section-1 {
@@ -967,10 +959,6 @@ right: 15px;
 		height: 403px;
 	}
 
-	.computer-purple {
-		height: 403px;
-	}
-
 .computer {
 	height: 403px;
 
@@ -985,6 +973,17 @@ right: 15px;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
+	.welcome {
+		max-height: 300px; 
+	}
+
+}
+@media screen and (min-width: 1025px) {
+	.welcome {
+		max-height: 390px;
+	}
+
+
 }
 
 
@@ -1003,19 +1002,6 @@ right: 15px;
 	height: 493px;
 }
 
-/*.the-graph {
-	width: 80%;
-}
-.graph {
-	width: 50%;
-	height: auto;
-}
-
-.welcome {
-	max-height: 100%;
-	height: auto;
-}
-*/
 
 }
 
