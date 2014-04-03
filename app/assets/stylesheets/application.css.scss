@@ -611,8 +611,23 @@ overflow: hidden;
 
 .welcome.top-graph {
 position: relative;
-padding-top: 132px;
+padding-top: 74px;
 }
+
+.welcome {
+	max-height: 426px;
+	max-width: 100%;
+}
+.top-graph {
+	width: 100%;
+	height: auto;
+}
+
+.graph {
+	width: 700px;
+	height: auto;
+}
+
 .section-1 {
 	display: table;
 	width: 100%;
