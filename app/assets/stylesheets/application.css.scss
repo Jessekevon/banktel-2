@@ -604,8 +604,10 @@ margin-top: 0px;
 .welcome {
 background-color: #EFEFEF;
 padding-top: 20px;
-max-height: 431px;
 overflow: hidden;
+max-height: 100%;
+max-width: 100%;
+
 
 }
 
@@ -614,10 +616,6 @@ position: relative;
 padding-top: 20px;
 }
 
-.welcome {
-	max-height: 426px;
-	max-width: 100%;
-}
 .top-graph {
 /*	width: 100%;
 	height: auto;
@@ -934,6 +932,8 @@ right: 15px;
 .computer {
 	height: 401px;
 }
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -976,7 +976,17 @@ right: 15px;
 
 }
 
+.computer-subtext {
+	margin-left: -65px;
+	margin-top: 80px;
 }
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+}
+
 
 @media screen and (min-width: 1199px) {
 	.card {
@@ -992,6 +1002,20 @@ right: 15px;
 .computer-purple {
 	height: 493px;
 }
+
+/*.the-graph {
+	width: 80%;
+}
+.graph {
+	width: 50%;
+	height: auto;
+}
+
+.welcome {
+	max-height: 100%;
+	height: auto;
+}
+*/
 
 }
 
