@@ -271,6 +271,9 @@ padding-bottom: 18px;
 .footer-bottom .main-button {
 	position: relative;
 	top: 5px;
+	padding: 11px 17px 13px 17px;
+	margin-left: -6px;
+
 }
 
 a.footer-link {
@@ -1006,9 +1009,14 @@ right: 15px;
 
 }
 
-.description-subtext {
+.computer-subtext {
 	margin-left: -65px;
 	margin-top: 80px;
+}
+
+.description-subtext {
+	margin-top: 80px;
+
 }
 
 .welcome {
@@ -1160,7 +1168,7 @@ i.checkmark {
 	position: relative;
 	z-index: 1000;
 	border-radius: 50%;
-	border: 2px solid #28b4ab;
+	border: 1px solid #28b4ab;
 	padding: 0px 7px;
 	padding: 0px 9px 8px 9px\9; /* IE ONLY */
 	top: 0;
