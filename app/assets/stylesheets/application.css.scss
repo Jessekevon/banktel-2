@@ -940,19 +940,15 @@ display: none;
 	padding-bottom: 58px;
 }
 
-/*.main-button {
-	margin: 15px 0;
-}
-*/
 .description-subtext {
 	padding: 40px 40px 0px 40px;
 	}
-
+/*
 #section3 .description-subtext {
 	padding: 0px 40px 40px 40px;
 }
 
-.twitter-row {
+*/.twitter-row {
 /* float: left; */
 /* text-align: center; */
 position: relative;
@@ -972,6 +968,7 @@ right: 15px;
 .the-graph {
 width: 90%;
 height: auto;
+padding-top: 20px;
 }
 
 }
