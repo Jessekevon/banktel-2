@@ -79,7 +79,7 @@ Banktel2::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   config.action_mailer.default_url_options = { :host => 'banktel.herokuapp.com' }
-
+Rails.application.routes.default_url_options[:host] = 'banktel.herokuapp.com'
 
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.perform_deliveries = true
@@ -95,6 +95,13 @@ enable_starttls_auto: true,
 user_name: ENV["GMAIL_USERNAME"],
 password: ENV["GMAIL_PASSWORD"]
 
+# :address              => "smtp.gmail.com",
+# :port                 => 587,
+# :domain               => ENV["GMAIL_DOMAIN"]
+# :user_name            => ENV["GMAIL_ACCOUNT"],
+# :password             => ENV["GMAIL_PASSWORD"],
+# :authentication       => "plain",
+# :enable_starttls_auto => true
 
 }
 
