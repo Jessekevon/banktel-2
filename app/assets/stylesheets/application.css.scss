@@ -603,7 +603,7 @@ margin-top: 0px;
 
 .welcome {
 background-color: #EFEFEF;
-padding-top: 5px;
+padding-top: 20px;
 max-height: 431px;
 overflow: hidden;
 
@@ -611,7 +611,7 @@ overflow: hidden;
 
 .welcome.top-graph {
 position: relative;
-padding-top: 74px;
+padding-top: 20px;
 }
 
 .welcome {
@@ -619,12 +619,17 @@ padding-top: 74px;
 	max-width: 100%;
 }
 .top-graph {
-	width: 100%;
+/*	width: 100%;
+	height: auto;
+*/}
+
+.the-graph {
+	width: 80%;
 	height: auto;
 }
 
 .graph {
-	width: 700px;
+	width: 50%;
 	height: auto;
 }
 
@@ -962,6 +967,9 @@ right: 15px;
 		height: 403px;
 	}
 
+	.computer-purple {
+		height: 403px;
+	}
 
 .computer {
 	height: 403px;
@@ -974,7 +982,7 @@ right: 15px;
 	.card {
 		height: 493px;
 		position: relative;
-		top: 50px;
+		top: 15px;
 	}
 
 .computer {
