@@ -243,6 +243,17 @@ padding-bottom: 46px;
 
 }
 
+.footer-top a {
+	color: #fff;
+}
+
+.footer-top a:hover {
+	opacity: 0.7;
+	text-decoration: none;
+	color: #636467;
+
+}
+
 
 
 .footer-bottom {
@@ -430,6 +441,27 @@ right: 14px;
 	position: relative;
 	top: 5px;
 }
+
+.contact-links a {
+	color: #28b4ab;
+
+}
+.contact-links a:hover {
+	opacity: 0.7;
+	text-decoration: none;
+	color: #28b4ab;
+}
+
+
+.support-links a {
+	color: #636467;
+	}
+	.support-links a:hover {
+		opacity: 0.7;
+		text-decoration: none;
+		color: #636467;
+	}
+
 
 
 /*---------- LANDING PAGE ------------*/
