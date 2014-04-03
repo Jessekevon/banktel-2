@@ -529,16 +529,15 @@
 
 // ------------- TOUCH SWIPE ----------------//
 
-  $(document).ready(function() {  
-       $("#myCarousel1, #myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5").swipe(function() {  
-          $(this).carousel('prev');  
-          });  
-
-       $("#myCarousel1, #myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5").swipe(function() {  
-          $(this).carousel('next');  
-     });  
-
-  });  
+	$('#myCarousel1').swipe( {
+	    swipeLeft: function() {
+	        $(this).carousel('next');
+	    },
+	    swipeRight: function() {
+	        $(this).carousel('prev');
+	    },
+	    allowPageScroll: 'vertical'
+	});
 
   $('input, textarea').placeholder();
 
