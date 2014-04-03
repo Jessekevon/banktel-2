@@ -437,7 +437,7 @@ right: 14px;
 .the-graph {
 	width: 80%;
 	height: auto;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 
 .graph {
@@ -969,19 +969,9 @@ right: 15px;
 	margin-top: 80px;
 }
 
-
+.welcome {
+	max-height: 300px; 
 }
-
-@media screen and (min-width: 992px) and (max-width: 1024px) {
-	.welcome {
-		max-height: 300px; 
-	}
-
-}
-@media screen and (min-width: 1025px) {
-	.welcome {
-		max-height: 390px;
-	}
 
 
 }
@@ -1000,6 +990,10 @@ right: 15px;
 
 .computer-purple {
 	height: 493px;
+}
+
+.welcome {
+	max-height: 360px; 
 }
 
 
@@ -1051,6 +1045,11 @@ right: 15px;
 	.description-subtext {
 	margin-top: 14%;
 	}
+
+	.welcome {
+		max-height: 418px; 
+	}
+
 
 }
 
