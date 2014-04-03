@@ -202,7 +202,7 @@ border: 2px solid #28B4AB;
 position: relative;
 font-size: 16px;
 font-weight: 600;
-padding: 15px 17px;
+padding: 12px 17px;
 }
 
 .main-button .btn:hover {
@@ -266,8 +266,11 @@ padding-top: 52px;
 color: #333;
 line-height: 26px;
 padding-bottom: 18px;
+}
 
-
+.footer-bottom .main-button {
+	position: relative;
+	top: 5px;
 }
 
 a.footer-link {
@@ -304,7 +307,9 @@ font-style: italic;
 font-size: 12px;
 }
 
+input.btn {
 
+}
 /*---------------- ABOUT PAGE STYLES -----------*/
 
 .first-row {
@@ -493,8 +498,9 @@ right: 14px;
 	/* Centered texts in each section 
 	* --------------------------------------- */
 	.section{
-/*		text-align:center;
-*/	}
+background-color: #949599;
+
+	}
 	
 	
 	/* Backgrounds will cover all the section
