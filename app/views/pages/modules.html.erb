@@ -523,19 +523,14 @@
 
 		$('#myCarousel1').swipe( {
 		   swipeLeft: function() {
-		       $(this).carousel('next'),
-		       $.fn.fullpage.jsetAllowScrolling(false);
-		       $.fn.fullpage.jsetAllowScrolling(true);
-		       
+		       $(this).carousel('next');		       
 		   },
-
+		   
 		   swipeRight: function() {
-		       $(this).carousel('prev'),
-		       $.fn.fullpage.jsetAllowScrolling(false);
-		       $.fn.fullpage.jsetAllowScrolling(true);
-
+		       $(this).carousel('prev');
 		   },
-		   allowPageScroll: 'vertical'
+		   $.fn.fullpage.jsetAllowScrolling(false);
+		   $.fn.fullpage.jsetAllowScrolling(true);
 		});
 
 // ------------- Placeholder Fallback for IE ------------ //
