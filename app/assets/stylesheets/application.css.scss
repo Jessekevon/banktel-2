@@ -883,12 +883,36 @@ display: none;
 }
 }
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
-/* Styles */
+@media screen and (max-width: 767px) {
+	.section-1 h3 {
+		font-size: 26px;
+	}
+
+	.section-1-subtext {
+	font-size: 14px;
+	line-height: 21px;
+	}
+
+h3.section-content {
+	font-size: 26px;
 
 }
+.description-subtext p {
+font-size: 14px;
+line-height: 23px;
+}
 
+.landing-page-footer {
+	position: relative;
+}
+
+.card-img {
+	height: 299px;
+	width: auto;
+}
+
+
+}
 
 @media screen and (min-width: 600px) and (max-width: 991px) {
 	.description-subtext p {
@@ -897,13 +921,19 @@ display: none;
 
 	}
 
+	#myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5 {
+		height: 600px;
+	}
+
+	.card-img {
+		height: 398px;
+		width: auto;
+	}
+
 }
 
 
 @media screen and (max-width: 991px) {
-	#myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5 {
-		height: 600px;
-	}
 
 	.header-wrapper h3 {
 		font-size: 31px;
@@ -960,10 +990,6 @@ right: 15px;
 .card {
 }
 
-.card-img {
-	height: 398px;
-	width: auto;
-}
 
 /*.computer {
 	height: 401px;
