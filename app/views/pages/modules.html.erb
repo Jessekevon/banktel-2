@@ -521,14 +521,21 @@
 
 // ------------- TOUCH SWIPE ----------------//
 
+
+		$('#myCarousel1').swipe(function() {
+			   	$.fn.fullpage.jsetAllowScrolling(false);
+			   	$.fn.fullpage.jsetAllowScrolling(true);   
+		   },
+		});
+
 		$('#myCarousel1').swipe( {
 		   swipeLeft: function() {
 		       $(this).carousel('next');		       
 		   },
-
 		   swipeRight: function() {
 		       $(this).carousel('prev');
 		   },
+		   allowPageScroll: 'vertical'
 		});
 
 // ------------- Placeholder Fallback for IE ------------ //
