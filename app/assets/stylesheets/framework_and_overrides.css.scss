@@ -304,10 +304,11 @@ label {
 /*------------------------- Buttons and form inputs-------------------*/
 
 .alert-danger {
-  margin-top: 20px;
-  background-color: #28B4AB;
-  border-color: #28B4AB;
-  color: #fff;
+margin-top: 20px;
+background-color: transparent;
+border-color: transparent;
+color: #fff;
+text-align: center;
 }
 
 .btn, .submit {
