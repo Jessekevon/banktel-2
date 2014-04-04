@@ -523,10 +523,15 @@
 
 		$('#myCarousel1').swipe( {
 		   swipeLeft: function() {
-		       $(this).carousel('next');		       
+		       $(this).carousel('next'),
+		       jsetAllowScrolling(false),
+		       jsetAllowScrolling(true);		       
 		   },
 		   swipeRight: function() {
-		       $(this).carousel('prev');
+		       $(this).carousel('prev'),
+		       jsetAllowScrolling(false),
+		       jsetAllowScrolling(true);		       
+
 		   },
 		   allowPageScroll: 'vertical'
 		});

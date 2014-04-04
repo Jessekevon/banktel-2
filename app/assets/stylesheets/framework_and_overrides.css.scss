@@ -545,7 +545,9 @@ text-align: center;
     padding: 18px 23px;
     line-height: 20px;
   }
-
+.nav > li {
+  top: 0px;
+}
   .nav > li > a {
     position: relative;
     display: block;
@@ -596,11 +598,18 @@ text-align: center;
 
   .navbar-inverse {
     position: absolute;
+    padding-bottom: 0px;
   }
 
   #section0 {
     padding-top: 0px;
   }
+
+  li.log-out.btn-sm, .btn-group-sm > li.log-out.btn, .btn-group-sm > li.log-out.submit {
+    position: absolute;
+  top: -45px;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
