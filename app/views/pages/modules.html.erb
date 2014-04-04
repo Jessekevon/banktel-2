@@ -523,18 +523,17 @@
 
 		$('#myCarousel1').swipe( {
 		   swipeLeft: function() {
-		       $(this).carousel('next'),
-		       jsetAllowScrolling(false),
-		       jsetAllowScrolling(true);		       
+		       $(this).carousel('next');		       
 		   },
 		   swipeRight: function() {
-		       $(this).carousel('prev'),
-		       jsetAllowScrolling(false),
-		       jsetAllowScrolling(true);		       
-
+		       $(this).carousel('prev');
 		   },
-		   allowPageScroll: 'vertical'
+		   allowPageScroll: 'vertical',
+		   jsetAllowScrolling: false,
+		   jsetAllowScrolling: true
 		});
+
+
 
 // ------------- Placeholder Fallback for IE ------------ //
 
