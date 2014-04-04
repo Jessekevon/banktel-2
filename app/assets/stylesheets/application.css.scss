@@ -559,9 +559,6 @@ background-color: #949599;
 
 }
 
-#myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5 {
-/*	min-height: 523px;
-*/}
  
  	/*Adding background for the slides
 	* --------------------------------------- */
@@ -894,7 +891,7 @@ display: none;
 @media screen and (min-width: 600px) and (max-width: 991px) {
 	.description-subtext p {
 		text-align: center;
-		padding: 0px 123px;
+		padding: 0px 118px;
 
 	}
 
@@ -902,6 +899,9 @@ display: none;
 
 
 @media screen and (max-width: 991px) {
+	#myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5 {
+		height: 600px;
+	}
 
 	.header-wrapper h3 {
 		font-size: 31px;
@@ -956,12 +956,17 @@ right: 15px;
 }
 
 .card {
-	height: 436px;
-}
-.computer {
-	height: 401px;
 }
 
+.card-img {
+	height: 398px;
+	width: auto;
+}
+
+/*.computer {
+	height: 401px;
+}
+*/
 .welcome {
 	max-height: 255px;
 }
