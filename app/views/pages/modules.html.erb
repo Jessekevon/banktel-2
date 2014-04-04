@@ -505,7 +505,7 @@
 
 </div>
 
-	<script type="text/javascript">
+<script type="text/javascript">
 
 
 //----------- fullPage.js--------------//
@@ -521,20 +521,24 @@
 
 // ------------- TOUCH SWIPE ----------------//
 
-	// $('#myCarousel1').swipe( {
-	//     swipeLeft: function() {
-	//         $(this).carousel('next');
-	//         $.fn.fullpage.jsetAllowScrolling(false);
-	//         $.fn.fullpage.jsetAllowScrolling(true);
-	//     },
-	//     swipeRight: function() {
-	//         $(this).carousel('prev');
-	//         $.fn.fullpage.jsetAllowScrolling(false);
-	//         $.fn.fullpage.jsetAllowScrolling(true);
+		$('#myCarousel1').swipe( {
+		   swipeLeft: function() {
+		       $(this).carousel('next'),
+		       $.fn.fullpage.jsetAllowScrolling(false);
+		       $.fn.fullpage.jsetAllowScrolling(true);
+		       
+		   },
 
-	//     },
-	//     allowPageScroll: 'vertical'
-	// });
+		   swipeRight: function() {
+		       $(this).carousel('prev'),
+		       $.fn.fullpage.jsetAllowScrolling(false);
+		       $.fn.fullpage.jsetAllowScrolling(true);
+
+		   },
+		   allowPageScroll: 'vertical'
+		});
+
+// ------------- Placeholder Fallback for IE ------------ //
 
   $('input, textarea').placeholder();
 
