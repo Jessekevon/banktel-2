@@ -11,11 +11,8 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
 //= require jquery.ui.all
 //= require bootstrap
-//= require chosen-jquery
-
 //= require_tree .
 
 
@@ -781,7 +778,7 @@
 					//up
 					case 38:
 					case 33:
-						$.fn.fullpage.moveSectionUp();
+						$.fn.fullpage. moveSectionUp();
 						break;
 
 					//down
