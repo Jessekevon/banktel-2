@@ -334,8 +334,8 @@ height: auto;
 
 .table {
 position: relative;
-top: 8px;
-}
+/*top: 8px;
+*/}
 
 
 .table th {
@@ -563,6 +563,11 @@ background-color: #949599;
 	background-color: #fff;
 	padding-top: 52px;
 
+}
+
+.landing-page-footer p {
+/*	line-height: 26px;
+*/
 }
 
  
@@ -949,6 +954,14 @@ line-height: 23px;
 
 @media screen and (max-width: 991px) {
 
+	.about-body {
+		padding-bottom: 30px;
+	}
+
+	.table-responsive {
+		padding-bottom: 10px;
+	}
+
 	.header-wrapper h3 {
 		font-size: 31px;
 	}
@@ -980,7 +993,7 @@ line-height: 23px;
 }
 
 .first-row, .second-row {
-	padding-bottom: 58px;
+	padding-bottom: 50px;
 }
 
 .description-subtext {
