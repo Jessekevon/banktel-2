@@ -382,6 +382,14 @@ text-align: center;
   box-shadow: none;
 }
 
+.dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: 50px;
+bottom: auto;
+margin-bottom: 1px;
+}
+
+
+
 /*---------------------- Dropdown Menu ----------------*/
 
 .dropdown-menu {

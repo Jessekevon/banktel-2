@@ -345,6 +345,10 @@ text-align: center;
 
 }
 
+/*.about-body .second-row {
+	margin-top: -30px;
+}
+*/
 /*---------------- CONTACT PAGE STYLES -----------*/
 
 .overview-content li {
@@ -910,9 +914,6 @@ line-height: 23px;
 	width: auto;
 }
 
-.new_contact {
-	display: none;
-}
 
 #module-biz {
 	display: none;
@@ -936,6 +937,11 @@ line-height: 23px;
 		height: 398px;
 		width: auto;
 	}
+
+	.footer-bottom .main-button {
+		padding: 0;
+	}
+
 
 }
 
@@ -967,9 +973,6 @@ line-height: 23px;
 	float: none;
 }
 
-.footer-bottom .main-button {
-	padding: 0;
-}
 
 .contact-links, .support-links {
 	text-align: center;
@@ -997,6 +1000,9 @@ right: 15px;
 .card {
 }
 
+.feature-button {
+	text-align: center;
+}
 
 /*.computer {
 	height: 401px;
@@ -1010,6 +1016,11 @@ width: 90%;
 height: auto;
 padding-top: 20px;
 }
+
+.banktel-wireframe {
+	padding-bottom: 50px;
+}
+
 
 }
 
@@ -1061,6 +1072,15 @@ padding-top: 20px;
 
 .welcome {
 	max-height: 270px;
+}
+
+.about-body .second-row {
+margin-top:-40px;
+}
+
+.table {
+position: relative;
+margin-left: 78px;
 }
 
 
@@ -1637,3 +1657,5 @@ color: #cccccc;
 background-color: none;
 border-color: #cccccc; 
 }
+
+
