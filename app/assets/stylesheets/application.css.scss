@@ -1389,6 +1389,10 @@ i.checkmark {
     width: 100%\0; /*IE9 and below*/
 }
 
+.bootstrap-select > li > a {
+	display: block;
+}
+
 .bootstrap-select.form-control:not([class*="span"]) {
     width: 100%;
 }
@@ -1500,7 +1504,7 @@ i.checkmark {
     padding-left: 35px;
 }
 
-.bootstrap-select.btn-group .dropdown-menu li > a {
+.bootstrap-select.btn-group .dropdown-menu li {
     cursor: pointer;
 }
 
@@ -1661,7 +1665,7 @@ i.checkmark {
 
 .overview-content .dropdown-menu li {
   font-size: 14px;
-  padding: 8px;
+  padding: 14px 0px;
 }
 
 .btn .dropdown-toggle .selectpicker .btn-default {

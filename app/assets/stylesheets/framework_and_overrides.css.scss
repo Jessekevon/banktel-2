@@ -645,6 +645,11 @@ a:focus {
 
 /* --------------------- Flash messages----------------------------- */
 
+.bootstrap-select .dropdown-menu > li > a {
+  display: block;
+}
+
+
 
 p.notice {
   color: #fff;
