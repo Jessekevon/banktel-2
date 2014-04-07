@@ -836,132 +836,132 @@
 		/**
 		 * Scrolling horizontally when clicking on the slider controls.
 		 */
-		$('.section').on('click', '.controlArrow', function() {
-			//not that fast my friend! :)
-			if (slideMoving) {
-				return;
-			}
-			slideMoving = true;
+		// $('.section').on('click', '.controlArrow', function() {
+		// 	//not that fast my friend! :)
+		// 	if (slideMoving) {
+		// 		return;
+		// 	}
+		// 	slideMoving = false;
 
-			var slides = $(this).closest('.section').find('.slides');
-			var currentSlide = slides.find('.slide.active');
-			var destiny = null;
+		// 	var slides = $(this).closest('.section').find('.slides');
+		// 	var currentSlide = slides.find('.slide.active');
+		// 	var destiny = null;
 
-			if ($(this).hasClass('prev')) {
-				destiny = currentSlide.prev('.slide');
-			} else {
-				destiny = currentSlide.next('.slide');
-			}
+		// 	if ($(this).hasClass('prev')) {
+		// 		destiny = currentSlide.prev('.slide');
+		// 	} else {
+		// 		destiny = currentSlide.next('.slide');
+		// 	}
 
-			//is there isn't a next slide in the secuence?
-			if(!destiny.length) {
-				//to the last
-				if ($(this).hasClass('prev')) {
-					destiny = currentSlide.siblings(':last');
-				} else {
-					destiny = currentSlide.siblings(':first');
-				}	
-			}
+		// 	//is there isn't a next slide in the secuence?
+		// 	if(!destiny.length) {
+		// 		//to the last
+		// 		if ($(this).hasClass('prev')) {
+		// 			destiny = currentSlide.siblings(':last');
+		// 		} else {
+		// 			destiny = currentSlide.siblings(':first');
+		// 		}	
+		// 	}
 
-			landscapeScroll(slides, destiny);
-		});
+		// 	landscapeScroll(slides, destiny);
+		// });
 
 		
 		/**
 		 * Scrolling horizontally when clicking on the slider controls.
 		 */
-		$('.section').on('click', '.toSlide', function(e) {
-			e.preventDefault();
+		// $('.section').on('click', '.toSlide', function(e) {
+		// 	e.preventDefault();
 			
-			var slides = $(this).closest('.section').find('.slides');
-			var currentSlide = slides.find('.slide.active');
-			var destiny = null;
+		// 	var slides = $(this).closest('.section').find('.slides');
+		// 	var currentSlide = slides.find('.slide.active');
+		// 	var destiny = null;
 			
-			destiny = slides.find('.slide').eq( ($(this).data('index') -1) );
+		// 	destiny = slides.find('.slide').eq( ($(this).data('index') -1) );
 
-			if(destiny.length > 0){
-				landscapeScroll(slides, destiny);
-			}
-		});
+		// 	if(destiny.length > 0){
+		// 		landscapeScroll(slides, destiny);
+		// 	}
+		// });
 		
 		/**
 		* Scrolls horizontal sliders.
 		*/
-		function landscapeScroll(slides, destiny){
-			var destinyPos = destiny.position();
-			var slidesContainer = slides.find('.slidesContainer').parent();
-			var slideIndex = destiny.index();
-			var section = slides.closest('.section');
-			var sectionIndex = section.index('.section');
-			var anchorLink = section.data('anchor');
-			var slidesNav = section.find('.fullPage-slidesNav');
-			var slideAnchor = destiny.data('anchor');
+		// function landscapeScroll(slides, destiny){
+		// 	var destinyPos = destiny.position();
+		// 	var slidesContainer = slides.find('.slidesContainer').parent();
+		// 	var slideIndex = destiny.index();
+		// 	var section = slides.closest('.section');
+		// 	var sectionIndex = section.index('.section');
+		// 	var anchorLink = section.data('anchor');
+		// 	var slidesNav = section.find('.fullPage-slidesNav');
+		// 	var slideAnchor = destiny.data('anchor');
 	
-			//caching the value of isResizing at the momment the function is called 
-			//because it will be checked later inside a setTimeout and the value might change
-			var localIsResizing = isResizing; 
+		// 	//caching the value of isResizing at the momment the function is called 
+		// 	//because it will be checked later inside a setTimeout and the value might change
+		// 	var localIsResizing = isResizing; 
 
-			if(options.onSlideLeave){
-				var prevSlideIndex = section.find('.slide.active').index();
-				var xMovement = getXmovement(prevSlideIndex, slideIndex);
+		// 	if(options.onSlideLeave){
+		// 		var prevSlideIndex = section.find('.slide.active').index();
+		// 		var xMovement = getXmovement(prevSlideIndex, slideIndex);
 
-				//if the site is not just resizing and readjusting the slides
-				if(!localIsResizing){
-					$.isFunction( options.onSlideLeave ) && options.onSlideLeave.call( this, anchorLink, (sectionIndex + 1), prevSlideIndex, xMovement);
-				}
-			}
+		// 		//if the site is not just resizing and readjusting the slides
+		// 		if(!localIsResizing){
+		// 			$.isFunction( options.onSlideLeave ) && options.onSlideLeave.call( this, anchorLink, (sectionIndex + 1), prevSlideIndex, xMovement);
+		// 		}
+		// 	}
 	
-			destiny.addClass('active').siblings().removeClass('active');
+		// 	destiny.addClass('active').siblings().removeClass('active');
 
 			
-			if(typeof slideAnchor === 'undefined'){
-				slideAnchor = slideIndex;
-			}
+		// 	if(typeof slideAnchor === 'undefined'){
+		// 		slideAnchor = slideIndex;
+		// 	}
 			
-			//only changing the URL if the slides are in the current section (not for resize re-adjusting)
-			if(section.hasClass('active')){
+		// 	//only changing the URL if the slides are in the current section (not for resize re-adjusting)
+		// 	if(section.hasClass('active')){
 			
-				if(!options.loopHorizontal){
-					//hidding it for the fist slide, showing for the rest
-					section.find('.controlArrow.prev').toggle(slideIndex!=0);
+		// 		if(!options.loopHorizontal){
+		// 			//hidding it for the fist slide, showing for the rest
+		// 			section.find('.controlArrow.prev').toggle(slideIndex!=0);
 
-					//hidding it for the last slide, showing for the rest
-					section.find('.controlArrow.next').toggle(!destiny.is(':last-child'));
-				}
+		// 			//hidding it for the last slide, showing for the rest
+		// 			section.find('.controlArrow.next').toggle(!destiny.is(':last-child'));
+		// 		}
 
-				setURLHash(slideIndex, slideAnchor, anchorLink);				
-			}			
+		// 		setURLHash(slideIndex, slideAnchor, anchorLink);				
+		// 	}			
 
-			if(options.css3){
-				var translate3d = 'translate3d(-' + destinyPos.left + 'px, 0px, 0px)';
+		// 	if(options.css3){
+		// 		var translate3d = 'translate3d(-' + destinyPos.left + 'px, 0px, 0px)';
 
-				slides.find('.slidesContainer').toggleClass('easing', options.scrollingSpeed>0).css(getTransforms(translate3d));
+		// 		slides.find('.slidesContainer').toggleClass('easing', options.scrollingSpeed>0).css(getTransforms(translate3d));
 
-				setTimeout(function(){
-					//if the site is not just resizing and readjusting the slides
-					if(!localIsResizing){
-						$.isFunction( options.afterSlideLoad ) && options.afterSlideLoad.call( this, anchorLink, (sectionIndex + 1), slideAnchor, slideIndex );
-					}
+		// 		setTimeout(function(){
+		// 			//if the site is not just resizing and readjusting the slides
+		// 			if(!localIsResizing){
+		// 				$.isFunction( options.afterSlideLoad ) && options.afterSlideLoad.call( this, anchorLink, (sectionIndex + 1), slideAnchor, slideIndex );
+		// 			}
 
-					slideMoving = false;
-				}, options.scrollingSpeed, options.easing);
-			}else{
-				slidesContainer.animate({
-					scrollLeft : destinyPos.left
-				}, options.scrollingSpeed, options.easing, function() {
+		// 			slideMoving = false;
+		// 		}, options.scrollingSpeed, options.easing);
+		// 	}else{
+		// 		slidesContainer.animate({
+		// 			scrollLeft : destinyPos.left
+		// 		}, options.scrollingSpeed, options.easing, function() {
 
-					//if the site is not just resizing and readjusting the slides
-					if(!localIsResizing){
-						$.isFunction( options.afterSlideLoad ) && options.afterSlideLoad.call( this, anchorLink, (sectionIndex + 1), slideAnchor, slideIndex);
-					}	
-					//letting them slide again
-					slideMoving = false; 
-				});
-			}
+		// 			//if the site is not just resizing and readjusting the slides
+		// 			if(!localIsResizing){
+		// 				$.isFunction( options.afterSlideLoad ) && options.afterSlideLoad.call( this, anchorLink, (sectionIndex + 1), slideAnchor, slideIndex);
+		// 			}	
+		// 			//letting them slide again
+		// 			slideMoving = false; 
+		// 		});
+		// 	}
 			
-			slidesNav.find('.active').removeClass('active');
-			slidesNav.find('li').eq(slideIndex).find('a').addClass('active');
-		}
+		// 	slidesNav.find('.active').removeClass('active');
+		// 	slidesNav.find('li').eq(slideIndex).find('a').addClass('active');
+		// }
 		
 		
 		if (!isTablet) {
@@ -1139,12 +1139,12 @@
 		* Retuns `right` or `left` depending on the scrolling movement to reach its destination
 		* from the current slide.
 		*/
-		function getXmovement(fromIndex, toIndex){			
-			if(fromIndex > toIndex){
-				return 'left';
-			}
-			return 'right';
-		}		
+		// function getXmovement(fromIndex, toIndex){			
+		// 	if(fromIndex > toIndex){
+		// 		return 'left';
+		// 	}
+		// 	return 'right';
+		// }		
 		
 		
 		function createSlimScrolling(element){
@@ -1262,40 +1262,40 @@
 		/**
 		* Scrolls the slider to the given slide destination for the given section
 		*/
-		function scrollSlider(section, slide){
-			if(typeof slide != 'undefined'){
-				var slides = section.find('.slides');
-				var destiny =  slides.find('[data-anchor="'+slide+'"]');
+		// function scrollSlider(section, slide){
+		// 	if(typeof slide != 'undefined'){
+		// 		var slides = section.find('.slides');
+		// 		var destiny =  slides.find('[data-anchor="'+slide+'"]');
 
-				if(!destiny.length){
-					destiny = slides.find('.slide').eq(slide);
-				}
+		// 		if(!destiny.length){
+		// 			destiny = slides.find('.slide').eq(slide);
+		// 		}
 
-				if(destiny.length){
-					landscapeScroll(slides, destiny);
-				}
-			}
-		}
+		// 		if(destiny.length){
+		// 			landscapeScroll(slides, destiny);
+		// 		}
+		// 	}
+		// }
 		
 		/**
 		* Creates a landscape navigation bar with dots for horizontal sliders.
 		*/
-		function addSlidesNavigation(section, numSlides){						
-			section.append('<div class="fullPage-slidesNav"><ul></ul></div>');
-			var nav = section.find('.fullPage-slidesNav');
+		// function addSlidesNavigation(section, numSlides){						
+		// 	section.append('<div class="fullPage-slidesNav"><ul></ul></div>');
+		// 	var nav = section.find('.fullPage-slidesNav');
 
-			//top or bottom
-			nav.addClass(options.slidesNavPosition);
+		// 	//top or bottom
+		// 	nav.addClass(options.slidesNavPosition);
 
-			for(var i=0; i< numSlides; i++){			
-				nav.find('ul').append('<li><a href="#"><span></span></a></li>');
-			}
+		// 	for(var i=0; i< numSlides; i++){			
+		// 		nav.find('ul').append('<li><a href="#"><span></span></a></li>');
+		// 	}
 			
-			//centering it
-			nav.css('margin-left', '-' + (nav.width()/2) + 'px');
+		// 	//centering it
+		// 	nav.css('margin-left', '-' + (nav.width()/2) + 'px');
 			
-			nav.find('li').first().find('a').addClass('active');
-		}
+		// 	nav.find('li').first().find('a').addClass('active');
+		// }
 		
 
 		/**
@@ -1336,13 +1336,13 @@
 		/**
 		* Scrolls the slider to the given slide destination for the given section
 		*/
-		$(document).on('click', '.fullPage-slidesNav a', function(e){
-			e.preventDefault();
-			var slides = $(this).closest('.section').find('.slides');		
-			var destiny = slides.find('.slide').eq($(this).closest('li').index());
+		// $(document).on('click', '.fullPage-slidesNav a', function(e){
+		// 	e.preventDefault();
+		// 	var slides = $(this).closest('.section').find('.slides');		
+		// 	var destiny = slides.find('.slide').eq($(this).closest('li').index());
 			
-			landscapeScroll(slides, destiny);
-		});
+		// 	landscapeScroll(slides, destiny);
+		// });
 		
 		
 		/**
