@@ -903,11 +903,11 @@ max-width: 250px;
 margin: 0 auto;}
 /* Styles */
 
-/*.carousel-control {
-display: none;
+.carousel-control {
+	display: none;
 
 }
-*/
+
 	.section-1 h3 {
 		font-size: 26px;
 	}
@@ -1724,19 +1724,19 @@ border-color: #cccccc;
 
 @media screen and (max-width: 767px) {
 	.welcome {
-	max-height: 255px;
-	padding-top: 37px;
+		padding-top: 37px;
+		max-height: 220px;
 	}
 
 	.the-graph {
-	width: 100%;
-	height: auto;
-	padding-top: 53px;
+		width: 100%;
+		height: auto;
+		padding-top: 33px;
 	}
 	.graph {
-	width: 85%;
-	height: auto;
-	padding-top: 20px;
+		width: 80%;
+		height: auto;
+		padding-top: 20px;
 	}
 	#module-biz {
 		display: none;
