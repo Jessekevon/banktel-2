@@ -892,10 +892,15 @@ padding-bottom: 40px;
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 
+.sign-in-header {
+	margin-bottom: -30px;
+}
+
 .subtext p {
 font-size: 14px;
 line-height: 20px;
-}
+max-width: 250px;
+margin: 0 auto;}
 /* Styles */
 .carousel-control {
 display: none;

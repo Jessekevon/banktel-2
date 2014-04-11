@@ -1,5 +1,6 @@
 <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 
+<div class="sign-in-header"></div>
 <div class="sign-in-form">
   <div class="form-inputs">
   	<div class="user"><%= f.input :email, placeholder: 'Username' %></div>
@@ -24,7 +25,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="subtext" id="sign-in-subtext">
-				<p>Introducing a smarter, cloud-based Small Business<br>
+				<p>Introducing a smarter, cloud-based Small Business
 					accounting solution built from the bank up.</p>
 			</div>
 		</div>
