@@ -933,11 +933,31 @@ line-height: 23px;
 	height: 185px;
 	width: auto;
 }
+.header-wrapper p {
+	padding: 0px;
+}
 
+.visit-banktel {
+	display: none;
+}
+
+.copyright {
+	float: left;
+}
 
 #module-biz {
 	display: none;
 }
+
+.footer-bottom .main-button {
+margin-left: 0px;
+}
+
+.table-responsive > .table > thead > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > tfoot > tr > td {
+white-space: nowrap;
+}
+
+
 
 }
 

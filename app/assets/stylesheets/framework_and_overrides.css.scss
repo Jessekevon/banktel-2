@@ -333,6 +333,9 @@ text-align: center;
   -ms-user-select: none;
   user-select: none;
 }
+.table-responsive > .table > thead > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > tfoot > tr > td {
+  white-space: initial;
+}
 
 .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
   line-height: 1.428571429;
@@ -387,6 +390,7 @@ text-align: center;
 bottom: auto;
 margin-bottom: 1px;
 }
+
 
 
 
@@ -605,7 +609,7 @@ margin-bottom: 1px;
   }
 
   .navbar-inverse {
-    position: absolute;
+    position: relative;
     padding-bottom: 0px;
   }
 
