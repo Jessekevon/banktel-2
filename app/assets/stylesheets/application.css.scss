@@ -902,6 +902,7 @@ line-height: 20px;
 max-width: 250px;
 margin: 0 auto;}
 /* Styles */
+
 .carousel-control {
 display: none;
 
@@ -957,6 +958,17 @@ margin-left: 0px;
 white-space: nowrap;
 }
 
+.graph {
+	width: 85%;
+	height: auto;
+
+}
+
+.the-graph {
+width: 100%;
+height: auto;
+padding-top: 63px;
+}
 
 
 }

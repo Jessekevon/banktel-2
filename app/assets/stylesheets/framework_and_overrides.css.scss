@@ -598,7 +598,7 @@ margin-bottom: 1px;
 
   .navbar-nav {
     float: none;
-    position: relative;
+    position: absolute;
     margin: 0 7px;
     top: 0px;
     z-index: 1000;
@@ -619,7 +619,7 @@ margin-bottom: 1px;
 
   li.log-out.btn-sm, .btn-group-sm > li.log-out.btn, .btn-group-sm > li.log-out.submit {
     position: absolute;
-  top: -45px;
+    top: -45px;
   }
 
 }
