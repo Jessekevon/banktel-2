@@ -889,6 +889,80 @@ padding-bottom: 40px;
 =            	 Media Queries             =
 ==================================================*/
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+.sign-in-header {
+	margin-bottom: -60px;
+}
+
+.subtext p {
+font-size: 14px;
+line-height: 20px;
+max-width: 250px;
+margin: 0 auto;}
+/* Styles */
+
+/*.carousel-control {
+display: none;
+
+}
+*/
+	.section-1 h3 {
+		font-size: 26px;
+	}
+
+	.section-1-subtext {
+	font-size: 14px;
+	line-height: 21px;
+	}
+
+h3.section-content {
+	font-size: 26px;
+
+}
+.description-subtext p {
+font-size: 14px;
+line-height: 23px;
+}
+
+.landing-page-footer {
+	position: relative;
+}
+
+.card-img {
+	height: 185px;
+	width: auto;
+}
+.header-wrapper p {
+	padding: 0px;
+}
+
+.visit-banktel {
+	display: none;
+}
+
+.copyright {
+	float: left;
+}
+
+#module-biz {
+	display: none;
+}
+
+.footer-bottom .main-button {
+margin-left: 0px;
+}
+
+.table-responsive > .table > thead > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > tfoot > tr > td {
+white-space: nowrap;
+}
+
+
+
+}
+
+
 @media screen and (min-width: 600px) and (max-width: 991px) {
 	.description-subtext p {
 		text-align: center;
@@ -1648,91 +1722,23 @@ border-color: #cccccc;
 }
 
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-
-.sign-in-header {
-	margin-bottom: -60px;
-}
-
-.subtext p {
-font-size: 14px;
-line-height: 20px;
-max-width: 250px;
-margin: 0 auto;}
-/* Styles */
-
-.carousel-control {
-display: none;
-
-}
-
-	.section-1 h3 {
-		font-size: 26px;
+@media screen and (max-width: 767px) {
+	.welcome {
+	max-height: 255px;
+	padding-top: 37px;
 	}
 
-	.section-1-subtext {
-	font-size: 14px;
-	line-height: 21px;
+	.the-graph {
+	width: 100%;
+	height: auto;
+	padding-top: 53px;
 	}
-
-h3.section-content {
-	font-size: 26px;
-
+	.graph {
+	width: 85%;
+	height: auto;
+	padding-top: 20px;
+	}
+	#module-biz {
+		display: none;
+	}
 }
-.description-subtext p {
-font-size: 14px;
-line-height: 23px;
-}
-
-.landing-page-footer {
-	position: relative;
-}
-
-.card-img {
-	height: 185px;
-	width: auto;
-}
-.header-wrapper p {
-	padding: 0px;
-}
-
-.visit-banktel {
-	display: none;
-}
-
-.copyright {
-	float: left;
-}
-
-#module-biz {
-	display: none;
-}
-
-.footer-bottom .main-button {
-margin-left: 0px;
-}
-
-.table-responsive > .table > thead > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > tfoot > tr > td {
-white-space: nowrap;
-}
-.welcome {
-max-height: 255px;
-padding-top: 37px;
-}
-
-.the-graph {
-width: 100%;
-height: auto;
-padding-top: 63px;
-}
-.graph {
-width: 85%;
-height: auto;
-padding-top: 20px;
-}
-
-
-}
-
-
