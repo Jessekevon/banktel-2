@@ -904,8 +904,8 @@ margin: 0 auto;}
 /* Styles */
 
 .carousel-control {
-	display: none;
-
+/*	display: none;
+*/
 }
 
 	.section-1 h3 {
@@ -1722,23 +1722,38 @@ border-color: #cccccc;
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
 	.welcome {
 		padding-top: 37px;
-		max-height: 220px;
+		max-height: 193px;
 	}
 
-/*	.the-graph {
+	.the-graph {
 		width: 100%;
 		height: auto;
-		padding-top: 33px;
+		padding-top: 20px;
 	}
 	.graph {
 		width: 80%;
 		height: auto;
-		padding-top: 20px;
+		padding-top: 10px;
 	}
-*/	#module-biz {
+	#module-biz {
 		display: none;
 	}
+	#myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5 {
+		height: 440px;
+	}
+
+
 }
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+	.welcome {
+		padding-top: 37px;
+		max-height: 233px;
+	}
+
+
+}
+
