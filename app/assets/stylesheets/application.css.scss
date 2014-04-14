@@ -904,8 +904,8 @@ margin: 0 auto;}
 /* Styles */
 
 .carousel-control {
-/*	display: none;
-*/
+	display: none;
+
 }
 
 	.section-1 h3 {
@@ -1725,7 +1725,7 @@ border-color: #cccccc;
 @media screen and (max-width: 480px) {
 	.welcome {
 		padding-top: 37px;
-		max-height: 193px;
+		max-height: 180px;
 	}
 
 	.the-graph {
@@ -1742,7 +1742,7 @@ border-color: #cccccc;
 		display: none;
 	}
 	#myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5 {
-		height: 440px;
+		height: 500px;
 	}
 
 
@@ -1754,6 +1754,9 @@ border-color: #cccccc;
 		max-height: 233px;
 	}
 
+	#module-biz {
+		display: none;
+	}
 
 }
 
